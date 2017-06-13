@@ -1,6 +1,6 @@
-# Inkdrop Documentation Site
+# Inkdrop Top Page
 
-The source files for [doc.inkdrop.info](http://doc.inkdrop.info).
+The source files for [www.inkdrop.info](https://www.inkdrop.info).
 
 ### Directory Layout
 
