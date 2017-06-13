@@ -5,7 +5,8 @@
     "plugin:react/recommended"
   ],
   "globals": {
-    "__DEV__": true
+    "__DEV__": true,
+    "$": true
   },
   "rules": {
     "react/jsx-quotes": 0,

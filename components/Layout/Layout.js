@@ -9,7 +9,6 @@ import PropTypes from 'prop-types'
 import './Layout.scss'
 import Navigation from '../Navigation'
 import Footer from '../Footer'
-import Masthead from '../masthead'
 // import Link from '../Link';
 
 function Layout ({ children }) {
@@ -20,10 +19,9 @@ function Layout ({ children }) {
           <Navigation />
         </div>
       </header>
-      <div>
-        <Masthead />
+      <main>
         {children}
-      </div>
+      </main>
       <Footer />
     </div>
   )

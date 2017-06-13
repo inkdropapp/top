@@ -1,14 +1,27 @@
 @import '../components/variables.scss';
 
-img.top-image {
-  border: 8px solid white;
-  border-radius: 4px;
-  box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
-}
+article.app--top {
 
-@media (min-width: $screen-sm-min) {
-  img.top-image {
-    border-width: 16px;
+  .ui.embed {
+    background: none;
+    width: 1180px;
+    &.win {
+      width: 1200px;
+    }
+
+    .video.play.icon {
+      &:before {
+        color: $blue;
+      }
+      &:after {
+        background: none;
+      }
+    }
+    .video.play.icon:hover {
+      &:before {
+        color: #1c67f5;
+      }
+    }
   }
-}
 
+}

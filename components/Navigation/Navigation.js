@@ -4,7 +4,7 @@ import Link from '../Link'
 
 function Navigation () {
   return (
-    <div className='ui grid'>
+    <nav className='ui grid'>
       <div className='row'>
         <a href='https://www.inkdrop.info/' className='app--logo'>
           <img
@@ -53,7 +53,7 @@ function Navigation () {
         </ul>
 
       </div>
-    </div>
+    </nav>
   )
 }
 

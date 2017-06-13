@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+section.masthead {
+  text-align: center;
+  background-color: $brand-color;
+  background-image: url(/bg_triangle-dark.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 3rem 0;
+  border-bottom: 6px solid #38799C;
+
+  h1, h2 {
+    color: white;
+    font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+
+  h1 {
+    font-size: 6vmin;
+    margin: 0 0 0.3em 0;
+  }
+}
