@@ -14,6 +14,13 @@ export default class IndexPage extends Component {
   render () {
     return (
       <div className='ui container main-content'>
+        <div style={{ paddingTop: '2em' }}>
+          <img
+            className='ui image'
+            src='/top/sc01.png'
+            srcSet='/top/sc01.png 1x, /top/sc01@2x.png 2x'
+          />
+        </div>
         <Menu />
         <div style={{ paddingTop: '2em' }}>
           <a href='https://mixpanel.com/f/partner' rel='nofollow'><img src='//cdn.mxpnl.com/site_media/images/partner/badge_light.png' alt='Mobile Analytics' /></a>
