@@ -1,9 +1,3 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 @import '../variables.scss';
 
 .app--header {
@@ -23,6 +17,7 @@
     text-align: right;
     height: 45px;
     margin: 0;
+    color: #bbb;
 
     li {
       display: inline-block;
@@ -32,6 +27,12 @@
       > a {
         display: inline-block;
         padding: 14px 0;
+
+        &.login {
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 20px;
+          padding: 4px 10px;
+        }
       }
 
       &:last-child {
