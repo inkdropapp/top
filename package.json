@@ -19,6 +19,7 @@
     "eslint": "^4.0.0",
     "eslint-plugin-react": "^7.0.1",
     "expose-loader": "^0.7.3",
+    "extract-text-webpack-plugin": "^2.1.2",
     "fbjs": "^0.4.0",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",

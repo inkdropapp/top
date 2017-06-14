@@ -8,6 +8,7 @@ import path from 'path'
 import fs from 'fs'
 import webpack from 'webpack'
 import markdownRenderer from './markdown-renderer'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 const DEBUG = !process.argv.includes('release')
 const VERBOSE = process.argv.includes('verbose')
@@ -86,7 +87,8 @@ const config = {
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
-    })
+    }),
+    new ExtractTextPlugin('app.css')
   ],
   module: {
     rules: [
@@ -107,7 +109,10 @@ const config = {
         loader: 'raw-loader'
       }, {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
+        })
       }, {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=10000'
@@ -125,6 +130,16 @@ const config = {
             }
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            POSTCSS_LOADER
+          ]
+        })
       }
     ]
   }
@@ -170,15 +185,7 @@ const appConfig = {
           ]
         }
       }) : JS_LOADER,
-      ...config.module.rules,
-      {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          POSTCSS_LOADER
-        ]
-      }
+      ...config.module.rules
     ]
   }
 }
@@ -209,14 +216,7 @@ const pagesConfig = {
   module: {
     rules: [
       JS_LOADER,
-      ...config.module.rules,
-      {
-        test: /\.scss$/,
-        use: [
-          'css-loader',
-          POSTCSS_LOADER
-        ]
-      }
+      ...config.module.rules
     ]
   }
 }
