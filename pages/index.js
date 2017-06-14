@@ -1,31 +1,29 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 import './index.scss'
 import React, { Component } from 'react'
 import Link from '../components/Link'
 import Masthead from '../components/masthead'
+import SupportingDeviceMenu from '../components/top-page/supporting-device-menu'
+import DesktopDescription from '../components/top-page/desktop-description'
+import MobileDescription from '../components/top-page/mobile-description'
+import LeanMoreSection from '../components/top-page/learn-more-section'
+import KeepInTouchSection from '../components/top-page/keep-in-touch-section'
+const isBrowser = typeof window !== 'undefined'
 
 export default class IndexPage extends Component {
   static title = 'Note-taking App for Markdown Lovers'
 
   constructor (props) {
     super(props)
-    const isWin32 = window.navigator.platform === 'Win32'
+    const isWin32 = isBrowser ? window.navigator.platform === 'Win32' : false
 
     this.state = {
+      activeDeviceType: 'desktop',
       isWin32
     }
   }
 
-  componentDidMount () {
-    $('.ui.embed').embed()
-  }
-
   render () {
+    const { activeDeviceType } = this.state
     return (
       <article className='app--top'>
 
@@ -39,25 +37,22 @@ export default class IndexPage extends Component {
               </Link>
             </div>
           </div>
+          <SupportingDeviceMenu
+            onClickMenu={::this.handleDeviceTypeMenuItemClick}
+            activeDeviceType={activeDeviceType}
+          />
+          <DesktopDescription active={activeDeviceType === 'desktop'} />
+          <MobileDescription active={activeDeviceType === 'mobile'} />
         </Masthead>
 
-        <div className='ui image' style={{ paddingTop: '2em' }}>
-          <div
-            className={`ui embed ${this.state.isWin32 ? 'win' : ''}`}
-            data-source='vimeo'
-            data-id='186246591'
-            data-placeholder='/top/sc01@2x.png' />
-        </div>
-
-        <div style={{ paddingTop: '2em' }}>
-          <img
-            className='ui image'
-            src='/top/sc01.png'
-            srcSet='/top/sc01.png 1x, /top/sc01@2x.png 2x'
-          />
-        </div>
+        <LeanMoreSection />
+        <KeepInTouchSection />
 
       </article>
     )
+  }
+
+  handleDeviceTypeMenuItemClick (deviceType) {
+    this.setState({ activeDeviceType: deviceType })
   }
 }

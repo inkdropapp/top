@@ -1,0 +1,7 @@
+.description-mobile {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
