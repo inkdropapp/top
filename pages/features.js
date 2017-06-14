@@ -1,6 +1,5 @@
 import './index.scss'
 import React, { Component } from 'react'
-import Link from '../components/Link'
 import Masthead from '../components/features-page/masthead'
 import FunctionalitySection from '../components/features-page/functionality-section'
 import InterfaceSection from '../components/features-page/interface-section'
