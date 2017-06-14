@@ -3,7 +3,8 @@
 section.masthead {
   text-align: center;
   background-color: $brand-color;
-  background-image: url(/bg_triangle-dark.png);
+  background: linear-gradient(#071B26, #072B3F, #072B3F);
+  background-image: url(/bg_triangle-dark.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
