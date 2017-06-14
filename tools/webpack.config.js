@@ -165,7 +165,6 @@ const appConfig = {
   plugins: [
     ...config.plugins,
     ...(DEBUG ? [] : [
-      new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin(),
       new webpack.optimize.AggressiveMergingPlugin()
     ]),
