@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ManualLayout from '../components/manual-layout'
+import Masthead from '../components/masthead'
+import Link from '../components/Link'
 
 export default class ErrorPage extends Component {
   static propTypes = {
@@ -17,13 +18,20 @@ export default class ErrorPage extends Component {
 
   render () {
     return (
-      <ManualLayout currentPageTitle='Error'>
-        <h1>Sorry, unexpected error has been occurred.</h1>
-        <div>
-          Check the URL and try again.
-        </div>
-        { this.props.error ? this.renderError() : null }
-      </ManualLayout>
+      <article className='app--top'>
+        <Masthead>
+          <h1>Sorry, unexpected error has been occurred 😢</h1>
+          <div>
+            Check the URL and try again.
+          </div>
+          { this.props.error ? this.renderError() : null }
+          <div>
+            <Link to='/' className='ui rounded button'>
+              Return to top
+            </Link>
+          </div>
+        </Masthead>
+      </article>
     )
   }
 }
