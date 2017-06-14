@@ -23,11 +23,11 @@ function Html ({ title, description, body }) {
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Lato:300,400' />
         <link rel='stylesheet' href='//fonts.googleapis.com/earlyaccess/notosansjapanese.css' />
-        <script src={'/app.js?' + new Date().getTime()} />
       </head>
       <body>
         <div id='app' dangerouslySetInnerHTML={{ __html: body }} />
         <GoogleAnalytics />
+        <script src={'/app.js?' + new Date().getTime()} />
       </body>
     </html>
   )
