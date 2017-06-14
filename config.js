@@ -6,6 +6,6 @@
 
 export default {
   title: 'Inkdrop',
-  description: 'The Notebook for Hackers',
-  googleAnalyticsId: 'UA-58709134-3',
-};
+  description: 'The Note-taking App for Markdown Lover',
+  googleAnalyticsId: 'UA-58709134-2'
+}
