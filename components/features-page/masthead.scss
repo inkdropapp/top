@@ -1,0 +1,58 @@
+.features-masthead {
+  font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+
+  .headline {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+
+  .ui.container nav.sections {
+    margin: 2rem 1rem 0 1rem;
+
+    .column.section-item {
+      padding-left: 14px !important;
+      min-height: 84px;
+      text-align: left;
+
+      a {
+        display: block;
+        padding-left: 72px;
+        color: white;
+
+        &:before {
+          display: block;
+          content: "";
+          width: 62px;
+          height: 63px;
+          position: absolute;
+          left: 10px;
+          top: 10px;
+        }
+      }
+
+      &.simplicity a:before {
+        background-image: url(/features/simple-functionality_shadow.png);
+        background-size: 62px 63px;
+      }
+      &.beauty a:before {
+        background-image: url(/features/beautiful-interface_shadow.png);
+        background-size: 62px 63px;
+      }
+      &.extensibility a:before {
+        background-image: url(/features/plugin-support_shadow.png);
+        background-size: 62px 63px;
+      }
+      &.security a:before {
+        background-image: url(/features/seamless-security_shadow.png);
+        background-size: 62px 63px;
+      }
+    }
+    strong {
+      display: block;
+      font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+}

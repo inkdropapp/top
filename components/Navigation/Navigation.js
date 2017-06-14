@@ -1,20 +1,20 @@
 import React from 'react'
 import './Navigation.scss'
 import Link from '../Link'
+import RetinaImage from '../retina-image'
 
 function Navigation () {
   return (
     <nav className='ui grid'>
       <div className='row'>
-        <a href='https://www.inkdrop.info/' className='app--logo'>
-          <img
+        <Link to='/' className='app--logo'>
+          <RetinaImage
             src='/navbar-logo.png'
-            srcSet='/navbar-logo.png 1x, /navbar-logo@2x.png 2x'
             width='186'
             height='45'
             alt='logo'
           />
-        </a>
+        </Link>
 
         <ul className='app--navbar reset-list un-select'>
           <li>

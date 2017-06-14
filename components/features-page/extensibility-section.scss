@@ -1,0 +1,22 @@
+@import '../variables.scss';
+
+.extensibility-section {
+  header h2:before {
+    background-image: url(/features/plugin-support_shadow.png);
+    background-size: 62px 63px;
+  }
+
+  section {
+    .plugin-support, .access-cloud, .integration {
+      i.icon, a {
+        color: #42b939;
+      }
+    }
+  }
+
+  hr.separator {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 3em 0;
+  }
+}

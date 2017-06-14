@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+.security-section {
+  color: #c7cfd4;
+  background: #1b2128;
+  background-image: linear-gradient(163deg,#1b2128,#61758e);
+
+  header {
+    text-shadow: 0 1px 2px rgba(0,0,0,.39);
+
+    h2 {
+      color: white;
+    }
+
+    h2:before {
+      background-image: url(/features/seamless-security_shadow.png);
+      background-size: 62px 63px;
+    }
+  }
+
+  section {
+    padding: 0;
+
+    .secure-database-image {
+      background-image: url(/features/security.png);
+      background-size: 450px 270px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: 270px;
+    }
+  }
+
+  section h3 {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.39);
+  }
+
+  section .text {
+    text-shadow: 0 1px 2px rgba(0,0,0,.39);
+    text-align: justify;
+  }
+
+  .ui.message {
+    text-align: left;
+  }
+
+  hr.separator {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 3em 0;
+  }
+}

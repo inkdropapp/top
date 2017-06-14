@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.interface-section {
+  header h2:before {
+    background-image: url(/features/beautiful-interface_shadow.png);
+    background-size: 62px 63px;
+  }
+  section i.icon {
+    color: #1290f1;
+  }
+  section.ui-themes {
+    padding-bottom: 0;
+    .dark-theme {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  section.syntax-themes {
+    margin-top: 0;
+    img {
+      margin: 0 auto;
+      /* filter: drop-shadow(0 1px 1px rgba(0,0,0,.43)); */
+      filter: drop-shadow(0 3px 5px rgba(0,0,0,.3)) drop-shadow(0 0 1px rgba(0,0,0,.08));
+    }
+  }
+
+}

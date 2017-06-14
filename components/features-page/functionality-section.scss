@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+.functionality-section {
+
+  header h2:before {
+    background-image: url(/features/simple-functionality_shadow.png);
+    background-size: 62px 63px;
+  }
+  section i.icon, section a {
+    color: #ab34ff;
+  }
+
+  .markdown-support {
+    img {
+      margin: 0 auto;
+    }
+  }
+  .builtin-sync {
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (width >= $screen-sm-min) {
+    section.high-usability {
+      background-image: url(/features/leftbars.png);
+      background-position: 50vw bottom;
+      background-size: 1183px 697px;
+      background-repeat: no-repeat;
+      min-height: 780px;
+
+      .ui.grid {
+        min-height: 700px;
+
+        .usability-description-column {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+}
