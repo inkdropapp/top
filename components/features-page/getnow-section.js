@@ -11,7 +11,7 @@ export default class GetNowSection extends Component {
 
           <div className='ui stackable grid'>
 
-            <div className='four wide column right aligned'>
+            <div className='four wide column big-icon'>
               <RetinaImage
                 src='/icon_w128.png'
                 width='128'
@@ -19,7 +19,7 @@ export default class GetNowSection extends Component {
               />
             </div>
 
-            <div className='twelve wide column'>
+            <div className='twelve wide column get-started-message'>
               <h1>Get started with Inkdrop</h1>
               <Link to='/signup' className='ui rounded primary button'>
                 Start your 60-day free trial now

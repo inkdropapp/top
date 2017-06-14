@@ -18,7 +18,7 @@ export default class InterfaceSection extends Component {
         </header>
         <section className='ui container ui-themes'>
           <div className='dark-theme'>
-            <RetinaImage
+            <img
               className='ui image'
               src='/features/dark-theme.png'
               alt='Dark Theme'
@@ -56,7 +56,7 @@ export default class InterfaceSection extends Component {
                 </div>
               </div>
               <div className='six wide column'>
-                <RetinaImage
+                <img
                   className='ui image'
                   src='/features/syntax-themes.png'
                   alt='Have it everywhere'

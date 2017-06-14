@@ -1,17 +1,35 @@
+@import '../variables.scss';
+
 .getnow-section {
   padding: 2rem 0;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   background: #fafafa;
 
+  .big-icon {
+    text-align: right;
+  }
+
   h1 {
     font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 5vmin;
+    font-size: 50px;
     margin: 0 0 0.3em 0;
   }
 
   .description {
     margin: 0 0 1em 0;
+  }
+
+  @media screen and (width <= $screen-sm-min) {
+    h1 {
+      font-size: 30px;
+    }
+    .big-icon {
+      text-align: center;
+    }
+    .get-started-message {
+      text-align: center;
+    }
   }
 }

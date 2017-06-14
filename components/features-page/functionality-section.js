@@ -95,7 +95,7 @@ export default class FunctionalitySection extends Component {
           <div className='ui container'>
             <div className='ui stackable centered grid sixteen column'>
               <div className='six wide column builtin-sync'>
-                <RetinaImage
+                <img
                   className='ui image'
                   src='/features/builtin-sync.png'
                   alt='Have it everywhere'
