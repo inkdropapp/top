@@ -9,11 +9,7 @@ export default class DesktopDescription extends Component {
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
-    active: PropTypes.bool
-  }
-
-  static defaultProps = {
-    active: false
+    active: PropTypes.bool.isRequired
   }
 
   componentDidMount () {
