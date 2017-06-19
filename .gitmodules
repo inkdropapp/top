@@ -1,0 +1,3 @@
+[submodule "semantic"]
+	path = semantic
+	url = git@github.com:inkdropapp/inkdrop-semantic-ui.git
