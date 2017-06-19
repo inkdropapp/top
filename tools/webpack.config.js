@@ -144,7 +144,6 @@ const appConfig = {
   ...config,
   entry: [
     ...(WATCH ? ['webpack-hot-middleware/client', 'react-hot-loader/patch'] : []),
-    // (WATCH ? './semantic/dist/semantic.css' : './semantic/dist/semantic.min.css'),
     'jquery',
     './app.js'
   ],
