@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import '../semantic/dist/components/embed.js'
+import '../semantic/dist/components/embed.css'
 
 export default class Masthead extends Component {
   static propTypes = {

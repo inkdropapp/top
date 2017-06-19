@@ -11,6 +11,19 @@ import Navigation from '../Navigation'
 import Footer from '../Footer'
 // import Link from '../Link';
 
+import '../../semantic/dist/components/reset.css'
+import '../../semantic/dist/components/site.css'
+import '../../semantic/dist/components/button.css'
+import '../../semantic/dist/components/container.css'
+import '../../semantic/dist/components/icon.css'
+import '../../semantic/dist/components/header.css'
+import '../../semantic/dist/components/segment.css'
+import '../../semantic/dist/components/menu.css'
+import '../../semantic/dist/components/grid.css'
+import '../../semantic/dist/components/image.css'
+import '../../semantic/dist/components/message.css'
+import '../../semantic/dist/components/dropdown.css'
+
 function Layout ({ children }) {
   return (
     <div>

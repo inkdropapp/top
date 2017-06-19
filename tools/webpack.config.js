@@ -73,9 +73,6 @@ const config = {
     cached: VERBOSE,
     cachedAssets: VERBOSE
   },
-  resolve: {
-    // extensions: ['', '.js', '.json', '.jsx', '.node']
-  },
   plugins: [
     new webpack.LoaderOptionsPlugin({
       debug: DEBUG
@@ -95,9 +92,6 @@ const config = {
       {
         test: require.resolve('jquery'),
         loader: 'expose-loader?$!expose-loader?jQuery'
-      }, {
-        test: /semantic\.js$/,
-        loader: 'script-loader'
       }, {
         test: /[\\\/]app\.js$/,
         loader: path.join(__dirname, './lib/routes-loader.js')
@@ -150,10 +144,8 @@ const appConfig = {
   ...config,
   entry: [
     ...(WATCH ? ['webpack-hot-middleware/client', 'react-hot-loader/patch'] : []),
-    (WATCH ? './semantic/dist/semantic.css' : './semantic/dist/semantic.min.css'),
-    // 'font-awesome/css/font-awesome.css',
+    // (WATCH ? './semantic/dist/semantic.css' : './semantic/dist/semantic.min.css'),
     'jquery',
-    (WATCH ? './semantic/dist/semantic.js' : './semantic/dist/semantic.min.js'),
     './app.js'
   ],
   output: {
@@ -184,7 +176,11 @@ const appConfig = {
           ]
         }
       }) : JS_LOADER,
-      ...config.module.rules
+      ...config.module.rules,
+      {
+        test: /semantic(.*)\.js$/,
+        loader: 'script-loader'
+      }
     ]
   }
 }
@@ -215,7 +211,11 @@ const pagesConfig = {
   module: {
     rules: [
       JS_LOADER,
-      ...config.module.rules
+      ...config.module.rules,
+      {
+        test: /semantic(.*)\.js$/,
+        loader: 'null-loader'
+      }
     ]
   }
 }
