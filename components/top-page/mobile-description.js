@@ -28,6 +28,7 @@ export default class MobileDescription extends Component {
         </div>
         <div className='ui image'>
           <RetinaImage
+            className='screenshot'
             src='/top/mobile.png'
             width='1500'
             height='1000' />

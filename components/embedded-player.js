@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import '../semantic/dist/components/embed.js'
 import '../semantic/dist/components/embed.css'
+import './embedded-player.scss'
 
 export default class Masthead extends Component {
   static propTypes = {
@@ -18,7 +19,7 @@ export default class Masthead extends Component {
 
   render () {
     return (
-      <div className={`ui image ${this.props.className}`}>
+      <div className={`ui image embedded-player ${this.props.className}`}>
         <div
           className='ui embed'
           data-source={this.props.source}

@@ -11,12 +11,20 @@ export default class DesktopDescription extends Component {
     active: PropTypes.bool.isRequired
   }
 
+  constructor (props) {
+    super(props)
+    const isWin32 = window.navigator.platform === 'Win32'
+    this.state = { isWin32 }
+  }
+
   componentDidMount () {
     $('.ui.embed').embed()
   }
 
   render () {
     const { active, className } = this.props
+    const { isWin32 } = this.state
+    const topImage = isWin32 ? '/top/desktop-win32.png' : '/top/desktop@2x.png'
     return (
       <div className={`description-desktop ${className} ${active ? 'active' : ''}`}>
         <div className='description'>
@@ -45,7 +53,7 @@ export default class DesktopDescription extends Component {
         <EmbeddedPlayer
           source='vimeo'
           videoId='186246591'
-          imageSrc='/top/desktop@2x.png'
+          imageSrc={topImage}
         />
       </div>
     )
