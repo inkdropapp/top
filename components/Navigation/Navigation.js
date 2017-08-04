@@ -36,7 +36,7 @@ function Navigation () {
             More
             <i className='dropdown icon' />
             <div className='menu'>
-              <Link className='item' to='https://app.inkdrop.info/demo'>Demo</Link>
+              <a className='item' href='https://app.inkdrop.info/demo'>Demo</a>
               <Link className='item' to='/pricing'>Pricing</Link>
               <a className='item' href='http://doc.inkdrop.info/faq'>FAQ</a>
               <div className='divider' />

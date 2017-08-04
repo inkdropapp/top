@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Link from '../Link'
 import EmbeddedPlayer from '../embedded-player'
 import SupportingPlatform from './supporting-platform'
 import './desktop-description.scss'
@@ -37,10 +36,10 @@ export default class DesktopDescription extends Component {
             versions='(Ubuntu, 64bit)'
           />
           <div className='link-demo'>
-            <Link to='/demo'>
+            <a href='https://app.inkdrop.info/demo'>
               Try the Demo
               <i className='angle right icon' />
-            </Link>
+            </a>
           </div>
         </div>
         <EmbeddedPlayer
