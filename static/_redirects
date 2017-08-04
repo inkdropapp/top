@@ -1,3 +1,6 @@
-/download  https://app.inkdrop.info/download
-/demo      https://app.inkdrop.info/demo
-/plugins   https://app.inkdrop.info/plugins
+/download    https://app.inkdrop.info/download
+/demo        https://app.inkdrop.info/demo
+/plugins     https://app.inkdrop.info/plugins
+/plugins/*   https://app.inkdrop.info/plugins/:splat
+/login       https://app.inkdrop.info/login
+/signup      https://app.inkdrop.info/signup
