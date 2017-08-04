@@ -47,9 +47,9 @@ export default class PricingMasthead extends Component {
               </PeriodSection>
 
               <div className='join'>
-                <Link to='/signup' className='ui rounded button primary'>
+                <a href='https://app.inkdrop.info/signup' className='ui rounded button primary'>
                   Start your 60-day free trial now
-                </Link>
+                </a>
               </div>
             </div>
           </article>

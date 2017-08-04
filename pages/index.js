@@ -32,9 +32,9 @@ export default class IndexPage extends Component {
             <h1>Jot down your daily hacking endeavors.</h1>
             <h2>The Note-Taking App for Markdown Lovers</h2>
             <div>
-              <Link to='/signup' className='ui rounded button primary'>
+              <a href='https://app.inkdrop.info/signup' className='ui rounded button primary'>
                 Start your 60-day free trial now
-              </Link>
+              </a>
             </div>
           </div>
           <SupportingDeviceMenu

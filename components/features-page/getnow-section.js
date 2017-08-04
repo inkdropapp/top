@@ -21,9 +21,9 @@ export default class GetNowSection extends Component {
 
             <div className='twelve wide column get-started-message'>
               <h1>Get started with Inkdrop</h1>
-              <Link to='/signup' className='ui rounded primary button'>
+              <a href='https://app.inkdrop.info/signup' className='ui rounded primary button'>
                 Start your 60-day free trial now
-              </Link>
+              </a>
             </div>
 
           </div>
