@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import EmbeddedPlayer from '../embedded-player'
 import SupportingPlatform from './supporting-platform'
 import './desktop-description.scss'
+const isBrowser = typeof window !== 'undefined'
 
 export default class DesktopDescription extends Component {
   static propTypes = {
@@ -13,7 +14,7 @@ export default class DesktopDescription extends Component {
 
   constructor (props) {
     super(props)
-    const isWin32 = window.navigator.platform === 'Win32'
+    const isWin32 = isBrowser ? window.navigator.platform === 'Win32' : false
     this.state = { isWin32 }
   }
 
