@@ -28,9 +28,9 @@ function Navigation () {
             </a>
           </li>
           <li>
-            <Link to='https://app.inkdrop.info/plugins'>
+            <a href='https://app.inkdrop.info/plugins'>
               Plugins
-            </Link>
+            </a>
           </li>
           <li className='ui simple dropdown item'>
             More
