@@ -28,7 +28,7 @@ function Navigation () {
             </a>
           </li>
           <li>
-            <Link to='/plugins'>
+            <Link to='https://app.inkdrop.info/plugins'>
               Plugins
             </Link>
           </li>
@@ -36,7 +36,7 @@ function Navigation () {
             More
             <i className='dropdown icon' />
             <div className='menu'>
-              <Link className='item' to='/demo'>Demo</Link>
+              <Link className='item' to='https://app.inkdrop.info/demo'>Demo</Link>
               <Link className='item' to='/pricing'>Pricing</Link>
               <a className='item' href='http://doc.inkdrop.info/faq'>FAQ</a>
               <div className='divider' />
