@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import RetinaImage from '../retina-image'
 import './interface-section.scss'
 import Article from './article'
-import Link from '../Link'
 
 export default class InterfaceSection extends Component {
   render () {
@@ -42,13 +40,13 @@ export default class InterfaceSection extends Component {
                     you can also install themes created by the Inkdrop community or create your own.
                   </p>
                   <p>
-                    <Link to='/themes'>
+                    <a href='https://app.inkdrop.info/plugins'>
                       Find your favorite theme
                       <i className='angle double right icon' />
-                    </Link>
+                    </a>
                   </p>
                   <p>
-                    <a href='http://doc.inkdrop.info/manual/creating-a-theme'>
+                    <a href='https://doc.inkdrop.info/manual/creating-a-theme'>
                       Learn how to create a theme
                       <i className='angle double right icon' />
                     </a>

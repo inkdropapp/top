@@ -6,7 +6,6 @@
 
 import React from 'react'
 import './Footer.scss'
-import Link from '../Link'
 
 class Footer extends React.Component {
   componentDidMount () {
@@ -29,13 +28,13 @@ class Footer extends React.Component {
             <div className='thirteen wide column links'>
               <ul className='links'>
                 <li>
-                  <Link to='/terms'>Terms of Use</Link>
+                  <a href='https://doc.inkdrop.info/terms'>Terms of Use</a>
                 </li>
                 <li>
-                  <Link to='/privacy'>Privacy Policy</Link>
+                  <a href='https://doc.inkdrop.info/privacy'>Privacy Policy</a>
                 </li>
                 <li>
-                  <Link to='/faq'>FAQ</Link>
+                  <a href='https://doc.inkdrop.info/faq'>FAQ</a>
                 </li>
                 <li>
                   <a

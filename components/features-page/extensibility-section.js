@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './extensibility-section.scss'
 import Article from './article'
-import Link from '../Link'
 import OutboundLink from '../outbound-link'
 
 export default class ExtensibilitySection extends Component {
@@ -36,10 +35,10 @@ export default class ExtensibilitySection extends Component {
                   </a>
                 </p>
                 <p>
-                  <Link to='/plugins'>
+                  <a href='https://app.inkdrop.info/plugins'>
                     Explore plugins
                     <i className='angle double right icon' />
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>
@@ -58,7 +57,7 @@ export default class ExtensibilitySection extends Component {
                   from in your favorite language to create your own client app.
                 </p>
                 <p>
-                  <a href='http://doc.inkdrop.info/manual/accessing-data-in-the-cloud'>
+                  <a href='https://doc.inkdrop.info/manual/accessing-data-in-the-cloud'>
                     Learn more
                     <i className='angle double right icon' />
                   </a>

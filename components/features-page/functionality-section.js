@@ -79,7 +79,7 @@ export default class FunctionalitySection extends Component {
                       Start searching just as you launch Inkdrop, no more focusing search field.
                     </p>
                     <p>
-                      <a href='http://doc.inkdrop.info/manual/searching-notes'>
+                      <a href='https://doc.inkdrop.info/manual/searching-notes'>
                         Learn how to search
                         <i className='angle double right icon' />
                       </a>
@@ -122,7 +122,7 @@ export default class FunctionalitySection extends Component {
                   </p>
 
                   <p>
-                    <a href='http://doc.inkdrop.info/manual/synchronizing-in-the-cloud'>
+                    <a href='https://doc.inkdrop.info/manual/synchronizing-in-the-cloud'>
                       Learn more
                       <i className='angle double right icon' />
                     </a>
