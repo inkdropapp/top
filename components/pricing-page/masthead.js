@@ -5,7 +5,6 @@ import BasicPlanSection from './basic-plan-section'
 import PeriodTabs from './period-tabs'
 import PeriodSection from './period-section'
 import ColumnSpacer from './column-spacer'
-import Link from '../Link'
 import './masthead.scss'
 
 export default class PricingMasthead extends Component {

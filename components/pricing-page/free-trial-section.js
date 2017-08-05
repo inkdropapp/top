@@ -14,7 +14,7 @@ export default class FreeTrialSection extends Component {
           <span className='currency'>&#36;</span>
           0
           <span className='period'>
-            for 2 months
+            for 60 days
           </span>
         </h2>
         <div className='description'>
