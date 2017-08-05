@@ -3,6 +3,8 @@ import Masthead from '../components/masthead'
 import Link from '../components/Link'
 
 export default class NotFound extends Component {
+  static title = 'Not Found'
+
   render () {
     return (
       <article className='app--top'>

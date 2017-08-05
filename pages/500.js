@@ -4,6 +4,8 @@ import Masthead from '../components/masthead'
 import Link from '../components/Link'
 
 export default class ErrorPage extends Component {
+  static title = 'Error'
+
   static propTypes = {
     error: PropTypes.instanceOf(Error)
   }

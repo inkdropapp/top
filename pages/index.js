@@ -8,7 +8,7 @@ import LeanMoreSection from '../components/top-page/learn-more-section'
 import KeepInTouchSection from '../components/top-page/keep-in-touch-section'
 
 export default class IndexPage extends Component {
-  static title = 'Note-taking App for Markdown Lovers'
+  static title = 'Note-taking App with Robust Markdown Editor'
 
   constructor (props) {
     super(props)

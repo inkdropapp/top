@@ -9,7 +9,10 @@ import PropTypes from 'prop-types'
 import GoogleAnalytics from '../GoogleAnalytics'
 import config from '../../config'
 
-function Html ({ title, description, body }) {
+function Html ({ title, image, description, body }) {
+  const coverUrl = `${config.baseUrl}/cover.png`
+  const imageUrl = image ? `${config.baseUrl}${image}` : coverUrl
+
   return (
     <html className='no-js' lang=''>
       <head>
@@ -18,6 +21,23 @@ function Html ({ title, description, body }) {
         <title>{title || config.title}</title>
         <meta name='description' content={description || config.description} />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+        <meta name='author' content='Takuya Matsuyama' />
+        <meta name='author' content='craftzdog' />
+
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@craftzdog' />
+        <meta name='twitter:creator' content='@craftzdog' />
+        <meta name='twitter:title' content={title || config.title} />
+        <meta name='twitter:description' content={description || config.description} />
+        <meta name='twitter:image' content={imageUrl} />
+
+        <meta property='og:site_name' content={config.title} />
+        <meta property='og:title' content={title || config.title} />
+        <meta property='og:description' content={description || config.description} />
+        <meta property='og:type' content='website' />
+        <meta property='og:image' content={imageUrl} />
+
         <link rel='shortcut icon' href='/favicon@2x.png' />
         <link rel='mask-icon' href='/favicon.svg' color='rgb(17, 20, 24)' />
         <link rel='stylesheet' href={'/app.css?' + new Date().getTime()} />
@@ -38,7 +58,8 @@ Html.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   body: PropTypes.string.isRequired,
-  debug: PropTypes.bool.isRequired
+  debug: PropTypes.bool.isRequired,
+  image: PropTypes.string
 }
 
 export default Html
