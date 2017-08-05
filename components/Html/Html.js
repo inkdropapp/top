@@ -38,6 +38,8 @@ function Html ({ title, image, description, body }) {
         <meta property='og:type' content='website' />
         <meta property='og:image' content={imageUrl} />
 
+        <meta name='google-site-verification' content='HIOE45mmxL8AGVMPwLdDod2J9vqgwMJCL_HsaHW19K8' />
+
         <link rel='shortcut icon' href='/favicon@2x.png' />
         <link rel='mask-icon' href='/favicon.svg' color='rgb(17, 20, 24)' />
         <link rel='stylesheet' href={'/app.css?' + new Date().getTime()} />
