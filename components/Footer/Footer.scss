@@ -15,6 +15,7 @@
 
   div.column.links {
     text-align: left;
+    line-height: 200%;
 
     ul.links {
       display: inline-block;
@@ -27,6 +28,10 @@
         margin: 0 1em;
       }
     }
+  }
+
+  .copyright {
+    line-height: 200%;
   }
 
   a {

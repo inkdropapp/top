@@ -70,6 +70,7 @@ class Footer extends React.Component {
               <a href='https://www.inkdrop.info/'
                 target='_blank'
                 rel='noopener noreferrer'
+                className='copyright'
                 onClick={ this.handleOutboundLinkClick }>
                 © Inkdrop
               </a>
