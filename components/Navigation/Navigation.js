@@ -38,7 +38,7 @@ function Navigation () {
             <div className='menu'>
               <a className='item' href='https://app.inkdrop.info/demo'>Demo</a>
               <Link className='item' to='/pricing'>Pricing</Link>
-              <a className='item' href='http://doc.inkdrop.info/faq'>FAQ</a>
+              <a className='item' href='https://doc.inkdrop.info/faq'>FAQ</a>
               <div className='divider' />
               <a className='item' href='https://twitter.com/inkdrop_app'>Twitter</a>
               <a className='item' href='https://medium.com/@inkdrop'>Blog</a>
