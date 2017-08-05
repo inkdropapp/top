@@ -23,6 +23,8 @@ import '../../semantic/dist/components/grid.css'
 import '../../semantic/dist/components/image.css'
 import '../../semantic/dist/components/message.css'
 import '../../semantic/dist/components/dropdown.css'
+import '../../semantic/dist/components/label.css'
+import '../../semantic/dist/components/list.css'
 
 function Layout ({ children }) {
   return (
