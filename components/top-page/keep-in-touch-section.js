@@ -13,16 +13,16 @@ export default class KeepInTouchSection extends Component {
       <section className='white-bg light keep-in-touch-section'>
         <h2>Keep in touch on social media</h2>
         <OutboundLink
-          className='ui twitter button'
+          className='ui rounded twitter button'
           href='https://twitter.com/inkdrop_app'>
           <i className='twitter icon' />
-          @inkdrop_app
+          inkdrop_app
         </OutboundLink>
         <OutboundLink
-          className='ui twitter button'
-          href='https://twitter.com/craftzdog'>
-          <i className='twitter icon' />
-          @craftzdog
+          className='ui rounded secondary button'
+          href='https://medium.com/@inkdrop'>
+          <i className='medium icon' />
+          inkdrop
         </OutboundLink>
       </section>
     )
