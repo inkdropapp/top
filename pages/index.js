@@ -6,6 +6,7 @@ import DesktopDescription from '../components/top-page/desktop-description'
 import MobileDescription from '../components/top-page/mobile-description'
 import LeanMoreSection from '../components/top-page/learn-more-section'
 import KeepInTouchSection from '../components/top-page/keep-in-touch-section'
+import NewsSection from '../components/top-page/news'
 
 export default class IndexPage extends Component {
   static title = 'Note-taking App with Robust Markdown Editor'
@@ -21,7 +22,6 @@ export default class IndexPage extends Component {
     const { activeDeviceType } = this.state
     return (
       <article className='app--top'>
-
         <Masthead>
           <div className='ui container'>
             <h1>Jot down your daily hacking endeavors.</h1>
@@ -42,7 +42,7 @@ export default class IndexPage extends Component {
 
         <LeanMoreSection />
         <KeepInTouchSection />
-
+        <NewsSection />
       </article>
     )
   }
