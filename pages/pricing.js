@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PricingMasthead from '../components/pricing-page/masthead'
-import FaqSection from '../components/pricing-page/faq-section'
+import ReasonSection from '../components/pricing-page/reason-section'
+import TestimonialsSection from '../components/top-page/testimonials'
+import GetNowSection from '../components/features-page/getnow-section'
 
 export default class Pricing extends Component {
   static title = 'Pricing'
@@ -9,7 +11,9 @@ export default class Pricing extends Component {
     return (
       <article className='app--top'>
         <PricingMasthead />
-        <FaqSection />
+        <ReasonSection />
+        <TestimonialsSection />
+        <GetNowSection />
       </article>
     )
   }

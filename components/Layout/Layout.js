@@ -26,6 +26,7 @@ import '../../semantic/dist/components/dropdown.css'
 import '../../semantic/dist/components/dropdown.js'
 import '../../semantic/dist/components/label.css'
 import '../../semantic/dist/components/list.css'
+import '../../semantic/dist/components/divider.css'
 
 function Layout ({ children }) {
   return (
