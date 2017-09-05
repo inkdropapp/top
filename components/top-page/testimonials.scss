@@ -1,12 +1,22 @@
+@import '../variables.scss';
+
 .testimonials-section {
   padding: 2rem 0;
   background: white;
   text-align: left;
 
-  h2 {
+  h1 {
     text-align: center;
     font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
-    font-size: 2.5vmin;
+    font-weight: lighter;
+    font-size: 6vmin;
+    margin: 0.3em 0 0.8em 0;
+  }
+
+  @media screen and (width <= $screen-sm-min) {
+    h1 {
+      font-size: 10vmin;
+    }
   }
 
   i.quote.icon {

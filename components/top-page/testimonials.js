@@ -11,9 +11,9 @@ export default class TestimonialsSection extends Component {
   render () {
     return (
       <section className='white-bg light testimonials-section'>
-        <h2>Inkdrop is made for developers like you</h2>
         <div className='ui container'>
-          <div className='ui grid three columns'>
+          <h1>Inkdrop is made for developers like you</h1>
+          <div className='ui stackable grid three columns'>
             <div className='column'>
               <div className='testimonial-item'>
                 <p>
