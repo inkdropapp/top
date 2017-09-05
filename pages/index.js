@@ -6,6 +6,7 @@ import DesktopDescription from '../components/top-page/desktop-description'
 import MobileDescription from '../components/top-page/mobile-description'
 import LeanMoreSection from '../components/top-page/learn-more-section'
 import KeepInTouchSection from '../components/top-page/keep-in-touch-section'
+import TestimonialsSection from '../components/top-page/testimonials'
 import NewsSection from '../components/top-page/news'
 
 export default class IndexPage extends Component {
@@ -41,8 +42,9 @@ export default class IndexPage extends Component {
         </Masthead>
 
         <LeanMoreSection />
-        <KeepInTouchSection />
+        <TestimonialsSection />
         <NewsSection />
+        <KeepInTouchSection />
       </article>
     )
   }

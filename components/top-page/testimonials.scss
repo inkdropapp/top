@@ -1,0 +1,33 @@
+.testimonials-section {
+  padding: 2rem 0;
+  background: white;
+  text-align: left;
+
+  h2 {
+    text-align: center;
+    font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
+    font-size: 2.5vmin;
+  }
+
+  i.quote.icon {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .testimonial-item {
+    font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+  }
+
+  .testmonial-by {
+    text-align: right;
+
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-left: 0.6em;
+      margin-right: 0.2em;
+    }
+  }
+}
