@@ -16,18 +16,27 @@
   .testimonial-item {
     font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
+
+    p:before {
+      content: "\201C";
+      margin-left: -.6ex;
+    }
+
+    p:after {
+      content: "\201D";
+    }
   }
 
   .testmonial-by {
     text-align: right;
 
     img {
-      width: 48px;
-      height: 48px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       vertical-align: middle;
-      margin-left: 0.6em;
-      margin-right: 0.2em;
+      margin-left: 0.2em;
+      margin-right: 0.3em;
     }
   }
 }
