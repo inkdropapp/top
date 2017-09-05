@@ -12,13 +12,20 @@
 
   h1 {
     font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 50px;
-    margin: 0 0 0.3em 0;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0.3em 0 0.2em 0;
   }
 
-  .description {
-    margin: 0 0 1em 0;
+  h2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin: 0.2em 0 0.2em 0;
+  }
+
+  .link-to-signup {
+    margin-top: 1rem;
   }
 
   @media screen and (width <= $screen-sm-min) {

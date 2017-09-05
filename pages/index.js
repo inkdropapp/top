@@ -8,6 +8,7 @@ import LeanMoreSection from '../components/top-page/learn-more-section'
 import KeepInTouchSection from '../components/top-page/keep-in-touch-section'
 import TestimonialsSection from '../components/top-page/testimonials'
 import NewsSection from '../components/top-page/news'
+import GetNowSection from '../components/features-page/getnow-section'
 
 export default class IndexPage extends Component {
   static title = 'Note-taking App with Robust Markdown Editor'
@@ -45,6 +46,7 @@ export default class IndexPage extends Component {
         <TestimonialsSection />
         <NewsSection />
         <KeepInTouchSection />
+        <GetNowSection />
       </article>
     )
   }
