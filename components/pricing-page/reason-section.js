@@ -14,7 +14,7 @@ export default function ReasonSection () {
               <p>
                 Because lifetime pricing is not sustainable.
                 We know there are similar apps with lifetime pricing out there, but it doesn&apos;t work for long-running business.
-                The sustainability is crusial especially for note-taking apps because you will store a lot of notes in it day by day.
+                The sustainability is crucial especially for note-taking apps because you will store a lot of notes in it day by day.
               </p>
             </div>
             <div className='column'>
