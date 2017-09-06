@@ -26,7 +26,7 @@ export default function ReasonSection () {
               </p>
             </div>
             <div className='column'>
-              <h3>If lowered the pricing, you get more customers.</h3>
+              <h3>If lowered the pricing, you would get more customers.</h3>
               <p>
                 We would like to provide good, quick and warm user support.
                 If we got a lot of users, we won&apos;t be able to support them all.
