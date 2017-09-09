@@ -12,6 +12,7 @@ import GetNowSection from '../components/features-page/getnow-section'
 
 export default class IndexPage extends Component {
   static title = 'Note-taking App with Robust Markdown Editor'
+  static description = 'Jot down your daily hacking endeavors with Markdown on macOS, Windows, Linux, iOS and Android. Good Evernote alternative.'
 
   constructor (props) {
     super(props)
