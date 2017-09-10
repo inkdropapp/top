@@ -42,7 +42,7 @@ function Navigation () {
               <div className='divider' />
               <a className='item' href='https://twitter.com/inkdrop_app'>Twitter</a>
               <a className='item' href='https://medium.com/@inkdrop'>Blog</a>
-              <a className='item' href='https://github.com/inkdropapp/forum'>User Forum</a>
+              <a className='item' href='https://forum.inkdrop.info/'>User Forum</a>
             </div>
           </li>
           <li>
