@@ -15,11 +15,27 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className='left aligned'>
             <li>
+              Sep 26, 2017 — &nbsp;
+              <OutboundLink
+                href='https://blog.inkdrop.info/the-next-roadmap-of-inkdrop-vol-2-b40a70b5498d'
+              >
+                The Next Roadmap of Inkdrop (vol.2)
+              </OutboundLink>
+            </li>
+            <li>
+              Sep 25, 2017 — &nbsp;
+              <OutboundLink
+                href='https://hackernoon.com/how-i-built-a-markdown-editor-earning-1300-mo-profit-inkdrop-ddf6ad702c42'
+              >
+                How I Built a Markdown Editor Earning $1300/mo Profit
+              </OutboundLink>
+            </li>
+            <li>
               Jul 7, 2017 — &nbsp;
               <OutboundLink
                 href='https://hackernoon.com/markdown-note-taking-app-can-now-cover-half-of-rent-inkdrop-795de224ebf'
               >
-                Markdown Note-taking App Can Now Cover Half of Rent — Inkdrop
+                Markdown Note-taking App Can Now Cover Half of Rent
               </OutboundLink>
             </li>
             <li>
