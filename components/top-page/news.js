@@ -15,6 +15,14 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className='left aligned'>
             <li>
+              Feb 27, 2018 — &nbsp;
+              <OutboundLink
+                href='https://blog.inkdrop.info/get-a-slow-tempo-towards-becoming-a-long-running-product-12da66239539'
+              >
+                Get A Slow Tempo — Towards Becoming A Long-Running Product
+              </OutboundLink>
+            </li>
+            <li>
               Sep 26, 2017 — &nbsp;
               <OutboundLink
                 href='https://blog.inkdrop.info/the-next-roadmap-of-inkdrop-vol-2-b40a70b5498d'
