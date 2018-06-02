@@ -23,7 +23,7 @@ export default class MobileDescription extends Component {
           <SupportingPlatform
             image="/top/android-logo-small.png"
             platform="Android"
-            versions="4.1+"
+            versions="7.0+"
           />
         </div>
         <div className="ui image">
