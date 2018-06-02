@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import RetinaImage from '../retina-image'
 import './functionality-section.scss'
 import Article from './article'
+import PlatformImage from '../platform-image'
+import getPlatform from '../utils/platform'
 
 export default class FunctionalitySection extends Component {
   static propTypes = {
@@ -10,6 +11,7 @@ export default class FunctionalitySection extends Component {
   }
 
   render() {
+    const platform = getPlatform()
     return (
       <Article className="functionality-section">
         <a name="simplicity" />
@@ -22,10 +24,12 @@ export default class FunctionalitySection extends Component {
         </header>
         <section className="ui container">
           <div className="markdown-support">
-            <RetinaImage
+            <PlatformImage
               className="ui image"
-              src="/features/markdown-support.png"
-              alt="Markdown Support"
+              macOS="/features/syntax-highlightings-macos.png"
+              windows="/features/syntax-highlightings-windows.png"
+              linux="/features/syntax-highlightings-linux.png"
+              alt="Dark Theme"
               width="1046"
             />
           </div>
@@ -76,7 +80,7 @@ export default class FunctionalitySection extends Component {
             </div>
           </div>
         </section>
-        <section className="high-usability">
+        <section className={`high-usability ${platform}`}>
           <div className="ui container">
             <div className="ui stackable centered grid sixteen column">
               <div className="five wide column usability-description-column">

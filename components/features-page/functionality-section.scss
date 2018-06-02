@@ -23,11 +23,10 @@
 
   @media screen and (width >= $screen-sm-min) {
     section.high-usability {
-      background-image: url(/features/leftbars.png);
-      background-position: 50vw bottom;
-      background-size: 1183px 697px;
       background-repeat: no-repeat;
-      min-height: 780px;
+      background-position: 50vw bottom;
+      background-size: 1313px 839px;
+      min-height: 850px;
 
       .ui.grid {
         min-height: 700px;
@@ -38,6 +37,15 @@
           align-items: center;
           justify-content: center;
         }
+      }
+      &.macos {
+        background-image: url(/features/ui-theme-light-macos.png);
+      }
+      &.windows {
+        background-image: url(/features/ui-theme-light-windows.png);
+      }
+      &.linux {
+        background-image: url(/features/ui-theme-light-linux.png);
       }
     }
   }

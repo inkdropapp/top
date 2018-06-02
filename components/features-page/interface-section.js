@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './interface-section.scss'
 import Article from './article'
+import PlatformImage from '../platform-image'
 
 export default class InterfaceSection extends Component {
   render() {
@@ -16,9 +17,11 @@ export default class InterfaceSection extends Component {
         </header>
         <section className="ui container ui-themes">
           <div className="dark-theme">
-            <img
+            <PlatformImage
               className="ui image"
-              src="/features/dark-theme.png"
+              macOS="/features/ui-theme-dark-macos.png"
+              windows="/features/ui-theme-dark-windows.png"
+              linux="/features/ui-theme-dark-linux.png"
               alt="Dark Theme"
               width="1168"
             />

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import EmbeddedPlayer from '../embedded-player'
 import SupportingPlatform from './supporting-platform'
+import PlatformImage from '../platform-image'
 import './desktop-description.scss'
-const isBrowser = typeof window !== 'undefined'
 
 export default class DesktopDescription extends Component {
   static propTypes = {
@@ -12,20 +11,8 @@ export default class DesktopDescription extends Component {
     active: PropTypes.bool.isRequired
   }
 
-  constructor(props) {
-    super(props)
-    const isWin32 = isBrowser ? window.navigator.platform === 'Win32' : false
-    this.state = { isWin32 }
-  }
-
-  componentDidMount() {
-    $('.ui.embed').embed()
-  }
-
   render() {
     const { active, className } = this.props
-    const { isWin32 } = this.state
-    const topImage = isWin32 ? '/top/desktop-win32.png' : '/top/desktop@2x.png'
     return (
       <div
         className={`description-desktop ${className} ${active ? 'active' : ''}`}
@@ -50,11 +37,14 @@ export default class DesktopDescription extends Component {
             </a>
           </div>
         </div>
-        <EmbeddedPlayer
-          source="vimeo"
-          videoId="186246591"
-          imageSrc={topImage}
-        />
+        <div className="screenshot">
+          <PlatformImage
+            className="ui image"
+            macOS="/top/desktop-macos.png"
+            windows="/top/desktop-windows.png"
+            linux="/top/desktop-linux.png"
+          />
+        </div>
       </div>
     )
   }
