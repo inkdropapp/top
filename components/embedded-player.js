@@ -13,18 +13,19 @@ export default class Masthead extends Component {
     className: PropTypes.string
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $('.ui.embed').embed()
   }
 
-  render () {
+  render() {
     return (
       <div className={`ui image embedded-player ${this.props.className}`}>
         <div
-          className='ui embed'
+          className="ui embed"
           data-source={this.props.source}
           data-id={this.props.videoId}
-          data-placeholder={this.props.imageSrc} />
+          data-placeholder={this.props.imageSrc}
+        />
       </div>
     )
   }

@@ -8,10 +8,9 @@ import React from 'react'
 import './Footer.scss'
 
 class Footer extends React.Component {
-  componentDidMount () {
-  }
+  componentDidMount() {}
 
-  handleOutboundLinkClick (event) {
+  handleOutboundLinkClick(event) {
     const target = event.currentTarget
     window.ga('send', 'event', {
       eventCategory: 'Outbound Link',
@@ -20,25 +19,25 @@ class Footer extends React.Component {
     })
   }
 
-  render () {
+  render() {
     return (
-      <footer className='app--footer'>
-        <div className='app--footer-content ui container'>
-          <div className='ui stackable grid'>
-            <div className='thirteen wide column links'>
-              <ul className='links'>
+      <footer className="app--footer">
+        <div className="app--footer-content ui container">
+          <div className="ui stackable grid">
+            <div className="thirteen wide column links">
+              <ul className="links">
                 <li>
-                  <a href='https://doc.inkdrop.info/terms'>Terms of Use</a>
+                  <a href="https://doc.inkdrop.info/terms">Terms of Use</a>
                 </li>
                 <li>
-                  <a href='https://doc.inkdrop.info/privacy'>Privacy Policy</a>
+                  <a href="https://doc.inkdrop.info/privacy">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href='https://doc.inkdrop.info/faq'>FAQ</a>
+                  <a href="https://doc.inkdrop.info/faq">FAQ</a>
                 </li>
                 <li>
                   <a
-                    href='mailto:contact@inkdrop.info'
+                    href="mailto:contact@inkdrop.info"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Contact
@@ -46,9 +45,9 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href='https://twitter.com/inkdrop_app'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://twitter.com/inkdrop_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Twitter
@@ -56,9 +55,9 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href='https://medium.com/@inkdrop'
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    href="https://medium.com/@inkdrop"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Blog
@@ -66,12 +65,14 @@ class Footer extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className='three wide column text-left'>
-              <a href='https://www.inkdrop.info/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='copyright'
-                onClick={ this.handleOutboundLinkClick }>
+            <div className="three wide column text-left">
+              <a
+                href="https://www.inkdrop.info/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="copyright"
+                onClick={this.handleOutboundLinkClick}
+              >
                 © Inkdrop
               </a>
             </div>

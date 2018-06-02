@@ -7,9 +7,9 @@ export default class PlanPanel extends Component {
     children: PropTypes.node
   }
 
-  render () {
+  render() {
     return (
-      <div className='center aligned seven wide column plan-panel'>
+      <div className="center aligned seven wide column plan-panel">
         {this.props.children}
       </div>
     )

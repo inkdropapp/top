@@ -6,14 +6,9 @@ export default class RetinaImage extends Component {
     src: PropTypes.string.isRequired
   }
 
-  render () {
+  render() {
     const { src, ...props } = this.props
     const retinaSrc = src.replace(/(\.\w+$)/, '@2x$1')
-    return (
-      <img
-        src={src}
-        srcSet={`${src} 1x, ${retinaSrc} 2x`}
-        {...props} />
-    )
+    return <img src={src} srcSet={`${src} 1x, ${retinaSrc} 2x`} {...props} />
   }
 }

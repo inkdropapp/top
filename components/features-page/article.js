@@ -8,11 +8,11 @@ export default class FunctionalitySection extends Component {
     className: PropTypes.string
   }
 
-  render () {
+  render() {
     const { children, className, ...props } = this.props
     return (
       <article className={`features-article ${className}`} {...props}>
-        {this.props.children}
+        {children}
       </article>
     )
   }

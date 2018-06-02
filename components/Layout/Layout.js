@@ -28,17 +28,15 @@ import '../../semantic/dist/components/label.css'
 import '../../semantic/dist/components/list.css'
 import '../../semantic/dist/components/divider.css'
 
-function Layout ({ children }) {
+function Layout({ children }) {
   return (
     <div>
-      <header className='app--header'>
-        <div className='ui container'>
+      <header className="app--header">
+        <div className="ui container">
           <Navigation />
         </div>
       </header>
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   )

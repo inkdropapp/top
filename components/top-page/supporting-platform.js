@@ -10,15 +10,16 @@ export default class SupportingPlatform extends Component {
     versions: PropTypes.string
   }
 
-  render () {
+  render() {
     const { image, platform, versions } = this.props
     return (
-      <span className='supporting-platform'>
+      <span className="supporting-platform">
         <RetinaImage
-          className='platform-icon'
+          className="platform-icon"
           src={image}
-          width='24'
-          height='24' />
+          width="24"
+          height="24"
+        />
         <strong>{platform}</strong> {versions}
       </span>
     )

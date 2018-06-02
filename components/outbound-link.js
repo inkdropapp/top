@@ -7,11 +7,11 @@ export default class OutboundLink extends Component {
     children: PropTypes.node
   }
 
-  render () {
+  render() {
     return (
       <a
-        target='_blank'
-        rel='noopener noreferrer'
+        target="_blank"
+        rel="noopener noreferrer"
         onClick={this.handleOutboundLinkClick}
         {...this.props}
       >
@@ -20,7 +20,7 @@ export default class OutboundLink extends Component {
     )
   }
 
-  handleOutboundLinkClick (e) {
+  handleOutboundLinkClick(e) {
     const target = e.currentTarget
     ga('send', 'event', {
       eventCategory: 'Outbound Link',

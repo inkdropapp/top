@@ -8,12 +8,12 @@ export default class PeriodTabs extends Component {
     onClickTab: PropTypes.func.isRequired
   }
 
-  render () {
+  render() {
     const { period, onClickTab } = this.props
     return (
-      <div className='ui stackable centered grid period-tabs'>
-        <div className='seven wide column billing-interval-menu'>
-          <div className='ui secondary pagination pointing menu'>
+      <div className="ui stackable centered grid period-tabs">
+        <div className="seven wide column billing-interval-menu">
+          <div className="ui secondary pagination pointing menu">
             <a
               className={`item ${period === 'monthly' ? 'active' : ''}`}
               onClick={() => onClickTab('monthly')}
@@ -27,7 +27,7 @@ export default class PeriodTabs extends Component {
               Annual billing
             </a>
           </div>
-          <div className='ui teal left pointing label'>Save 17%</div>
+          <div className="ui teal left pointing label">Save 17%</div>
         </div>
       </div>
     )

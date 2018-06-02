@@ -8,13 +8,11 @@ export default class PeriodSection extends Component {
     active: PropTypes.bool.isRequired
   }
 
-  render () {
+  render() {
     const { children, active } = this.props
     return (
       <section className={`period-section ${active ? 'active' : ''}`}>
-        <div className='ui stackable centered grid'>
-          {children}
-        </div>
+        <div className="ui stackable centered grid">{children}</div>
       </section>
     )
   }

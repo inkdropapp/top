@@ -10,25 +10,19 @@ export default class ErrorPage extends Component {
     error: PropTypes.instanceOf(Error)
   }
 
-  renderError () {
-    return (
-      <div className='ui error message'>
-        { this.props.error }
-      </div>
-    )
+  renderError() {
+    return <div className="ui error message">{this.props.error}</div>
   }
 
-  render () {
+  render() {
     return (
-      <article className='app--top'>
+      <article className="app--top">
         <Masthead>
           <h1>Sorry, unexpected error has been occurred 😢</h1>
+          <div>Check the URL and try again.</div>
+          {this.props.error ? this.renderError() : null}
           <div>
-            Check the URL and try again.
-          </div>
-          { this.props.error ? this.renderError() : null }
-          <div>
-            <Link to='/' className='ui rounded button'>
+            <Link to="/" className="ui rounded button">
               Return to top
             </Link>
           </div>

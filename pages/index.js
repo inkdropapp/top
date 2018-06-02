@@ -12,25 +12,29 @@ import GetNowSection from '../components/features-page/getnow-section'
 
 export default class IndexPage extends Component {
   static title = 'Note-taking App with Robust Markdown Editor'
-  static description = 'Jot down your daily hacking endeavors with Markdown on macOS, Windows, Linux, iOS and Android. The best Evernote alternative for programmers.'
+  static description =
+    'Jot down your daily hacking endeavors with Markdown on macOS, Windows, Linux, iOS and Android. The best Evernote alternative for programmers.'
 
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       activeDeviceType: 'desktop'
     }
   }
 
-  render () {
+  render() {
     const { activeDeviceType } = this.state
     return (
-      <article className='app--top'>
+      <article className="app--top">
         <Masthead>
-          <div className='ui container'>
+          <div className="ui container">
             <h1>Jot down your daily hacking endeavors.</h1>
             <h2>The Note-Taking App for Markdown Lovers</h2>
             <div>
-              <a href='https://app.inkdrop.info/signup' className='ui rounded button primary'>
+              <a
+                href="https://app.inkdrop.info/signup"
+                className="ui rounded button primary"
+              >
                 Start your 60-day free trial now
               </a>
             </div>
@@ -52,7 +56,7 @@ export default class IndexPage extends Component {
     )
   }
 
-  handleDeviceTypeMenuItemClick (deviceType) {
+  handleDeviceTypeMenuItemClick(deviceType) {
     this.setState({ activeDeviceType: deviceType })
   }
 }

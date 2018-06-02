@@ -7,9 +7,9 @@ import GetNowSection from '../components/features-page/getnow-section'
 export default class Pricing extends Component {
   static title = 'Pricing'
 
-  render () {
+  render() {
     return (
-      <article className='app--top'>
+      <article className="app--top">
         <PricingMasthead />
         <ReasonSection />
         <TestimonialsSection />

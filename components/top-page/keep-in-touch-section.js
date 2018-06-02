@@ -8,20 +8,22 @@ export default class KeepInTouchSection extends Component {
     children: PropTypes.node
   }
 
-  render () {
+  render() {
     return (
-      <section className='white-bg light keep-in-touch-section'>
+      <section className="white-bg light keep-in-touch-section">
         <h2>Keep in touch on social media</h2>
         <OutboundLink
-          className='ui rounded twitter button'
-          href='https://twitter.com/inkdrop_app'>
-          <i className='twitter icon' />
+          className="ui rounded twitter button"
+          href="https://twitter.com/inkdrop_app"
+        >
+          <i className="twitter icon" />
           inkdrop_app
         </OutboundLink>
         <OutboundLink
-          className='ui rounded secondary button'
-          href='https://medium.com/@inkdrop'>
-          <i className='medium icon' />
+          className="ui rounded secondary button"
+          href="https://medium.com/@inkdrop"
+        >
+          <i className="medium icon" />
           inkdrop
         </OutboundLink>
       </section>

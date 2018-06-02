@@ -10,28 +10,29 @@ export default class MobileDescription extends Component {
     active: PropTypes.bool.isRequired
   }
 
-  render () {
+  render() {
     const { active } = this.props
     return (
       <div className={`description-mobile ${active ? 'active' : ''}`}>
-        <div className='description'>
+        <div className="description">
           <SupportingPlatform
-            image='/top/apple-logo-small.png'
-            platform='iOS'
-            versions='10+'
+            image="/top/apple-logo-small.png"
+            platform="iOS"
+            versions="10+"
           />
           <SupportingPlatform
-            image='/top/android-logo-small.png'
-            platform='Android'
-            versions='4.1+'
+            image="/top/android-logo-small.png"
+            platform="Android"
+            versions="4.1+"
           />
         </div>
-        <div className='ui image'>
+        <div className="ui image">
           <RetinaImage
-            className='screenshot'
-            src='/top/mobile.png'
-            width='1500'
-            height='1000' />
+            className="screenshot"
+            src="/top/mobile.png"
+            width="1500"
+            height="1000"
+          />
         </div>
       </div>
     )

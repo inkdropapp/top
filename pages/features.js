@@ -11,11 +11,11 @@ import './features.scss'
 export default class FeaturesPage extends Component {
   static title = 'Features'
 
-  render () {
+  render() {
     return (
-      <div className='app--features'>
+      <div className="app--features">
         <Masthead />
-        <div className='main-content'>
+        <div className="main-content">
           <FunctionalitySection />
           <InterfaceSection />
           <ExtensibilitySection />

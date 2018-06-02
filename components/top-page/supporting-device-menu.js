@@ -12,22 +12,22 @@ export default class SupportingDeviceMenu extends Component {
     activeDeviceType: 'desktop'
   }
 
-  render () {
+  render() {
     const { activeDeviceType, onClickMenu } = this.props
     return (
-      <div className='supporting-devices'>
-        <div className='ui secondary pagination pointing menu'>
+      <div className="supporting-devices">
+        <div className="ui secondary pagination pointing menu">
           <a
             className={`item ${activeDeviceType === 'desktop' ? 'active' : ''}`}
             onClick={() => onClickMenu('desktop')}
           >
-            <i className='desktop icon' /> for Desktop
+            <i className="desktop icon" /> for Desktop
           </a>
           <a
             className={`item ${activeDeviceType === 'mobile' ? 'active' : ''}`}
             onClick={() => onClickMenu('mobile')}
           >
-            <i className='mobile icon' /> for Mobile
+            <i className="mobile icon" /> for Mobile
           </a>
         </div>
       </div>

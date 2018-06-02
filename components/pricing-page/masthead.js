@@ -8,45 +8,45 @@ import ColumnSpacer from './column-spacer'
 import './masthead.scss'
 
 export default class PricingMasthead extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       period: 'monthly'
     }
   }
 
-  render () {
+  render() {
     const { period } = this.state
     return (
-      <Masthead className='pricing-masthead'>
-        <div className='ui container'>
-          <section className='top'>
-            <div className='ui container'>
+      <Masthead className="pricing-masthead">
+        <div className="ui container">
+          <section className="top">
+            <div className="ui container">
               <h1>Simple pricing.</h1>
             </div>
           </section>
 
-          <article className='pricing'>
-            <div className='ui container'>
-              <PeriodTabs
-                onClickTab={::this.handleTabClick}
-                period={period}
-              />
+          <article className="pricing">
+            <div className="ui container">
+              <PeriodTabs onClickTab={::this.handleTabClick} period={period} />
 
               <PeriodSection active={period === 'monthly'}>
                 <FreeTrialSection />
                 <ColumnSpacer />
-                <BasicPlanSection period='monthly' />
+                <BasicPlanSection period="monthly" />
               </PeriodSection>
 
               <PeriodSection active={period === 'annual'}>
                 <FreeTrialSection />
                 <ColumnSpacer />
-                <BasicPlanSection period='annual' />
+                <BasicPlanSection period="annual" />
               </PeriodSection>
 
-              <div className='join'>
-                <a href='https://app.inkdrop.info/signup' className='ui rounded button primary'>
+              <div className="join">
+                <a
+                  href="https://app.inkdrop.info/signup"
+                  className="ui rounded button primary"
+                >
                   Start your 60-day free trial now
                 </a>
               </div>
@@ -57,7 +57,7 @@ export default class PricingMasthead extends Component {
     )
   }
 
-  handleTabClick (period) {
+  handleTabClick(period) {
     this.setState({ period })
   }
 }
