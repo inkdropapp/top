@@ -23,7 +23,7 @@ export default class InterfaceSection extends Component {
               windows="/features/ui-theme-dark-windows.png"
               linux="/features/ui-theme-dark-linux.png"
               alt="Dark Theme"
-              width="1168"
+              width={1168}
             />
           </div>
         </section>

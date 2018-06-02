@@ -30,7 +30,7 @@ export default class FunctionalitySection extends Component {
               windows="/features/syntax-highlightings-windows.png"
               linux="/features/syntax-highlightings-linux.png"
               alt="Dark Theme"
-              width="1046"
+              width={1046}
             />
           </div>
           <div className="ui stackable five column grid">
