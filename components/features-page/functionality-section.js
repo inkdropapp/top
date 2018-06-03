@@ -152,6 +152,23 @@ export default class FunctionalitySection extends Component {
                     </a>
                   </p>
                 </div>
+
+                <h2>Share it on the Web.</h2>
+                <div className="feature-description">
+                  <p>
+                    Publishing notes on the web comes in handy if you are
+                    working on a team project or just passing along useful tips
+                    to friends. It allows you to share your Markdown notes with
+                    anyone, even those who don't use Inkdrop.
+                  </p>
+
+                  <p>
+                    <a href="https://doc.inkdrop.info/manual/sharing-your-notes-on-the-web">
+                      Learn more
+                      <i className="angle double right icon" />
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
