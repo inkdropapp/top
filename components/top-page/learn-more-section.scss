@@ -5,7 +5,7 @@
   padding: 2rem 0;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-  background: #fafafa;
+  background-color: #fafafa;
 
   h1 {
     font-family: 'Helvetica Neue', Lato, Arial, Helvetica, sans-serif;
@@ -14,7 +14,25 @@
     margin: 0 0 0.3em 0;
   }
 
+  @media screen and (width >= $screen-sm-min) {
+    background-repeat: no-repeat;
+    background-position: center 220px;
+    background-size: 900px 574px;
+    background-image: url(/top/desktop-dark-macos.png);
+    min-height: 500px;
+  }
+
   @media screen and (width <= $screen-sm-min) {
+    background-repeat: no-repeat;
+    background-position: center 220px;
+    background-size: 100vw 200vw;
+    background-image: url(/top/mobile-dark-ios.png);
+    min-height: 160vw;
+
+    &.android {
+      background-image: url(/top/mobile-dark-android.png);
+    }
+
     h1 {
       font-size: 10vmin;
     }

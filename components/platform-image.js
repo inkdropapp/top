@@ -4,9 +4,12 @@ import getPlatform from './utils/platform'
 
 export default class PlatformImage extends Component {
   static propTypes = {
-    macOS: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
+    macOS: PropTypes.string,
     windows: PropTypes.string,
     linux: PropTypes.string,
+    android: PropTypes.string,
+    iOS: PropTypes.string,
     className: PropTypes.string,
     width: PropTypes.number,
     height: PropTypes.number,
@@ -19,10 +22,30 @@ export default class PlatformImage extends Component {
   }
 
   render() {
-    const { macOS, windows, linux, className, width, height, alt } = this.props
+    const {
+      src: defaultSrc,
+      macOS,
+      windows,
+      linux,
+      iOS,
+      android,
+      className,
+      width,
+      height,
+      alt
+    } = this.props
     const { platform } = this.state
-    let src = macOS
+    let src = defaultSrc
     switch (platform) {
+      case 'macos':
+        src = macOS || src
+        break
+      case 'android':
+        src = android || src
+        break
+      case 'ios':
+        src = iOS || src
+        break
       case 'windows':
         src = windows || src
         break

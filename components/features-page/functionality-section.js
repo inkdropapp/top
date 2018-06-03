@@ -26,7 +26,7 @@ export default class FunctionalitySection extends Component {
           <div className="markdown-support">
             <PlatformImage
               className="ui image"
-              macOS="/features/syntax-highlightings-macos.png"
+              src="/features/syntax-highlightings-macos.png"
               windows="/features/syntax-highlightings-windows.png"
               linux="/features/syntax-highlightings-linux.png"
               alt="Dark Theme"

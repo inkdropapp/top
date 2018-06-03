@@ -5,6 +5,10 @@ export default function getPlatform() {
   if (isBrowser) {
     if (window.navigator.platform === 'Win32') {
       platform = 'windows'
+    } else if (window.navigator.userAgent.indexOf('Android') >= 0) {
+      platform = 'android'
+    } else if (window.navigator.userAgent.indexOf('iOS') >= 0) {
+      platform = 'ios'
     } else if (window.navigator.platform.startsWith('Linux')) {
       platform = 'linux'
     }

@@ -40,7 +40,7 @@ export default class DesktopDescription extends Component {
         <div className="screenshot">
           <PlatformImage
             className="ui image"
-            macOS="/top/desktop-macos.png"
+            src="/top/desktop-macos.png"
             windows="/top/desktop-windows.png"
             linux="/top/desktop-linux.png"
           />

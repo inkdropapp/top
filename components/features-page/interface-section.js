@@ -19,7 +19,7 @@ export default class InterfaceSection extends Component {
           <div className="dark-theme">
             <PlatformImage
               className="ui image"
-              macOS="/features/ui-theme-dark-macos.png"
+              src="/features/ui-theme-dark-macos.png"
               windows="/features/ui-theme-dark-windows.png"
               linux="/features/ui-theme-dark-linux.png"
               alt="Dark Theme"
