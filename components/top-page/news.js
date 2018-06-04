@@ -15,6 +15,12 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className="left aligned">
             <li>
+              June 4, 2018 — &nbsp;
+              <OutboundLink href="https://blog.inkdrop.info/inkdrop-mobile-v2-has-been-released-4b0b69bba7f0">
+                Inkdrop Mobile v2 Has Been Released
+              </OutboundLink>
+            </li>
+            <li>
               Apr 17, 2018 — &nbsp;
               <OutboundLink href="https://blog.inkdrop.info/inkdrop-mobile-v2-is-now-in-private-beta-8773d9531d91">
                 Inkdrop Mobile v2 is Now in Private Beta
