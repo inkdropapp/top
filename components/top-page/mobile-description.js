@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './supporting-platform.scss'
 import SupportingPlatform from './supporting-platform'
-import RetinaImage from '../retina-image'
 import './mobile-description.scss'
 
 export default class MobileDescription extends Component {
@@ -32,7 +31,7 @@ export default class MobileDescription extends Component {
             src="/top/mobile.png"
             srcSet="/top/mobile.png 2x"
             width="1000"
-            height="705"
+            height="700"
           />
         </div>
       </div>
