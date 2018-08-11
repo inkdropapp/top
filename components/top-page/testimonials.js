@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './testimonials.scss'
 import OutboundLink from '../outbound-link'
+import Tweet from '../embedded-tweet'
 
 export default class TestimonialsSection extends Component {
   static propTypes = {
@@ -60,6 +61,10 @@ export default class TestimonialsSection extends Component {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="center aligned tweet">
+            <Tweet tweetId="1023813729014624256" theme="light" />
           </div>
         </div>
       </section>
