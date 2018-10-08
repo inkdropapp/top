@@ -15,6 +15,12 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className="left aligned">
             <li>
+              Sep 28, 2018 — &nbsp;
+              <OutboundLink href="https://blog.inkdrop.info/the-roadmap-of-inkdrop-vol-3-a32fc0cc42d">
+                The Roadmap of Inkdrop Vol.3
+              </OutboundLink>
+            </li>
+            <li>
               Aug 13, 2018 — &nbsp;
               <OutboundLink href="https://blog.inkdrop.info/task-progress-view-is-now-supported-5082b66500fa">
                 Task Progress View is Now Supported
