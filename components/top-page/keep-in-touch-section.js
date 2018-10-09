@@ -23,7 +23,7 @@ export default class KeepInTouchSection extends Component {
           className="ui rounded secondary button"
           href="https://blog.inkdrop.info/"
         >
-          <i className="medium icon" />
+          <i className="medium m icon" />
           inkdrop
         </OutboundLink>
       </section>

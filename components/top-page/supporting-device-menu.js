@@ -27,7 +27,7 @@ export default class SupportingDeviceMenu extends Component {
             className={`item ${activeDeviceType === 'mobile' ? 'active' : ''}`}
             onClick={() => onClickMenu('mobile')}
           >
-            <i className="mobile icon" /> for Mobile
+            <i className="mobile alternate icon" /> for Mobile
           </a>
         </div>
       </div>
