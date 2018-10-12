@@ -6,7 +6,6 @@
 
 import React from 'react'
 import './Footer.scss'
-import Link from '../Link'
 
 class Footer extends React.Component {
   componentDidMount() {}
@@ -48,7 +47,7 @@ class Footer extends React.Component {
                   <a
                     href="https://twitter.com/inkdrop_app"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Twitter
@@ -58,7 +57,7 @@ class Footer extends React.Component {
                   <a
                     href="https://blog.inkdrop.info/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Blog
@@ -70,7 +69,7 @@ class Footer extends React.Component {
               <a
                 href="https://www.craftz.dog/"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="copyright"
                 onClick={this.handleOutboundLinkClick}
               >

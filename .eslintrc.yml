@@ -34,3 +34,4 @@ rules:
     -
       argsIgnorePattern: ^_
       varsIgnorePattern: ^_
+  react/jsx-no-target-blank: 0
