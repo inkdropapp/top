@@ -40,7 +40,7 @@ export default function ReasonSection() {
               <p>
                 Yes. We&apos;re committed to helping students and teachers
                 experience the power of Inkdrop. See{' '}
-                <OutboundLink href="https://doc.inkdrop.info/student-discount">
+                <OutboundLink href="https://docs.inkdrop.app/student-discount">
                   this page
                 </OutboundLink>{' '}
                 for requesting your discount.

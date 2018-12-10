@@ -31,7 +31,7 @@ export default class DesktopDescription extends Component {
             platform="Linux"
           />
           <div className="link-demo">
-            <a href="https://app.inkdrop.info/demo">
+            <a href="https://my.inkdrop.app/demo">
               Try the Demo
               <i className="angle right icon" />
             </a>

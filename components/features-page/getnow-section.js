@@ -27,7 +27,7 @@ export default class GetNowSection extends Component {
               </div>
               <div className="link-to-signup">
                 <a
-                  href="https://app.inkdrop.info/signup"
+                  href="https://my.inkdrop.app/signup"
                   className="ui rounded primary button"
                 >
                   Start your 60-day free trial now

@@ -44,13 +44,13 @@ export default class InterfaceSection extends Component {
                     by the Inkdrop community or create your own.
                   </p>
                   <p>
-                    <a href="https://app.inkdrop.info/plugins">
+                    <a href="https://my.inkdrop.app/plugins">
                       Find your favorite theme
                       <i className="angle double right icon" />
                     </a>
                   </p>
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/creating-a-theme">
+                    <a href="https://docs.inkdrop.app/manual/creating-a-theme">
                       Learn how to create a theme
                       <i className="angle double right icon" />
                     </a>

@@ -102,7 +102,7 @@ export default class FunctionalitySection extends Component {
                       just as you launch Inkdrop, no more focusing search field.
                     </p>
                     <p>
-                      <a href="https://doc.inkdrop.info/manual/searching-notes">
+                      <a href="https://docs.inkdrop.app/manual/searching-notes">
                         Learn how to search
                         <i className="angle double right icon" />
                       </a>
@@ -146,7 +146,7 @@ export default class FunctionalitySection extends Component {
                   </p>
 
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/synchronizing-in-the-cloud">
+                    <a href="https://docs.inkdrop.app/manual/synchronizing-in-the-cloud">
                       Learn more
                       <i className="angle double right icon" />
                     </a>
@@ -159,11 +159,11 @@ export default class FunctionalitySection extends Component {
                     Publishing notes on the web comes in handy if you are
                     working on a team project or just passing along useful tips
                     to friends. It allows you to share your Markdown notes with
-                    anyone, even those who don't use Inkdrop.
+                    anyone, even those who don&apos;t use Inkdrop.
                   </p>
 
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/sharing-your-notes-on-the-web">
+                    <a href="https://docs.inkdrop.app/manual/sharing-your-notes-on-the-web">
                       Learn more
                       <i className="angle double right icon" />
                     </a>

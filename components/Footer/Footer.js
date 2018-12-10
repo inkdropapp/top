@@ -27,17 +27,17 @@ class Footer extends React.Component {
             <div className="thirteen wide column links">
               <ul className="links">
                 <li>
-                  <a href="https://doc.inkdrop.info/terms">Terms of Use</a>
+                  <a href="https://docs.inkdrop.app/terms">Terms of Use</a>
                 </li>
                 <li>
-                  <a href="https://doc.inkdrop.info/privacy">Privacy Policy</a>
+                  <a href="https://docs.inkdrop.app/privacy">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://doc.inkdrop.info/faq">FAQ</a>
+                  <a href="https://docs.inkdrop.app/faq">FAQ</a>
                 </li>
                 <li>
                   <a
-                    href="mailto:contact@inkdrop.info"
+                    href="mailto:contact@inkdrop.app"
                     onClick={this.handleOutboundLinkClick}
                   >
                     Contact
@@ -67,7 +67,7 @@ class Footer extends React.Component {
             </div>
             <div className="three wide column text-left">
               <a
-                href="https://www.craftz.dog/"
+                href="https://craftz.dog/"
                 target="_blank"
                 rel="noopener"
                 className="copyright"

@@ -36,7 +36,7 @@ export default class ExtensibilitySection extends Component {
                         />
                       </div>
                       <p className="center aligned">
-                        <a href="https://app.inkdrop.info/plugins/math">
+                        <a href="https://my.inkdrop.app/plugins/math">
                           Math
                           <i className="angle double right icon" />
                         </a>
@@ -54,7 +54,7 @@ export default class ExtensibilitySection extends Component {
                         />
                       </div>
                       <p className="center aligned">
-                        <a href="https://app.inkdrop.info/plugins/sequence-diagrams">
+                        <a href="https://my.inkdrop.app/plugins/sequence-diagrams">
                           Sequence diagrams
                           <i className="angle double right icon" />
                         </a>
@@ -72,7 +72,7 @@ export default class ExtensibilitySection extends Component {
                         />
                       </div>
                       <p className="center aligned">
-                        <a href="https://app.inkdrop.info/plugins/flowchart">
+                        <a href="https://my.inkdrop.app/plugins/flowchart">
                           Flowcharts
                           <i className="angle double right icon" />
                         </a>
@@ -90,12 +90,12 @@ export default class ExtensibilitySection extends Component {
                     any time.
                   </p>
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/extend-inkdrop-with-plugins">
+                    <a href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins">
                       How to install plugins
                       <i className="angle double right icon" />
                     </a>
                     &nbsp;
-                    <a href="https://app.inkdrop.info/plugins">
+                    <a href="https://my.inkdrop.app/plugins">
                       Explore plugins
                       <i className="angle double right icon" />
                     </a>
@@ -122,7 +122,7 @@ export default class ExtensibilitySection extends Component {
                     favorite language to create your own client app.
                   </p>
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/accessing-data-in-the-cloud">
+                    <a href="https://docs.inkdrop.app/manual/accessing-data-in-the-cloud">
                       Learn more
                       <i className="angle double right icon" />
                     </a>
@@ -144,7 +144,7 @@ export default class ExtensibilitySection extends Component {
                     integrate Inkdrop notes with other tools you use.
                   </p>
                   <p>
-                    <a href="https://doc.inkdrop.info/manual/accessing-the-local-database">
+                    <a href="https://docs.inkdrop.app/manual/accessing-the-local-database">
                       Learn more
                       <i className="angle double right icon" />
                     </a>

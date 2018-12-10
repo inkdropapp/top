@@ -44,7 +44,7 @@ export default class PricingMasthead extends Component {
 
               <div className="join">
                 <a
-                  href="https://app.inkdrop.info/signup"
+                  href="https://my.inkdrop.app/signup"
                   className="ui rounded button primary"
                 >
                   Start your 60-day free trial now

@@ -21,22 +21,22 @@ function Navigation() {
             <Link to="/features">Features</Link>
           </li>
           <li>
-            <a href="https://doc.inkdrop.info/">Docs</a>
+            <a href="https://docs.inkdrop.app/">Docs</a>
           </li>
           <li>
-            <a href="https://app.inkdrop.info/plugins">Plugins</a>
+            <a href="https://my.inkdrop.app/plugins">Plugins</a>
           </li>
           <li className="ui simple dropdown item">
             More
             <i className="dropdown icon" />
             <div className="menu">
-              <a className="item" href="https://app.inkdrop.info/demo">
+              <a className="item" href="https://my.inkdrop.app/demo">
                 Demo
               </a>
               <Link className="item" to="/pricing">
                 Pricing
               </Link>
-              <a className="item" href="https://doc.inkdrop.info/faq">
+              <a className="item" href="https://docs.inkdrop.app/faq">
                 FAQ
               </a>
               <div className="divider" />
@@ -46,13 +46,13 @@ function Navigation() {
               <a className="item" href="https://medium.com/@inkdrop">
                 Blog
               </a>
-              <a className="item" href="https://forum.inkdrop.info/">
+              <a className="item" href="https://forum.inkdrop.app/">
                 User Forum
               </a>
             </div>
           </li>
           <li>
-            <a href="https://app.inkdrop.info/" className="login">
+            <a href="https://my.inkdrop.app/" className="login">
               <i className="sign in icon" />
               Log in
             </a>

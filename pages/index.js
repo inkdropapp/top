@@ -32,7 +32,7 @@ export default class IndexPage extends Component {
             <h2>The Note-Taking App for Markdown Lovers</h2>
             <div>
               <a
-                href="https://app.inkdrop.info/signup"
+                href="https://my.inkdrop.app/signup"
                 className="ui rounded button primary"
               >
                 Start your 60-day free trial now
