@@ -15,6 +15,19 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className="left aligned">
             <li>
+              Jan 26, 2019 — &nbsp;
+              <OutboundLink href="https://blog.inkdrop.info/inkdrop-is-now-available-on-snap-store-for-linux-333da2c122f2">
+                Inkdrop is now Available on Snap Store for Linux
+              </OutboundLink>
+            </li>
+            <li>
+              Oct 15, 2018 — &nbsp;
+              <OutboundLink href="https://blog.inkdrop.info/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
+                How I’ve Attracted The First 500 Paid Users For My SaaS That
+                Costs $5/mo
+              </OutboundLink>
+            </li>
+            <li>
               Sep 28, 2018 — &nbsp;
               <OutboundLink href="https://blog.inkdrop.info/the-roadmap-of-inkdrop-vol-3-a32fc0cc42d">
                 The Roadmap of Inkdrop Vol.3
@@ -60,30 +73,6 @@ export default class NewsSection extends Component {
               Jul 7, 2017 — &nbsp;
               <OutboundLink href="https://hackernoon.com/markdown-note-taking-app-can-now-cover-half-of-rent-inkdrop-795de224ebf">
                 Markdown Note-taking App Can Now Cover Half of Rent
-              </OutboundLink>
-            </li>
-            <li>
-              May 29, 2017 — &nbsp;
-              <OutboundLink href="https://blog.inkdrop.info/inkdrop-for-android-is-now-available-8d2708e8f049">
-                Inkdrop for Android is now available
-              </OutboundLink>
-            </li>
-            <li>
-              Apr 5, 2017 — &nbsp;
-              <OutboundLink href="https://hackernoon.com/inkdrop-has-reached-1-000-sales-f56a0b2fb60b">
-                Inkdrop has reached $1,000 sales
-              </OutboundLink>
-            </li>
-            <li>
-              Mar 22, 2017 — &nbsp;
-              <OutboundLink href="https://blog.inkdrop.info/inkdrop-for-ios-is-available-now-2fe6d4bc4ea">
-                Inkdrop for iOS is Available Now
-              </OutboundLink>
-            </li>
-            <li>
-              Dec 7, 2016 — &nbsp;
-              <OutboundLink href="https://blog.inkdrop.info/the-future-work-of-inkdrop-8c50c4e06e6c">
-                The Future Work of Inkdrop
               </OutboundLink>
             </li>
           </ul>
