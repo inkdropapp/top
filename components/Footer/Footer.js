@@ -63,6 +63,9 @@ class Footer extends React.Component {
                     Blog
                   </a>
                 </li>
+                <li>
+                  <a href="https://status.inkdrop.app/">Status</a>
+                </li>
               </ul>
             </div>
             <div className="three wide column text-left">
