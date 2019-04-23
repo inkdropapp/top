@@ -15,6 +15,12 @@ export default class NewsSection extends Component {
           <h2>News</h2>
           <ul className="left aligned">
             <li>
+              Apr 23, 2019 — &nbsp;
+              <OutboundLink href="https://blog.inkdrop.info/inkdrop-v4-is-now-in-private-beta-9ffc6d5a013">
+                Inkdrop v4 is Now in Private Beta
+              </OutboundLink>
+            </li>
+            <li>
               Jan 26, 2019 — &nbsp;
               <OutboundLink href="https://blog.inkdrop.info/inkdrop-is-now-available-on-snap-store-for-linux-333da2c122f2">
                 Inkdrop is now Available on Snap Store for Linux
