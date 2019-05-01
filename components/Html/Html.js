@@ -51,7 +51,7 @@ function Html({ title, image, description, body }) {
 
         <link rel="shortcut icon" href="/favicon@2x.png" />
         <link rel="mask-icon" href="/favicon.svg" color="rgb(17, 20, 24)" />
-        <link rel="stylesheet" href={'/app.css?' + new Date().getTime()} />
+        <link rel="stylesheet" href={'/app.css'} />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto"
@@ -64,7 +64,11 @@ function Html({ title, image, description, body }) {
           rel="stylesheet"
           href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css"
         />
-
+      </head>
+      <body>
+        <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
+        <GoogleAnalytics />
+        <script src={'/app.js'} async />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -87,11 +91,6 @@ function Html({ title, image, description, body }) {
         `
           }}
         />
-      </head>
-      <body>
-        <div id="app" dangerouslySetInnerHTML={{ __html: body }} />
-        <GoogleAnalytics />
-        <script src={'/app.js?' + new Date().getTime()} />
       </body>
     </html>
   )
