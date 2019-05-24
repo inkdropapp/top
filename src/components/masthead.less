@@ -1,0 +1,72 @@
+@import "../variables.less";
+
+.ui.vertical.masthead.segment {
+  text-align: center;
+  border: none;
+  background: url(../images/masthead-bg.jpg);
+  background-color: #ecf2fd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 3rem 0 0 0;
+  margin-bottom: 0;
+  padding-bottom: 10vh;
+  // box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 7px 17px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(3,27,78,.7);
+
+  @media (max-width: 768px) {
+    background-position: center bottom;
+    background-size: 1600px;
+  }
+
+  h1, h2, h3 {
+    color: #031b4e;
+  }
+
+  h1 {
+    font-size: 2.82rem;
+    font-weight: bold;
+    a {
+      color: inherit;
+    }
+  }
+
+  p.sub-headline {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+  }
+
+  .ui.button.signup {
+    margin: 1em 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    color: white;
+    background: #3d7aed;
+    background: linear-gradient(90deg,#66b6ea 0,#8743ff);
+    border-radius: 1.3em;
+    box-shadow: 0 10px 30px 2px rgba(159,191,255,.4);
+    mix-blend-mode: multiply;
+
+    &:hover, &:active, &:focus {
+      background: lighten(#1c6dff, 10%);
+      background: linear-gradient(90deg, lighten(#66b6ea, 10%) 0, lighten(#8743ff, 10%));
+    }
+  }
+
+  .ui.button.demo {
+    margin: 0.6em 0 1em 1em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    width: 160px;
+    color: #3d7aed;
+    background: #ecf2fd;
+    border: 1px solid #3d7aed;
+    border-radius: 1.3em;
+
+    &:hover, &:active, &:focus {
+      background: white;
+    }
+  }
+}

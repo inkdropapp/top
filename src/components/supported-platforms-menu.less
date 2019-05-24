@@ -1,0 +1,76 @@
+.supported-platforms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+
+  .supported-platforms-group {
+    position: relative;
+    flex: 0 1 auto;
+
+    @media only screen and (max-width: 480px) {
+      flex: 0 1 50%;
+    }
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &:first-child {
+      padding-right: 12px;
+    }
+
+    &:last-child {
+      padding-left: 9px;
+    }
+
+    &:first-child:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(3,27,78,.2);
+      width: 3px;
+      border-radius: 3px;
+    }
+  }
+}
+
+ul.supported-platforms-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 0.4em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    > i.icon {
+      opacity: 0.8;
+      font-size: 24px;
+      vertical-align: middle;
+    }
+
+    &.active {
+      color: #ff63c3;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255,99,195, .4);
+        height: 3px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
