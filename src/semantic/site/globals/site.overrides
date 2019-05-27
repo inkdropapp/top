@@ -10,4 +10,8 @@ h5 {
   color: #0d2b3e;
 }
 
+.right.aligned {
+  text-align: right;
+}
+
 @import (css) url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');

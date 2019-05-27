@@ -1,0 +1,111 @@
+import { StaticQuery, graphql } from 'gatsby'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './top-masthead.less'
+import Img from 'gatsby-image'
+import SupportedPlatformsMenu from './supported-platforms-menu'
+import getPlatform from '../utils/platform'
+import SignupButton from './signup-button'
+import TryDemoButton from './try-demo-button'
+import Masthead from './masthead'
+import Container from 'semantic-ui-react/dist/es/elements/Container'
+
+export default class TopMasthead extends Component {
+  static propTypes = {
+    children: PropTypes.node
+  }
+
+  constructor(props) {
+    super(props)
+    this.state = { selectedPlatform: getPlatform() }
+  }
+
+  render() {
+    const isPC = ['macos', 'windows', 'linux'].indexOf(getPlatform()) >= 0
+    const { selectedPlatform } = this.state
+    return (
+      <StaticQuery
+        query={query}
+        render={data => (
+          <Masthead className="top-masthead">
+            <Container>
+              <h1>
+                <span className="avoid-wrap">Organizing your</span>&nbsp;
+                <span className="avoid-wrap">Markdown notes</span>&nbsp;
+                <span className="avoid-wrap">made simple.</span>
+              </h1>
+              <p className="ui container sub-headline">
+                Jot down your daily hacking endeavors and increase your
+                productivity.
+              </p>
+
+              <p className="ui text container">
+                <SignupButton />
+                {isPC && <TryDemoButton />}
+              </p>
+
+              <SupportedPlatformsMenu
+                active={selectedPlatform}
+                onClick={this.handlePlatformSelect}
+              />
+
+              <div className="platform-screenshot">
+                {/*
+                <div className="masthead-icons">
+                  <span className="masthead-icon-item">
+                    <i className="icon ion-ios-flask" />
+                  </span>
+                  <span className="masthead-icon-item">
+                    <i className="icon ion-ios-bulb" />
+                  </span>
+                </div>
+                */}
+                {selectedPlatform === 'macos' && (
+                  <Img fluid={data.ss_macOS.childImageSharp.fluid} />
+                )}
+                {selectedPlatform === 'windows' && (
+                  <Img fluid={data.ss_windows.childImageSharp.fluid} />
+                )}
+                {selectedPlatform === 'linux' && (
+                  <Img fluid={data.ss_linux.childImageSharp.fluid} />
+                )}
+              </div>
+
+              {this.props.children}
+            </Container>
+          </Masthead>
+        )}
+      />
+    )
+  }
+
+  handlePlatformSelect = platform => {
+    this.setState({ selectedPlatform: platform })
+  }
+}
+
+const query = graphql`
+  query {
+    ss_macOS: file(relativePath: { eq: "ss-macos-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_windows: file(relativePath: { eq: "ss-windows-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_linux: file(relativePath: { eq: "ss-linux-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

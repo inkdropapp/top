@@ -2,7 +2,7 @@ import './index.less'
 import React from 'react'
 
 import Layout from '../components/layout'
-import Masthead from '../components/masthead'
+import Masthead from '../components/top-masthead'
 import SectionSimpleFeatures from '../components/top-section-simple-features'
 import SectionBeautifulUI from '../components/top-section-beautiful-ui'
 import SectionSeamlessSync from '../components/top-section-seamless-sync'

@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Masthead from '../components/masthead'
+import Masthead from '../components/top-masthead'
 import HelpUs from '../components/helpus'
 
 const NotFoundPage = () => (

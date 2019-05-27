@@ -1,34 +1,29 @@
 .main-content {
-  .block-badge {
-    display: inline-block;
-    padding: 3px 10px;
-    width: 2.1875rem;
-    border-radius: 12px;
-    margin-top: 0;
-    margin-bottom: 1.5625rem;
-    background-image: linear-gradient(90deg, #e64c4c 0%, #ef32fb 100%);
-    color: #000;
-    text-align: center;
-    line-height: 20px;
-  }
-
   p {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1.6rem;
   }
 
-  .ui.button.rounded-button {
+  .ui.button.rounded {
     margin: 0.6em 0 1em 1em;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 16px;
-    width: 160px;
     color: #3d7aed;
-    background: #ecf2fd;
     border: 1px solid #3d7aed;
     border-radius: 1.3em;
+    background: transparent;
 
     &:hover, &:active, &:focus {
       background: white;
+    }
+
+    &.white {
+      color: white;
+      border-color: white;
+
+      &:hover, &:active, &:focus {
+        color: #3d7aed;
+      }
     }
   }
 }

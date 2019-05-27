@@ -15,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-transformer-sharp": "^2.1.18",
+    "ionicons": "^4.5.8",
     "less": "^3.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

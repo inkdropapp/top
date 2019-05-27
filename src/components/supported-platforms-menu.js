@@ -1,7 +1,6 @@
 import './supported-platforms-menu.less'
 import React from 'react'
 import PropTypes from 'prop-types'
-import './masthead.less'
 
 const SupportedPlatformsMenu = props => {
   const { active, onClick } = props

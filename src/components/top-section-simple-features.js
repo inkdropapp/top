@@ -9,7 +9,7 @@ import Flickity from 'flickity'
 class SectionSimpleFeatures extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      const flkty = new Flickity(this.carouselRef, {
+      new Flickity(this.carouselRef, {
         wrapAround: false,
         autoPlay: true
       })
@@ -27,7 +27,7 @@ class SectionSimpleFeatures extends React.Component {
                 className="markdown-icon"
                 fixed={data.md.childImageSharp.fixed}
               />
-              <h2>Built for Markdown lovers</h2>
+              <h2>Built for developers like you</h2>
             </Container>
             <div ref={el => (this.carouselRef = el)} className="carousel">
               <div className="carousel-cell">
@@ -69,7 +69,10 @@ class SectionSimpleFeatures extends React.Component {
                   Plugins add new functionality or provide a new look to
                   Inkdrop. You can activate or deactivate them at any time.
                   <br />
-                  <a href="https://my.inkdrop.app/plugins">
+                  <a
+                    className="ui rounded white button"
+                    href="https://my.inkdrop.app/plugins"
+                  >
                     Explore plugins&nbsp;
                     <i className="angle double right icon" />
                   </a>

@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
+import BlockBadge from './block-badge'
 
 const SectionBeautifulUI = () => (
   <StaticQuery
@@ -10,8 +11,8 @@ const SectionBeautifulUI = () => (
     render={data => (
       <section id="beautiful-ui">
         <Container text>
-          <i className="block-badge" />
-          <h2 className="ui header">Beautiful user interface</h2>
+          <BlockBadge />
+          <h2 className="ui header">Clean, intuitive and beautiful</h2>
           <p>
             Sophisticated UIs don&apos;t distract you from the text and come
             with customizable themes including a dark theme for night owls.

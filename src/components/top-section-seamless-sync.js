@@ -19,11 +19,16 @@ class SectionSeamlessSync extends React.Component {
               </h2>
               <p>
                 Capture a note once, and it’s instantly available on all your
-                devices. It syncs data securely with{' '}
-                <a href="https://docs.inkdrop.app/security">
-                  end-to-end encryption
+                devices. It syncs data securely with end-to-end encryption.
+              </p>
+              <p>
+                <a
+                  className="ui rounded white button"
+                  href="https://docs.inkdrop.app/security"
+                >
+                  Learn more&nbsp;
+                  <i className="angle double right icon" />
                 </a>
-                .
               </p>
             </Container>
             <Container>

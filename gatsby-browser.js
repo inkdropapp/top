@@ -3,3 +3,4 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
+import 'ionicons/dist/css/ionicons.min.css'
