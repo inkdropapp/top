@@ -6,6 +6,7 @@ import Masthead from '../components/top-masthead'
 import SectionSimpleFeatures from '../components/top-section-simple-features'
 import SectionBeautifulUI from '../components/top-section-beautiful-ui'
 import SectionSeamlessSync from '../components/top-section-seamless-sync'
+import SectionBlogposts from '../components/section-blogposts'
 
 const IndexPage = () => (
   <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
@@ -14,6 +15,7 @@ const IndexPage = () => (
       <SectionSimpleFeatures />
       <SectionBeautifulUI />
       <SectionSeamlessSync />
+      <SectionBlogposts />
     </div>
   </Layout>
 )

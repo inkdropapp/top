@@ -1,0 +1,78 @@
+@import "../variables.less";
+
+section#blogposts {
+  position: relative;
+  padding-top: 3em;
+
+  h2 {
+    text-align: center;
+    font-size: 2.82rem;
+    margin-top: 0rem;
+  }
+
+  .carousel {
+    margin: 3rem 0 5rem 0;
+
+    .flickity-page-dots {
+      .dot {
+        background-color: transparent;
+        border: 2px solid rgba(0,0,0,0.4);
+        opacity: 1.0;
+
+        &.is-selected {
+          background-color: rgba(0,0,0,0.4);
+          border: none;
+        }
+      }
+    }
+
+    @media (max-width: @tabletBreakpoint - 1) {
+      .flickity-prev-prev-button, .flickity-prev-next-button {
+        display: none;
+      }
+    }
+  }
+
+  .carousel-cell {
+    width: 340px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+    .meta-created-at {
+      text-align: left;
+      color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem 0 2rem;
+    }
+
+    h3 {
+      text-align: left;
+      font-size: 1.5rem;
+      padding: 0 2rem;
+      margin-top: 0;
+
+      .icon {
+        margin-right: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .cover-image {
+      border: 1px solid rgba(0,0,0,0.3);
+      object-fit: cover;
+      width: 320px;
+      height: 211px;
+    }
+
+    @media (max-width: @mobileBreakpoint) {
+      width: 300px;
+      .cover-image {
+        width: 280px;
+        height: 184px;
+      }
+    }
+  }
+}

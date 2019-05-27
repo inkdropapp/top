@@ -37,6 +37,13 @@ module.exports = {
         name: `release-pages`,
         path: `${__dirname}/src/pages`
       }
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `prodhacker`,
+        limit: 6
+      }
     }
   ]
 }
