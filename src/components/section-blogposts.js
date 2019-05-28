@@ -23,25 +23,31 @@ export default class BlogpostsSection extends React.Component {
             const { node } = edge
             return (
               <div key={node.id} className="carousel-cell">
-                <LazyLoad
-                  placeholder={
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`https://blog.inkdrop.info/${node.uniqueSlug}`}
+                >
+                  <LazyLoad
+                    placeholder={
+                      <img
+                        className="cover-image"
+                        src={`https://cdn-images-1.medium.com/max/20/${
+                          node.virtuals.previewImage.imageId
+                        }`}
+                      />
+                    }
+                  >
                     <img
                       className="cover-image"
-                      src={`https://cdn-images-1.medium.com/max/20/${
+                      src={`https://cdn-images-1.medium.com/max/800/${
                         node.virtuals.previewImage.imageId
                       }`}
                     />
-                  }
-                >
-                  <img
-                    className="cover-image"
-                    src={`https://cdn-images-1.medium.com/max/800/${
-                      node.virtuals.previewImage.imageId
-                    }`}
-                  />
-                </LazyLoad>
-                <div className="meta-created-at">{node.createdAt}</div>
-                <h3>{node.title}</h3>
+                  </LazyLoad>
+                  <div className="meta-created-at">{node.createdAt}</div>
+                  <h3>{node.title}</h3>
+                </a>
               </div>
             )
           })
@@ -49,7 +55,7 @@ export default class BlogpostsSection extends React.Component {
             <section id="blogposts">
               <h2>Blog posts</h2>
               <p className="ui container sub-headline">
-                I&apos;m writing most of my experiences on this product.
+                I&apos;m sharing most of my experiences on this product.
               </p>
               <div ref={el => (this.carouselRef = el)} className="carousel">
                 {articles}
@@ -68,6 +74,7 @@ const query = graphql`
       edges {
         node {
           id
+          uniqueSlug
           title
           createdAt
           virtuals {

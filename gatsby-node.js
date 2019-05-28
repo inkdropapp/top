@@ -5,6 +5,7 @@
  */
 
 const path = require('path')
+const fs = require('fs')
 
 exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
   actions.setWebpackConfig({

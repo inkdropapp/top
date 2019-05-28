@@ -44,6 +44,18 @@ module.exports = {
         username: `prodhacker`,
         limit: 6
       }
+    },
+    {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        typeName: `Yaml`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`
+      }
     }
   ]
 }

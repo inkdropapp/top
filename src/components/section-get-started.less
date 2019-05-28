@@ -1,0 +1,53 @@
+@import "../variables.less";
+
+#get-started {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  border: none;
+
+  .panel {
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 3rem 0;
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,.1), 0 3px 10px rgba(0,0,0,.07);
+  }
+
+  .big-icon {
+    text-align: right;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0.3em 0 0.2em 0;
+  }
+
+  h3 {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin: 0.2em 0 0.2em 0;
+  }
+
+  .link-to-signup {
+    margin-top: 1rem;
+  }
+
+  .pricing {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: @mobileBreakpoint) {
+    h1 {
+      font-size: 30px;
+    }
+    .big-icon {
+      text-align: center;
+    }
+    .get-started-message {
+      text-align: center;
+    }
+  }
+}

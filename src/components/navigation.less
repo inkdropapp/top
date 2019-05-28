@@ -17,7 +17,7 @@
     margin: 0;
     padding-left: 0;
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: @mobileBreakpoint) {
       display: none;
     }
 
@@ -46,5 +46,64 @@
       }
     }
   }
+
+  .hamburger-menu {
+    display: none;
+    flex: 0 auto;
+    text-align: right;
+    height: 45px;
+    margin: 0;
+    padding-left: 0;
+    flex-direction: row;
+    align-items: center;
+
+    @media only screen and (max-width: @mobileBreakpoint) {
+      display: flex;
+    }
+  }
 }
 
+.app-navbar-mobile-container {
+  position: relative;
+  width: 100%;
+}
+
+.app--navbar-mobile {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 0.3s cubic-bezier(0, 0.58, 0.4, 1);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0rem;
+  z-index: 10;
+
+  .content {
+    box-shadow: 0 15px 35px rgba(0,0,0,.1), 0 3px 10px rgba(0,0,0,.07);
+    background: #ecf2fd;
+  }
+ 
+
+  &.visible {
+    padding-bottom: 40px;
+    max-height: 370px;
+  }
+
+  .item {
+    display: block;
+    padding: 0.6rem;
+    color: #373e42;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+
+    &:last-child {
+      border: none;
+      padding-bottom: 1rem;
+    }
+
+    .chevron.right.icon {
+      float: right;
+      opacity: 0.3;
+      color: black;
+    }
+  }
+}
