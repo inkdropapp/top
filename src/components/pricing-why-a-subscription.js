@@ -1,6 +1,7 @@
 import './pricing-why-a-subscription.less'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class SectionSimpleFeatures extends React.Component {
   render() {
@@ -43,9 +44,9 @@ class SectionSimpleFeatures extends React.Component {
                 <p>
                   Yes. We&apos;re committed to helping students and teachers
                   experience the power of Inkdrop. See{' '}
-                  <a href="https://docs.inkdrop.app/student-discount">
+                  <OutboundLink href="https://docs.inkdrop.app/student-discount">
                     this page
-                  </a>{' '}
+                  </OutboundLink>{' '}
                   for requesting your discount.
                 </p>
               </div>
@@ -54,9 +55,9 @@ class SectionSimpleFeatures extends React.Component {
           <div className="section-read-blogpost">
             <p>
               If you are curious about our pricing, please read{' '}
-              <a href="https://hackernoon.com/why-inkdrop-is-a-subscription-app-beda29c507d5">
-                our blog post
-              </a>{' '}
+              <OutboundLink href="https://blog.inkdrop.info/why-inkdrop-is-a-subscription-app-beda29c507d5">
+                my blog post
+              </OutboundLink>{' '}
               for more detail.
             </p>
           </div>

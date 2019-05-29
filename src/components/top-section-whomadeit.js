@@ -4,6 +4,7 @@ import './top-section-whomadeit.less'
 import Img from 'gatsby-image'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import BlockBadge from './block-badge'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 export default class SectionWhoMadeIt extends Component {
   render() {
@@ -20,15 +21,15 @@ export default class SectionWhoMadeIt extends Component {
                 based in Japan.
               </p>
               <div className="center aligned links">
-                <a href="https://craftz.dog/">
+                <OutboundLink href="https://craftz.dog/">
                   <i className="home icon" />
-                </a>
-                <a href="https://twitter.com/inkdrop_app">
+                </OutboundLink>
+                <OutboundLink href="https://twitter.com/inkdrop_app">
                   <i className="twitter icon" />
-                </a>
-                <a href="https://github.com/craftzdog">
+                </OutboundLink>
+                <OutboundLink href="https://github.com/craftzdog">
                   <i className="github icon" />
-                </a>
+                </OutboundLink>
               </div>
             </Container>
             <Container text className="center aligned content">
@@ -38,13 +39,13 @@ export default class SectionWhoMadeIt extends Component {
               />
               <div className="caption">
                 at&nbsp;
-                <a
+                <OutboundLink
                   href="https://www.meetup.com/React-Native-London/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   React Native London
-                </a>
+                </OutboundLink>
               </div>
             </Container>
           </section>

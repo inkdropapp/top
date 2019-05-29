@@ -1,10 +1,14 @@
 import * as React from 'react'
 import './signup-button.less'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const SignupButton = () => (
-  <a href="https://my.inkdrop.app/signup" className="ui button signup">
+  <OutboundLink
+    href="https://my.inkdrop.app/signup"
+    className="ui button signup"
+  >
     Start your 60-day free trial
-  </a>
+  </OutboundLink>
 )
 
 export default SignupButton

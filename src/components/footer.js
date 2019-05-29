@@ -2,6 +2,7 @@ import './footer.less'
 import React from 'react'
 import './header.less'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Footer = () => (
   <footer className="app--footer">
@@ -22,31 +23,27 @@ const Footer = () => (
               <a href="mailto:contact@inkdrop.app">Contact</a>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://twitter.com/inkdrop_app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Twitter
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://blog.inkdrop.info"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Blog
-              </a>
+              </OutboundLink>
             </li>
           </ul>
         </div>
         <div className="three wide column text-left">
-          <a
-            href="https://inkdrop.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://inkdrop.app/">
             © {new Date().getFullYear()} Inkdrop
           </a>
         </div>

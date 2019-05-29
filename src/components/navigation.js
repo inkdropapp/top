@@ -4,6 +4,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import './navigation.less'
 import HamburgerMenuButton from './hamburger-menu-button'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -47,38 +48,61 @@ class Navigation extends React.Component {
                   <Link to="/pricing">Pricing</Link>
                 </li>
                 <li>
-                  <a href="https://my.inkdrop.app/plugins">Plugins</a>
+                  <OutboundLink href="https://my.inkdrop.app/plugins">
+                    Plugins
+                  </OutboundLink>
                 </li>
                 <li className="ui simple dropdown item">
                   More
                   <i className="dropdown icon" />
                   <div className="menu">
-                    <a className="item" href="https://my.inkdrop.app/demo">
+                    <OutboundLink
+                      className="item"
+                      href="https://my.inkdrop.app/demo"
+                    >
                       Demo
-                    </a>
-                    <a className="item" href="https://docs.inkdrop.app/">
+                    </OutboundLink>
+                    <OutboundLink
+                      className="item"
+                      href="https://docs.inkdrop.app/"
+                    >
                       Documentations
-                    </a>
-                    <a className="item" href="https://forum.inkdrop.app/">
+                    </OutboundLink>
+                    <OutboundLink
+                      className="item"
+                      href="https://forum.inkdrop.app/"
+                    >
                       User Forum
-                    </a>
-                    <a className="item" href="https://docs.inkdrop.app/faq">
+                    </OutboundLink>
+                    <OutboundLink
+                      className="item"
+                      href="https://docs.inkdrop.app/faq"
+                    >
                       FAQ
-                    </a>
+                    </OutboundLink>
                     <div className="divider" />
-                    <a className="item" href="https://twitter.com/inkdrop_app">
+                    <OutboundLink
+                      className="item"
+                      href="https://twitter.com/inkdrop_app"
+                    >
                       Twitter
-                    </a>
-                    <a className="item" href="https://blog.inkdrop.info/">
+                    </OutboundLink>
+                    <OutboundLink
+                      className="item"
+                      href="https://blog.inkdrop.info/"
+                    >
                       Blog
-                    </a>
+                    </OutboundLink>
                   </div>
                 </li>
                 <li>
-                  <a href="https://my.inkdrop.app/" className="login">
+                  <OutboundLink
+                    href="https://my.inkdrop.app/"
+                    className="login"
+                  >
                     <i className="sign in icon" />
                     Log in
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
 
@@ -103,34 +127,55 @@ class Navigation extends React.Component {
                   <i className="chevron right icon" />
                   Pricing
                 </Link>
-                <a href="https://my.inkdrop.app/plugins" className="item">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins"
+                  className="item"
+                >
                   <i className="chevron right icon" />
                   Plugins
-                </a>
-                <a className="item" href="https://my.inkdrop.app/demo">
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://my.inkdrop.app/demo"
+                >
                   <i className="chevron right icon" />
                   Demo
-                </a>
-                <a className="item" href="https://forum.inkdrop.app/">
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://forum.inkdrop.app/"
+                >
                   <i className="chevron right icon" />
                   User Forum
-                </a>
-                <a className="item" href="https://docs.inkdrop.app/faq">
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://docs.inkdrop.app/faq"
+                >
                   <i className="chevron right icon" />
                   FAQ
-                </a>
-                <a className="item" href="https://twitter.com/inkdrop_app">
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://twitter.com/inkdrop_app"
+                >
                   <i className="chevron right icon" />
                   Twitter
-                </a>
-                <a className="item" href="https://blog.inkdrop.info/">
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://blog.inkdrop.info/"
+                >
                   <i className="chevron right icon" />
                   Blog
-                </a>
-                <a className="item login" href="https://my.inkdrop.app/">
+                </OutboundLink>
+                <OutboundLink
+                  className="item login"
+                  href="https://my.inkdrop.app/"
+                >
                   <i className="sign in icon" />
                   Log in
-                </a>
+                </OutboundLink>
               </Container>
             </div>
           </div>

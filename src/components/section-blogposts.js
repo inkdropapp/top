@@ -3,6 +3,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Flickity from 'flickity'
 import LazyLoad from 'react-lazyload'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 export default class BlogpostsSection extends React.Component {
   componentDidMount() {
@@ -23,7 +24,7 @@ export default class BlogpostsSection extends React.Component {
             const { node } = edge
             return (
               <div key={node.id} className="carousel-cell">
-                <a
+                <OutboundLink
                   target="_blank"
                   rel="noopener noreferrer"
                   href={`https://blog.inkdrop.info/${node.uniqueSlug}`}
@@ -47,7 +48,7 @@ export default class BlogpostsSection extends React.Component {
                   </LazyLoad>
                   <div className="meta-created-at">{node.createdAt}</div>
                   <h3>{node.title}</h3>
-                </a>
+                </OutboundLink>
               </div>
             )
           })
