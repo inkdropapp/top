@@ -1,23 +1,24 @@
+import './404.less'
+import { Link } from 'gatsby'
 import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Masthead from '../components/top-masthead'
-import HelpUs from '../components/helpus'
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <Masthead />
-    <div className="ui container main-content">
-      <div className="ui stackable grid">
-        <div className="five wide column side-bar">404</div>
-        <div className="eleven wide column doc-content">
-          <h1>NOT FOUND</h1>
-          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-
-          <HelpUs />
-        </div>
+    <div className="ui text container not-found-page">
+      <h1>Not Found 😢</h1>
+      <p>
+        The page you&apos;re looking for was not found. Please check the URL or
+        click a link from the menu.
+      </p>
+      <div className="center aligned">
+        <Link to="/" className="ui rounded button">
+          Return to top&nbsp;
+          <i className="right angle double icon" />
+        </Link>
       </div>
     </div>
   </Layout>
