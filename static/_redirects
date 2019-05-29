@@ -1,2 +1,10 @@
-# Redirect domain aliases to primary domain
-https://doc.inkdrop.info/* https://docs.inkdrop.app/:splat 301!
+https://www.inkdrop.info/* https://inkdrop.app/:splat 301!
+https://www.inkdrop.app/* https://inkdrop.app/:splat 301!
+
+/features    /         301
+/download    https://my.inkdrop.app/download         301
+/demo        https://my.inkdrop.app/demo             301
+/plugins     https://my.inkdrop.app/plugins          301
+/plugins/*   https://my.inkdrop.app/plugins/:splat   301
+/login       https://my.inkdrop.app/                 301
+/signup      https://my.inkdrop.app/signup           301
