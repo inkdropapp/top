@@ -3,7 +3,6 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import TestimonialFaces from './testimonials-faces'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import Img from 'gatsby-image'
 
 const people = [
   'roberto',
@@ -20,13 +19,16 @@ const people = [
 export default class TestimonialsSection extends React.Component {
   constructor(props) {
     super(props)
-    const idx = Math.floor(Math.random() * people.length)
     this.state = {
-      activeItem: people[idx]
+      activeItem: ''
     }
   }
 
   componentDidMount() {
+    const idx = Math.floor(Math.random() * people.length)
+    this.setState({
+      activeItem: people[idx]
+    })
     this.intervalId = setInterval(this.selectReviewRandomly, 5000)
   }
 
