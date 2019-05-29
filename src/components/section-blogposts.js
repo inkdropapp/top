@@ -8,7 +8,7 @@ export default class BlogpostsSection extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       new Flickity(this.carouselRef, {
-        wrapAround: false,
+        wrapAround: true,
         autoPlay: true
       })
     }, 200)
