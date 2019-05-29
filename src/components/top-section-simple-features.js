@@ -57,8 +57,8 @@ class SectionSimpleFeatures extends React.Component {
                   organize notes however you like.
                 </p>
               </div>
-              <div className="carousel-cell">
-                <Container text>
+              <div className="carousel-cell plugins">
+                <Container>
                   <Img fluid={data.image03.childImageSharp.fluid} />
                 </Container>
                 <h3>

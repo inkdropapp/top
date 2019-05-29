@@ -61,13 +61,34 @@ export default class TopMasthead extends Component {
                 </div>
                 */}
                 {selectedPlatform === 'macos' && (
-                  <Img fluid={data.ss_macOS.childImageSharp.fluid} />
+                  <Img
+                    className="screenshot screenshot-macos"
+                    fluid={data.ss_macOS.childImageSharp.fluid}
+                  />
                 )}
                 {selectedPlatform === 'windows' && (
-                  <Img fluid={data.ss_windows.childImageSharp.fluid} />
+                  <Img
+                    className="screenshot screenshot-windows"
+                    fluid={data.ss_windows.childImageSharp.fluid}
+                  />
                 )}
                 {selectedPlatform === 'linux' && (
-                  <Img fluid={data.ss_linux.childImageSharp.fluid} />
+                  <Img
+                    className="screenshot screenshot-linux"
+                    fluid={data.ss_linux.childImageSharp.fluid}
+                  />
+                )}
+                {selectedPlatform === 'ios' && (
+                  <Img
+                    className="screenshot screenshot-ios"
+                    fluid={data.ss_ios.childImageSharp.fluid}
+                  />
+                )}
+                {selectedPlatform === 'android' && (
+                  <Img
+                    className="screenshot screenshot-android"
+                    fluid={data.ss_android.childImageSharp.fluid}
+                  />
                 )}
               </div>
 
@@ -101,6 +122,20 @@ const query = graphql`
       }
     }
     ss_linux: file(relativePath: { eq: "ss-linux-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_ios: file(relativePath: { eq: "ss-ios-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_android: file(relativePath: { eq: "ss-android-01.png" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid

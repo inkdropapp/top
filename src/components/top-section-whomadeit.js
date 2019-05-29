@@ -16,8 +16,8 @@ export default class SectionWhoMadeIt extends Component {
               <BlockBadge center />
               <h2>Who is making Inkdrop?</h2>
               <p className="sub-headline">
-                It is developed by a solo developer, Takuya Matsuyama, based in
-                Japan.
+                It is developed by a freelance developer, Takuya Matsuyama,
+                based in Japan.
               </p>
               <div className="center aligned links">
                 <a href="https://craftz.dog/">
@@ -36,6 +36,16 @@ export default class SectionWhoMadeIt extends Component {
                 className="author"
                 fluid={data.takuya.childImageSharp.fluid}
               />
+              <div className="caption">
+                at&nbsp;
+                <a
+                  href="https://www.meetup.com/React-Native-London/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  React Native London
+                </a>
+              </div>
             </Container>
           </section>
         )}

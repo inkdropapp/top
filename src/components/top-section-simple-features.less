@@ -71,10 +71,10 @@ section#simple-features {
   }
 
   .carousel-cell {
-    width: 80%;
+    width: 80vw;
     margin-right: 10px;
     border-radius: 5px;
-    counter-increment: carousel-cell;
+    max-width: 1024px;
 
     h3 {
       color: rgba(255,255,255,0.8);
@@ -88,6 +88,11 @@ section#simple-features {
     p {
       font-size: 1.3rem;
       color: rgba(255,255,255,0.65);
+    }
+
+    .gatsby-image-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
     }
   }
 }
