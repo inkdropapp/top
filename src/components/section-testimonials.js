@@ -3,6 +3,7 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import TestimonialFaces from './testimonials-faces'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
+import Img from 'gatsby-image'
 
 const people = [
   'roberto',
@@ -59,6 +60,7 @@ export default class TestimonialsSection extends React.Component {
             if (node.id === activeItem) {
               return (
                 <div key={node.id} className="testimonial-item">
+                  <i className="quote left icon" />
                   <p>{node.comment}</p>
                   <div className="profile">
                     <div className="name">{node.name}</div>

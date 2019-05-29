@@ -26,6 +26,7 @@ section#testimonials {
 
   .testimonial-list {
     .testimonial-item {
+      position: relative;
       margin: 1rem auto 0 auto;
       min-height: 19rem;
 
@@ -61,12 +62,20 @@ section#testimonials {
         }
       }
 
+      .quote.left.icon {
+        position: absolute;
+        left: -1.5em;
+        opacity: 0.3;
+        font-size: 2rem;
+      }
+
       p {
         padding: 0 1rem;
         margin-bottom: 0.8rem;
         text-align: justify;
       }
 
+      /*
       p:before {
         content: "\201C";
         margin-left: -.6ex;
@@ -75,6 +84,7 @@ section#testimonials {
       p:after {
         content: "\201D";
       }
+      */
 
       @media (max-width: @mobileBreakpoint) {
         p {

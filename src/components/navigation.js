@@ -56,6 +56,9 @@ class Navigation extends React.Component {
                     <a className="item" href="https://my.inkdrop.app/demo">
                       Demo
                     </a>
+                    <a className="item" href="https://docs.inkdrop.app/">
+                      Documentations
+                    </a>
                     <a className="item" href="https://forum.inkdrop.app/">
                       User Forum
                     </a>
@@ -66,7 +69,7 @@ class Navigation extends React.Component {
                     <a className="item" href="https://twitter.com/inkdrop_app">
                       Twitter
                     </a>
-                    <a className="item" href="https://medium.com/@inkdrop">
+                    <a className="item" href="https://blog.inkdrop.info/">
                       Blog
                     </a>
                   </div>
@@ -120,7 +123,7 @@ class Navigation extends React.Component {
                   <i className="chevron right icon" />
                   Twitter
                 </a>
-                <a className="item" href="https://medium.com/@inkdrop">
+                <a className="item" href="https://blog.inkdrop.info/">
                   <i className="chevron right icon" />
                   Blog
                 </a>

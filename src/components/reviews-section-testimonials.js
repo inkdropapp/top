@@ -90,9 +90,12 @@ export default class TestimonialsSection extends React.Component {
           return (
             <section id="reviews">
               <Container>
-                <h2>What People Are Saying</h2>
+                <h2>
+                  What People Are Saying
+                  <img src="/smile.svg" width={40} />
+                </h2>
                 <p className="sub-headline">
-                  How Inkdrop helps their productivity.
+                  How Inkdrop helps their productivities.
                 </p>
               </Container>
               <Container text>{items}</Container>

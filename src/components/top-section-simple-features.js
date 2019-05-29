@@ -13,7 +13,7 @@ class SectionSimpleFeatures extends React.Component {
         wrapAround: false,
         autoPlay: true
       })
-    }, 200)
+    }, 500)
   }
 
   render() {

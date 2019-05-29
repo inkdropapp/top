@@ -9,6 +9,7 @@ import SectionSeamlessSync from '../components/top-section-seamless-sync'
 import SectionBlogposts from '../components/section-blogposts'
 import SectionGetStarted from '../components/section-get-started'
 import SectionTestimonials from '../components/section-testimonials'
+import SectionWhoMadeIt from '../components/top-section-whomadeit'
 
 const IndexPage = () => (
   <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
@@ -21,6 +22,7 @@ const IndexPage = () => (
         <SectionTestimonials />
         <SectionGetStarted />
       </div>
+      <SectionWhoMadeIt />
       <SectionBlogposts />
     </div>
   </Layout>

@@ -15,7 +15,7 @@ class SectionSeamlessSync extends React.Component {
             <Container text>
               <h2 className="ui icon header">
                 <i className="cloud icon" />
-                <div className="content">Have it everywhere</div>
+                <div className="content">Have it everywhere securely</div>
               </h2>
               <p>
                 Capture a note once, and it’s instantly available on all your
