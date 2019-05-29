@@ -3,14 +3,13 @@ import { StaticQuery, graphql } from 'gatsby'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
-import 'flickity/css/flickity.css'
 import Flickity from 'flickity'
 
 class SectionSimpleFeatures extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       new Flickity(this.carouselRef, {
-        wrapAround: false,
+        wrapAround: true,
         autoPlay: true
       })
     }, 500)

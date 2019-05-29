@@ -5,9 +5,8 @@
  */
 
 const path = require('path')
-const fs = require('fs')
 
-exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -15,4 +14,17 @@ exports.onCreateWebpackConfig = ({ stage: _stage, actions }) => {
       }
     }
   })
+
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /flickity/,
+            use: loaders.null()
+          }
+        ]
+      }
+    })
+  }
 }
