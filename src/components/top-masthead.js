@@ -23,6 +23,7 @@ export default class TopMasthead extends Component {
   render() {
     const isPC = ['macos', 'windows', 'linux'].indexOf(getPlatform()) >= 0
     const { selectedPlatform } = this.state
+    const isBrowser = typeof window !== `undefined`
     return (
       <StaticQuery
         query={query}
@@ -44,13 +45,15 @@ export default class TopMasthead extends Component {
                 {isPC && <TryDemoButton />}
               </p>
 
-              <SupportedPlatformsMenu
-                active={selectedPlatform}
-                onClick={this.handlePlatformSelect}
-              />
+              {isBrowser ? (
+                <>
+                  <SupportedPlatformsMenu
+                    active={selectedPlatform}
+                    onClick={this.handlePlatformSelect}
+                  />
 
-              <div className="platform-screenshot">
-                {/*
+                  <div className="platform-screenshot">
+                    {/*
                 <div className="masthead-icons">
                   <span className="masthead-icon-item">
                     <i className="icon ion-ios-flask" />
@@ -60,37 +63,41 @@ export default class TopMasthead extends Component {
                   </span>
                 </div>
                 */}
-                {selectedPlatform === 'macos' && (
-                  <Img
-                    className="screenshot screenshot-macos"
-                    fluid={data.ss_macOS.childImageSharp.fluid}
-                  />
-                )}
-                {selectedPlatform === 'windows' && (
-                  <Img
-                    className="screenshot screenshot-windows"
-                    fluid={data.ss_windows.childImageSharp.fluid}
-                  />
-                )}
-                {selectedPlatform === 'linux' && (
-                  <Img
-                    className="screenshot screenshot-linux"
-                    fluid={data.ss_linux.childImageSharp.fluid}
-                  />
-                )}
-                {selectedPlatform === 'ios' && (
-                  <Img
-                    className="screenshot screenshot-ios"
-                    fluid={data.ss_ios.childImageSharp.fluid}
-                  />
-                )}
-                {selectedPlatform === 'android' && (
-                  <Img
-                    className="screenshot screenshot-android"
-                    fluid={data.ss_android.childImageSharp.fluid}
-                  />
-                )}
-              </div>
+                    {selectedPlatform === 'macos' && (
+                      <Img
+                        className="screenshot screenshot-macos"
+                        fluid={data.ss_macOS.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'windows' && (
+                      <Img
+                        className="screenshot screenshot-windows"
+                        fluid={data.ss_windows.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'linux' && (
+                      <Img
+                        className="screenshot screenshot-linux"
+                        fluid={data.ss_linux.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'ios' && (
+                      <Img
+                        className="screenshot screenshot-ios"
+                        fluid={data.ss_ios.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'android' && (
+                      <Img
+                        className="screenshot screenshot-android"
+                        fluid={data.ss_android.childImageSharp.fluid}
+                      />
+                    )}
+                  </div>
+                </>
+              ) : (
+                <span className="masthead-spacer" />
+              )}
 
               {this.props.children}
             </Container>
