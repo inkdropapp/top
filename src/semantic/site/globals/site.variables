@@ -2,6 +2,7 @@
      User Global Variables
 *******************************/
 
+@importGoogleFonts : false;
 @headerFont: 'M PLUS Rounded 1c', 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
 @pageFont: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
 
