@@ -1,7 +1,6 @@
 import './footer.less'
 import React from 'react'
 import './header.less'
-import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Footer = () => (
@@ -11,13 +10,19 @@ const Footer = () => (
         <div className="thirteen wide column links">
           <ul className="links">
             <li>
-              <Link to="/terms">Terms of Use</Link>
+              <OutboundLink href="https://docs.inkdrop.app/terms">
+                Terms of Use
+              </OutboundLink>
             </li>
             <li>
-              <Link to="/privacy">Privacy Policy</Link>
+              <OutboundLink href="https://docs.inkdrop.app/privacy">
+                Privacy Policy
+              </OutboundLink>
             </li>
             <li>
-              <Link to="/faq">FAQ</Link>
+              <OutboundLink href="https://docs.inkdrop.app/faq">
+                FAQ
+              </OutboundLink>
             </li>
             <li>
               <a href="mailto:contact@inkdrop.app">Contact</a>
