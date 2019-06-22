@@ -66,7 +66,7 @@ class Navigation extends React.Component {
                       className="item"
                       href="https://docs.inkdrop.app/"
                     >
-                      Documentations
+                      Documentation
                     </OutboundLink>
                     <OutboundLink
                       className="item"
