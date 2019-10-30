@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "dependencies": {
+    "axios": "^0.19.0",
     "flickity": "^2.2.0",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.24",

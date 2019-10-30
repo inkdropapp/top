@@ -27,26 +27,19 @@ export default class BlogpostsSection extends React.Component {
                 <OutboundLink
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`https://blog.inkdrop.info/${node.uniqueSlug}`}
+                  href={node.link}
                 >
                   <LazyLoad
                     placeholder={
                       <img
                         className="cover-image"
-                        src={`https://cdn-images-1.medium.com/max/20/${
-                          node.virtuals.previewImage.imageId
-                        }`}
+                        src={node.thumbnail.replace('1024', '20')}
                       />
                     }
                   >
-                    <img
-                      className="cover-image"
-                      src={`https://cdn-images-1.medium.com/max/800/${
-                        node.virtuals.previewImage.imageId
-                      }`}
-                    />
+                    <img className="cover-image" src={node.thumbnail} />
                   </LazyLoad>
-                  <div className="meta-created-at">{node.createdAt}</div>
+                  <div className="meta-created-at">{node.pubDate}</div>
                   <h3>{node.title}</h3>
                 </OutboundLink>
               </div>
@@ -71,22 +64,17 @@ export default class BlogpostsSection extends React.Component {
 
 const query = graphql`
   query {
-    allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+    allMediumPost(
+      sort: { fields: [pubDate], order: DESC }
+      filter: { id: { ne: "dummy" } }
+    ) {
       edges {
         node {
           id
-          uniqueSlug
+          link
           title
-          createdAt
-          virtuals {
-            subtitle
-            previewImage {
-              imageId
-            }
-          }
-          author {
-            name
-          }
+          pubDate(formatString: "YYYY-MM-DD")
+          thumbnail
         }
       }
     }

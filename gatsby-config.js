@@ -39,13 +39,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-medium`,
-      options: {
-        username: `prodhacker`,
-        limit: 6
-      }
-    },
-    {
       resolve: `gatsby-transformer-yaml`,
       options: {
         typeName: `Yaml`

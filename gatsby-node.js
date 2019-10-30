@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
+const axios = require('axios')
 const path = require('path')
 
 exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
@@ -26,5 +27,36 @@ exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
         ]
       }
     })
+  }
+}
+
+exports.sourceNodes = async ({
+  actions,
+  createNodeId,
+  createContentDigest
+}) => {
+  const { createNode } = actions
+
+  const blogPosts = await axios.get(
+    `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/prodhacker`
+  )
+  console.log('blogPosts:', blogPosts)
+  for (const post of blogPosts.data.items) {
+    const nodeContent = JSON.stringify(post)
+
+    const nodeMeta = {
+      id: createNodeId(`medium-post-${post.guid}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: `MediumPost`,
+        mediaType: `application/json`,
+        content: nodeContent,
+        contentDigest: createContentDigest(post)
+      }
+    }
+
+    const node = Object.assign({}, post, nodeMeta)
+    createNode(node)
   }
 }
