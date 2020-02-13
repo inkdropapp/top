@@ -40,14 +40,21 @@ class SectionSimpleFeatures extends React.Component {
                 </p>
               </div>
               <div className="column">
-                <h3>Do you offer student discounts?</h3>
+                <h3>Do you offer any discount plans?</h3>
                 <p>
-                  Yes. We&apos;re committed to helping students and teachers
-                  experience the power of Inkdrop. See{' '}
-                  <OutboundLink href="https://docs.inkdrop.app/student-discount">
-                    this page
-                  </OutboundLink>{' '}
-                  for requesting your discount.
+                  Yes. We provide two types of discount:
+                  <ul>
+                    <li>
+                      <OutboundLink href="https://docs.inkdrop.app/student-discount">
+                        Educational discount
+                      </OutboundLink>
+                    </li>
+                    <li>
+                      <OutboundLink href="https://blog.inkdrop.info/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
+                        Plugin developer license
+                      </OutboundLink>
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>
