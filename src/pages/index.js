@@ -11,31 +11,21 @@ import SectionGetStarted from '../components/section-get-started'
 import SectionTestimonials from '../components/section-testimonials'
 import SectionWhoMadeIt from '../components/top-section-whomadeit'
 
-const HeaderReferral = React.lazy(() => import('../components/header-referral'))
-
-const IndexPage = () => {
-  const isSSR = typeof window === 'undefined'
-  return (
-    <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
-      {!isSSR && (
-        <React.Suspense fallback={null}>
-          <HeaderReferral />
-        </React.Suspense>
-      )}
-      <div className="main-content">
-        <Masthead />
-        <SectionSimpleFeatures />
-        <SectionBeautifulUI />
-        <SectionSeamlessSync />
-        <div className="section-get-now">
-          <SectionTestimonials />
-          <SectionGetStarted />
-        </div>
-        <SectionWhoMadeIt />
-        <SectionBlogposts />
+const IndexPage = () => (
+  <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
+    <div className="main-content">
+      <Masthead />
+      <SectionSimpleFeatures />
+      <SectionBeautifulUI />
+      <SectionSeamlessSync />
+      <div className="section-get-now">
+        <SectionTestimonials />
+        <SectionGetStarted />
       </div>
-    </Layout>
-  )
-}
+      <SectionWhoMadeIt />
+      <SectionBlogposts />
+    </div>
+  </Layout>
+)
 
 export default IndexPage

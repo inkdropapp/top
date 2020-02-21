@@ -1,11 +1,11 @@
 import './header-referral.less'
 import React, { useEffect, useState } from 'react'
+import { Link } from 'gatsby'
 import {
   getReferralIdFromCookie,
   setReferralIdToCookie
 } from '../utils/referral-cookie'
 import getQueryVariable from '../utils/query-string'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const HeaderReferral = () => {
   const referralIdInQuery = getQueryVariable('ref')
@@ -15,7 +15,11 @@ const HeaderReferral = () => {
   )
 
   useEffect(() => {
-    if (referralIdInQuery && !referralIdInCookie) {
+    if (
+      referralIdInQuery &&
+      !referralIdInCookie &&
+      referralIdInQuery !== referralIdInCookie
+    ) {
       // TODO Check if the ID is available
       setReferralIdToCookie(referralIdInQuery)
       setReferralId(referralIdInQuery)
@@ -24,9 +28,9 @@ const HeaderReferral = () => {
 
   return referralId ? (
     <div className="header-referral">
-      <OutboundLink href="https://my.inkdrop.app/signup">
+      <Link to="/pricing">
         You&apos;ve got referral credit! Try Inkdrop today and save $2.5.
-      </OutboundLink>
+      </Link>
     </div>
   ) : null
 }
