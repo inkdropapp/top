@@ -1,30 +1,11 @@
 import './header-referral.less'
-import React, { useEffect, useState } from 'react'
+import * as React from 'react'
+import { useContext } from 'react'
 import { Link } from 'gatsby'
-import {
-  getReferralIdFromCookie,
-  setReferralIdToCookie
-} from '../utils/referral-cookie'
-import getQueryVariable from '../utils/query-string'
+import ReferralContext from '../utils/referral-context'
 
 const HeaderReferral = () => {
-  const referralIdInQuery = getQueryVariable('ref')
-  const referralIdInCookie = getReferralIdFromCookie()
-  const [referralId, setReferralId] = useState(
-    referralIdInQuery || referralIdInCookie
-  )
-
-  useEffect(() => {
-    if (
-      referralIdInQuery &&
-      !referralIdInCookie &&
-      referralIdInQuery !== referralIdInCookie
-    ) {
-      // TODO Check if the ID is available
-      setReferralIdToCookie(referralIdInQuery)
-      setReferralId(referralIdInQuery)
-    }
-  }, [referralId])
+  const { referralId } = useContext(ReferralContext)
 
   return referralId ? (
     <div className="header-referral">
