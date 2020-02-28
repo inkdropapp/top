@@ -4,7 +4,7 @@ import getQueryVariable from './query-string'
 const KEY_REFERRER_ID = 'referrer_identity'
 
 export function getReferralIdFromQuery() {
-  return getQueryVariable('ref')
+  return getQueryVariable('r')
 }
 
 export function getReferralIdFromLocalStorage() {
