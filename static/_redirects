@@ -1,5 +1,5 @@
-https://www.inkdrop.info/* https://inkdrop.app/:splat 301!
-https://www.inkdrop.app/* https://inkdrop.app/:splat 301!
+https://www.inkdrop.info/* https://www.inkdrop.app/:splat 301!
+https://inkdrop.app/* https://www.inkdrop.app/:splat 301!
 
 /features    /         301
 /download    https://my.inkdrop.app/download         301
