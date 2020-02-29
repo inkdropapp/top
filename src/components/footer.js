@@ -48,7 +48,7 @@ const Footer = () => (
           </ul>
         </div>
         <div className="three wide column text-left">
-          <a href="https://inkdrop.app/">
+          <a href="https://www.inkdrop.app/">
             © {new Date().getFullYear()} Inkdrop
           </a>
         </div>
