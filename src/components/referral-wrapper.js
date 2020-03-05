@@ -12,6 +12,11 @@ const ReferralWrapper = props => {
   const [refId, setRefId] = useState(
     getReferralIdFromQuery() || getReferralIdFromLocalStorage()
   )
+  console.log(
+    'r:',
+    refId,
+    getReferralIdFromQuery() || getReferralIdFromLocalStorage()
+  )
   useEffect(() => {
     checkAndUpdateReferralId().then(newRefId => {
       if (refId !== newRefId) setRefId(newRefId)
