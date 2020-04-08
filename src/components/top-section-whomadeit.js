@@ -21,13 +21,19 @@ export default class SectionWhoMadeIt extends Component {
                 based in Japan.
               </p>
               <div className="center aligned links">
-                <OutboundLink href="https://craftz.dog/">
+                <OutboundLink href="https://craftz.dog/" title="Homepage">
                   <i className="home icon" />
                 </OutboundLink>
-                <OutboundLink href="https://twitter.com/inkdrop_app">
+                <OutboundLink
+                  href="https://twitter.com/inkdrop_app"
+                  title="Twitter @inkdrop_app"
+                >
                   <i className="twitter icon" />
                 </OutboundLink>
-                <OutboundLink href="https://github.com/craftzdog">
+                <OutboundLink
+                  href="https://github.com/craftzdog"
+                  title="GitHub @craftzdog"
+                >
                   <i className="github icon" />
                 </OutboundLink>
               </div>
