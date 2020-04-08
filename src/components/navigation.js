@@ -38,7 +38,10 @@ class Navigation extends React.Component {
                     }
                   `}
                   render={data => (
-                    <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+                    <Img
+                      fixed={data.placeholderImage.childImageSharp.fixed}
+                      alt="Inkdrop logo"
+                    />
                   )}
                 />
               </Link>

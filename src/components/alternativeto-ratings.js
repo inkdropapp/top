@@ -19,9 +19,10 @@ const AlternativeToRatings = () => (
               className="alternativeto-logo"
               src="/alternativeto.svg"
               width={300}
+              alt="alternativeTo"
             />
             <div className="ratings">
-              <Img fixed={data.ratings.childImageSharp.fixed} />
+              <Img fixed={data.ratings.childImageSharp.fixed} alt="Stars" />
               <p>
                 4.5 out of 5 with 15 ratings&nbsp;
                 <i className="angle double right icon" />

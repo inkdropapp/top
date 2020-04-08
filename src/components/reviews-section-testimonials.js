@@ -30,7 +30,11 @@ export default class TestimonialsSection extends React.Component {
             return (
               <div key={node.id} className="review-item">
                 <div className="profile">
-                  <Img className="face" fixed={img.childImageSharp.fixed} />
+                  <Img
+                    className="face"
+                    fixed={img.childImageSharp.fixed}
+                    alt="face"
+                  />
                   <div className="name">{node.name}</div>
                   {node.title && <div className="title">{node.title}</div>}
                   {node.company && (
@@ -92,7 +96,7 @@ export default class TestimonialsSection extends React.Component {
               <Container>
                 <h2>
                   What People Are Saying
-                  <img src="/smile.svg" width={40} />
+                  <img src="/smile.svg" width={40} alt="smile" />
                 </h2>
                 <p className="sub-headline">
                   How Inkdrop helps their productivities.

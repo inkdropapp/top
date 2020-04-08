@@ -23,7 +23,7 @@ export default class PricingMasthead extends Component {
       <Masthead className="pricing-masthead">
         <Container>
           <div className="coffee-icon-container">
-            <img src="/coffee.svg" />
+            <img src="/coffee.svg" alt="Coffee" />
           </div>
           <h1>
             <span className="avoid-wrap">At the cost of</span>&nbsp;

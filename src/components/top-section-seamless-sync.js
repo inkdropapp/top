@@ -32,7 +32,10 @@ class SectionSeamlessSync extends React.Component {
               </p>
             </Container>
             <Container>
-              <Img fluid={data.image01.childImageSharp.fluid} />
+              <Img
+                fluid={data.image01.childImageSharp.fluid}
+                alt="App running on multiple computers"
+              />
             </Container>
           </section>
         )}

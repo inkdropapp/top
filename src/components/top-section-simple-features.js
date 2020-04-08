@@ -31,7 +31,10 @@ class SectionSimpleFeatures extends React.Component {
             <div ref={el => (this.carouselRef = el)} className="carousel">
               <div className="carousel-cell">
                 <Container>
-                  <Img fluid={data.image01.childImageSharp.fluid} />
+                  <Img
+                    fluid={data.image01.childImageSharp.fluid}
+                    alt="Robust editor"
+                  />
                 </Container>
                 <h3>
                   <i className="write icon" />
@@ -45,7 +48,10 @@ class SectionSimpleFeatures extends React.Component {
               </div>
               <div className="carousel-cell">
                 <Container>
-                  <Img fluid={data.image02.childImageSharp.fluid} />
+                  <Img
+                    fluid={data.image02.childImageSharp.fluid}
+                    alt="Keep it organized"
+                  />
                 </Container>
                 <h3>
                   <i className="book icon" />
@@ -58,7 +64,10 @@ class SectionSimpleFeatures extends React.Component {
               </div>
               <div className="carousel-cell plugins">
                 <Container>
-                  <Img fluid={data.image03.childImageSharp.fluid} />
+                  <Img
+                    fluid={data.image03.childImageSharp.fluid}
+                    alt="Powerful plugins"
+                  />
                 </Container>
                 <h3>
                   <i className="plug icon" />

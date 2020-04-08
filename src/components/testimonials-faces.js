@@ -23,7 +23,11 @@ export default class TestimonialsFaces extends React.Component {
                 }`}
                 onClick={() => onClickItem(node.name)}
               >
-                <Img className="face" fixed={node.childImageSharp.fixed} />
+                <Img
+                  className="face"
+                  fixed={node.childImageSharp.fixed}
+                  alt="Reviewer face"
+                />
               </div>
             )
           })

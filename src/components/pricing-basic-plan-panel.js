@@ -54,7 +54,10 @@ export default class BasicPlanPanel extends Component {
               </div>
             </div>
 
-            <Img fixed={data.stripe.childImageSharp.fixed} />
+            <Img
+              fixed={data.stripe.childImageSharp.fixed}
+              alt="Powered by Stripe"
+            />
           </PlanPanel>
         )}
       />

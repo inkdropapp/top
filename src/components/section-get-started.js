@@ -17,7 +17,10 @@ export default class GetNowSection extends Component {
               <div className="panel">
                 <div className="ui stackable grid">
                   <div className="four wide column big-icon">
-                    <Img fixed={data.logo.childImageSharp.fixed} />
+                    <Img
+                      fixed={data.logo.childImageSharp.fixed}
+                      alt="App logo"
+                    />
                   </div>
 
                   <div className="twelve wide column get-started-message">

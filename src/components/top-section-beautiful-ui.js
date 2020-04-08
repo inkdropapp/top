@@ -19,7 +19,7 @@ const SectionBeautifulUI = () => (
           </p>
         </Container>
         <Container>
-          <Img fluid={data.image01.childImageSharp.fluid} />
+          <Img fluid={data.image01.childImageSharp.fluid} alt="Beautiful UI" />
         </Container>
       </section>
     )}
