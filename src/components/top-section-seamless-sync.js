@@ -26,7 +26,7 @@ class SectionSeamlessSync extends React.Component {
                   className="ui rounded white button"
                   href="https://docs.inkdrop.app/security"
                 >
-                  Learn more&nbsp;
+                  Learn more about security&nbsp;
                   <i className="angle double right icon" />
                 </a>
               </p>

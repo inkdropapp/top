@@ -37,7 +37,11 @@ export default class BlogpostsSection extends React.Component {
                       />
                     }
                   >
-                    <img className="cover-image" src={node.thumbnail} />
+                    <img
+                      className="cover-image"
+                      src={node.thumbnail}
+                      alt="blog cover image"
+                    />
                   </LazyLoad>
                   <div className="meta-created-at">{node.pubDate}</div>
                   <h3>{node.title}</h3>
