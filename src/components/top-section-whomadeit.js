@@ -31,6 +31,12 @@ export default class SectionWhoMadeIt extends Component {
                   <i className="twitter icon" />
                 </OutboundLink>
                 <OutboundLink
+                  href="https://www.youtube.com/devaslife"
+                  title="YouTube @devaslife"
+                >
+                  <i className="youtube icon" />
+                </OutboundLink>
+                <OutboundLink
                   href="https://github.com/craftzdog"
                   title="GitHub @craftzdog"
                 >
@@ -39,19 +45,15 @@ export default class SectionWhoMadeIt extends Component {
               </div>
             </Container>
             <Container text className="center aligned content">
-              <Img
-                className="author"
-                fluid={data.takuya.childImageSharp.fluid}
-              />
-              <div className="caption">
-                at&nbsp;
-                <OutboundLink
-                  href="https://www.meetup.com/React-Native-London/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  React Native London
-                </OutboundLink>
+              <div className="embed-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/466mxrWPk7A"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </Container>
           </section>
