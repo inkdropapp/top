@@ -66,16 +66,16 @@ class SectionSimpleFeatures extends React.Component {
                 <Container>
                   <Img
                     fluid={data.image03.childImageSharp.fluid}
-                    alt="Powerful plugins"
+                    alt="100+ Powerful plugins"
                   />
                 </Container>
                 <h3>
                   <i className="plug icon" />
-                  Powerful Plugins
+                  100+ Powerful Plugins
                 </h3>
                 <p className="ui text container">
                   Plugins add new functionality or provide a new look to
-                  Inkdrop. You can activate or deactivate them at any time.
+                  Inkdrop. vim, math, sequence-diagrams, and more!
                   <br />
                   <a
                     className="ui rounded white button"
