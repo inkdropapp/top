@@ -36,7 +36,8 @@ export default class TopMasthead extends Component {
                 <span className="avoid-wrap">made simple.</span>
               </h1>
               <p className="ui container sub-headline">
-                With 100+ plugins, cross-platform and seamless data sync support
+                With 100+ plugins, cross-platform and encrypted data sync
+                support
               </p>
 
               <p className="ui text container">
