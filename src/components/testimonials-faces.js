@@ -51,7 +51,7 @@ const query = graphql`
           id
           name
           childImageSharp {
-            fixed(width: 60, height: 60) {
+            fixed(width: 48, height: 48) {
               ...GatsbyImageSharpFixed
             }
           }

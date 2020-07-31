@@ -1,12 +1,13 @@
 section#beautiful-ui {
   position: relative;
-  text-align: center;
   background: #151617;
-  padding-top: 3em;
   padding-bottom: 10vh;
 
   h2 {
     font-size: 2.82rem;
+  }
+
+  h2, h3 {
     color: white;
     background-clip: text;
     text-fill-color: transparent;
@@ -16,5 +17,16 @@ section#beautiful-ui {
 
   p {
     color: rgba(255,255,255,0.65);
+  }
+
+  .three.column.grid {
+    .column {
+      h3 {
+        font-weight: bold;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

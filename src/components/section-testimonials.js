@@ -119,25 +119,21 @@ export default class TestimonialsSection extends React.Component {
           })
           return (
             <section id="testimonials">
+              <div className="ui text container">
+                <h2>
+                  TRUSTED BY DEVELOPERS AROUND THE WORLD
+                  <Link className="ui rounded tiny button" to="/reviews">
+                    See more
+                    <i className="angle double right icon" />
+                  </Link>
+                </h2>
+              </div>
               <TestimonialFaces
                 activeItem={activeItem}
                 onClickItem={this.handleClickItem}
               />
               <div className="testimonial-list">
                 <Container text>{items}</Container>
-              </div>
-              <div className="center aligned">
-                <Link className="ui rounded button" to="/reviews">
-                  See more reviews
-                  <i className="angle double right icon" />
-                </Link>
-                <a
-                  className="ui rounded button"
-                  href="https://forum.inkdrop.app/"
-                >
-                  <i className="users icon" />
-                  User community&nbsp;
-                </a>
               </div>
             </section>
           )

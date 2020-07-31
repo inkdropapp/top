@@ -1,23 +1,18 @@
 @import "../variables.less";
 
 section#testimonials {
-  &:before {
-    background-image: url(/section-separator-sync.svg);
-    content: '';
-    display: block;
-    width: 100%;
-    padding-bottom: 7.77%;
-    top: -2px;
-    background-size: cover;
-    position: relative;
-    z-index: 10;
-    margin-bottom: -.1875rem;
-  }
+  padding-top: 2rem;
 
   h2 {
-    text-align: center;
-    font-size: 2.82rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
     margin-top: 0rem;
+
+    .button {
+      font-size: 1rem;
+      padding: .4rem .6rem;
+    }
   }
 
   p.sub-headline {
@@ -28,7 +23,10 @@ section#testimonials {
     .testimonial-item {
       position: relative;
       margin: 1rem auto 0 auto;
-      min-height: 19rem;
+      min-height: 15rem;
+      @media (max-width: @mobileBreakpoint) {
+        min-height: 20rem;
+      }
 
       .profile {
         text-align: right;
@@ -73,6 +71,7 @@ section#testimonials {
         padding: 0 1rem;
         margin-bottom: 0.8rem;
         text-align: justify;
+        font-size: 16px;
       }
 
       /*

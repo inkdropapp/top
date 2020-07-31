@@ -21,12 +21,58 @@ class SectionSimpleFeatures extends React.Component {
         query={query}
         render={data => (
           <section id="simple-features">
-            <Container text>
-              <Img
-                className="markdown-icon"
-                fixed={data.md.childImageSharp.fixed}
-              />
-              <h2>Built for developers like you</h2>
+            <Container>
+              <div className="ui stackable grid">
+                <div className="six wide column">
+                  <Img
+                    className="markdown-icon"
+                    fixed={data.md.childImageSharp.fixed}
+                  />
+                  <h2>Jot down your daily creating endeavors</h2>
+                  <p>
+                    Your best work happens when tools stay out of the way. With
+                    a highly customizable Markdown editor, 100+ powerful plugins
+                    and themes, you can stay focused on taking notes about your
+                    work.
+                  </p>
+                </div>
+                <div className="ten wide column">
+                  <div className="video-container">
+                    <iframe
+                      src="https://player.vimeo.com/video/186246591"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div className="ui stackable three column grid">
+                <div className="column">
+                  <h3>Bring your ideas to life</h3>
+                  <p>
+                    From pixel-perfect icons and scalable vector graphics, to
+                    full user flows and interactive prototypes, Sketch is the
+                    perfect place to design, create, test and iterate.
+                  </p>
+                </div>
+                <div className="column">
+                  <h3>Build designs that scale</h3>
+                  <p>
+                    Lay the foundations for your product’s design system with
+                    reusable, responsive components that automatically scale to
+                    fit their content. Then update them everywhere in a click.
+                  </p>
+                </div>
+                <div className="column">
+                  <h3>Customise your workflow</h3>
+                  <p>
+                    Choose from hundreds of plugins and integrations that let
+                    you do everything from animating interactions to designing
+                    with live data.
+                  </p>
+                </div>
+              </div>
             </Container>
             <div ref={el => (this.carouselRef = el)} className="carousel">
               <div className="carousel-cell">

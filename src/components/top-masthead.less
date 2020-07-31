@@ -31,16 +31,50 @@
       }
     }
   }
-  .screenshot {
-    max-width: 1024px;
-    margin: 0 auto;
 
-    &.screenshot-ios, &.screenshot-android {
-      max-width: 800px;
+  .platform-screenshot .screenshot-container {
+    position: relative;
+
+    .play-button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 10;
+      width: 200px;
+      height: 100px;
+      left: 50%;
+      margin-left: -100px;
+      top: 50%;
+      margin-top: -60px;
+      cursor: pointer;
+
+      .play-icon {
+        width: 50px;
+        height: 50px;
+        color: @blue;
+      }
+
+      &:hover .play-icon {
+        color: @linkColor;
+      }
+
+      > div {
+        font-weight: bold;
+      }
     }
-  }
-  .masthead-spacer {
-    display: block;
-    height: 80vh;
+    
+    .screenshot {
+      max-width: 1024px;
+      margin: 0 auto;
+
+      &.screenshot-ios, &.screenshot-android {
+        max-width: 800px;
+      }
+    }
+    .masthead-spacer {
+      display: block;
+      height: 80vh;
+    }
   }
 }

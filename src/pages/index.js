@@ -14,12 +14,13 @@ import SectionWhoMadeIt from '../components/top-section-whomadeit'
 const IndexPage = () => (
   <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
     <div className="main-content">
-      <Masthead />
+      <Masthead>
+        <SectionTestimonials />
+      </Masthead>
       <SectionSimpleFeatures />
       <SectionBeautifulUI />
       <SectionSeamlessSync />
       <div className="section-get-now">
-        <SectionTestimonials />
         <SectionGetStarted />
       </div>
       <SectionWhoMadeIt />
