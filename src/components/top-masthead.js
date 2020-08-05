@@ -89,10 +89,16 @@ const TopMasthead = props => {
                         fluid={data.ss_windows_dark.childImageSharp.fluid}
                       />
                     )}
-                    {selectedPlatform === 'linux' && (
+                    {selectedPlatform === 'linux' && !darkThemeEnabled && (
                       <Img
                         className="screenshot screenshot-linux"
                         fluid={data.ss_linux.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'linux' && darkThemeEnabled && (
+                      <Img
+                        className="screenshot screenshot-linux"
+                        fluid={data.ss_linux_dark.childImageSharp.fluid}
                       />
                     )}
                     {selectedPlatform === 'ios' && (
@@ -157,6 +163,13 @@ const query = graphql`
       }
     }
     ss_linux: file(relativePath: { eq: "ss-linux-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_linux_dark: file(relativePath: { eq: "ss-linux-02.png" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
