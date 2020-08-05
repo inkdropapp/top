@@ -73,44 +73,44 @@ export default class TestimonialsSection extends React.Component {
                       {node.company && (
                         <span className="company">{node.company}</span>
                       )}
-                    </div>
-                    <div className="links">
-                      {node.homepage && (
-                        <a
-                          href={node.homepage}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="home icon" />
-                        </a>
-                      )}
-                      {node.twitter && (
-                        <a
-                          href={`https://twitter.com/${node.twitter}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="twitter icon" />
-                        </a>
-                      )}
-                      {node.github && (
-                        <a
-                          href={`https://github.com/${node.github}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="github icon" />
-                        </a>
-                      )}
-                      {node.facebook && (
-                        <a
-                          href={node.facebook}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <i className="facebook icon" />
-                        </a>
-                      )}
+                      <div className="links">
+                        {node.homepage && (
+                          <a
+                            href={node.homepage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="home icon" />
+                          </a>
+                        )}
+                        {node.twitter && (
+                          <a
+                            href={`https://twitter.com/${node.twitter}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="twitter icon" />
+                          </a>
+                        )}
+                        {node.github && (
+                          <a
+                            href={`https://github.com/${node.github}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="github icon" />
+                          </a>
+                        )}
+                        {node.facebook && (
+                          <a
+                            href={node.facebook}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <i className="facebook icon" />
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
