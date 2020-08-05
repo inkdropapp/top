@@ -26,6 +26,7 @@ const TopMasthead = props => {
       query={query}
       render={data => (
         <Masthead className="top-masthead">
+          {console.log('data:', data)}
           <Container>
             <h1>
               <span className="avoid-wrap">Organizing your</span>&nbsp;
@@ -101,16 +102,28 @@ const TopMasthead = props => {
                         fluid={data.ss_linux_dark.childImageSharp.fluid}
                       />
                     )}
-                    {selectedPlatform === 'ios' && (
+                    {selectedPlatform === 'ios' && !darkThemeEnabled && (
                       <Img
                         className="screenshot screenshot-ios"
                         fluid={data.ss_ios.childImageSharp.fluid}
                       />
                     )}
-                    {selectedPlatform === 'android' && (
+                    {selectedPlatform === 'ios' && darkThemeEnabled && (
+                      <Img
+                        className="screenshot screenshot-ios"
+                        fluid={data.ss_ios_dark.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'android' && !darkThemeEnabled && (
                       <Img
                         className="screenshot screenshot-android"
                         fluid={data.ss_android.childImageSharp.fluid}
+                      />
+                    )}
+                    {selectedPlatform === 'android' && darkThemeEnabled && (
+                      <Img
+                        className="screenshot screenshot-android"
+                        fluid={data.ss_android_dark.childImageSharp.fluid}
                       />
                     )}
                   </div>
@@ -183,7 +196,21 @@ const query = graphql`
         }
       }
     }
+    ss_ios_dark: file(relativePath: { eq: "ss-ios-02.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     ss_android: file(relativePath: { eq: "ss-android-01.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ss_android_dark: file(relativePath: { eq: "ss-android-02.png" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
