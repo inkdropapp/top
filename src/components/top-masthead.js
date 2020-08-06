@@ -10,6 +10,7 @@ import TryDemoButton from './try-demo-button'
 import Masthead from './masthead'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import ThemeSwitch from './theme-switch'
+import PerspectiveImage from './3d-perspective-image'
 
 const TopMasthead = props => {
   const { children } = props
@@ -66,66 +67,68 @@ const TopMasthead = props => {
                   </span>
                 </div>
                 */}
-                    {selectedPlatform === 'macos' && !darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-macos"
-                        fluid={data.ss_macOS.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'macos' && darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-macos"
-                        fluid={data.ss_macOS_dark.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'windows' && !darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-windows"
-                        fluid={data.ss_windows.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'windows' && darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-windows"
-                        fluid={data.ss_windows_dark.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'linux' && !darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-linux"
-                        fluid={data.ss_linux.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'linux' && darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-linux"
-                        fluid={data.ss_linux_dark.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'ios' && !darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-ios"
-                        fluid={data.ss_ios.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'ios' && darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-ios"
-                        fluid={data.ss_ios_dark.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'android' && !darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-android"
-                        fluid={data.ss_android.childImageSharp.fluid}
-                      />
-                    )}
-                    {selectedPlatform === 'android' && darkThemeEnabled && (
-                      <Img
-                        className="screenshot screenshot-android"
-                        fluid={data.ss_android_dark.childImageSharp.fluid}
-                      />
-                    )}
+                    <PerspectiveImage>
+                      {selectedPlatform === 'macos' && !darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-macos"
+                          fluid={data.ss_macOS.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'macos' && darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-macos"
+                          fluid={data.ss_macOS_dark.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'windows' && !darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-windows"
+                          fluid={data.ss_windows.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'windows' && darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-windows"
+                          fluid={data.ss_windows_dark.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'linux' && !darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-linux"
+                          fluid={data.ss_linux.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'linux' && darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-linux"
+                          fluid={data.ss_linux_dark.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'ios' && !darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-ios"
+                          fluid={data.ss_ios.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'ios' && darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-ios"
+                          fluid={data.ss_ios_dark.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'android' && !darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-android"
+                          fluid={data.ss_android.childImageSharp.fluid}
+                        />
+                      )}
+                      {selectedPlatform === 'android' && darkThemeEnabled && (
+                        <Img
+                          className="screenshot screenshot-android"
+                          fluid={data.ss_android_dark.childImageSharp.fluid}
+                        />
+                      )}
+                    </PerspectiveImage>
                   </div>
                 </div>
               </>
