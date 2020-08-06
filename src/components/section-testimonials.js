@@ -30,12 +30,10 @@ export default class TestimonialsSection extends React.Component {
       activeItem: people[idx]
     })
     this.startCarousel()
-    window.addEventListener('scroll', this.handlePageScroll)
   }
 
   componentWillUnmount() {
     this.stopCarousel()
-    window.removeEventListener('scroll', this.handlePageScroll)
   }
 
   startCarousel() {
@@ -153,26 +151,6 @@ export default class TestimonialsSection extends React.Component {
   handleClickItem = id => {
     this.setState({ activeItem: id })
     this.stopCarousel()
-  }
-
-  handlePageScroll = () => {
-    const scrollY = window.scrollY
-
-    if (!this.ticking) {
-      window.requestAnimationFrame(() => {
-        const el = document.querySelector('#testimonials')
-        const { top: bodyTop } = document.body.getBoundingClientRect()
-        const { top: elTop } = el.getBoundingClientRect()
-        const offY = elTop - bodyTop
-
-        if (scrollY > offY) {
-          this.stopCarousel()
-        }
-        this.ticking = false
-      })
-
-      this.ticking = true
-    }
   }
 
   selectReviewRandomly = () => {
