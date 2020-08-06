@@ -56,12 +56,14 @@ const ThreeDimensionalPerspectiveImage = props => {
   }, [])
 
   const handleMouseLeave = useCallback(() => {
-    const { current: elContainer } = refContainer
-    const imgs = elContainer.querySelectorAll('img')
+    window.requestAnimationFrame(() => {
+      const { current: elContainer } = refContainer
+      const imgs = elContainer.querySelectorAll('img')
 
-    imgs.forEach(img => {
-      img.style.transition = `all 0.2s linear`
-      img.style.transform = `rotateY(0deg) rotateX(0deg)`
+      imgs.forEach(img => {
+        img.style.transition = `all 0.2s linear`
+        img.style.transform = `rotateY(0deg) rotateX(0deg)`
+      })
     })
   }, [])
 
