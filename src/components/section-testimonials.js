@@ -29,15 +29,23 @@ export default class TestimonialsSection extends React.Component {
     this.setState({
       activeItem: people[idx]
     })
-    this.intervalId = setInterval(this.selectReviewRandomly, 5000)
+    this.startCarousel()
+    window.addEventListener('scroll', this.handlePageScroll)
   }
 
   componentWillUnmount() {
     this.stopCarousel()
+    window.removeEventListener('scroll', this.handlePageScroll)
+  }
+
+  startCarousel() {
+    if (this.intervalId) return
+    this.intervalId = setInterval(this.selectReviewRandomly, 5000)
   }
 
   stopCarousel() {
     clearInterval(this.intervalId)
+    this.intervalId = null
   }
 
   getImageWithId(images, id) {
@@ -145,6 +153,26 @@ export default class TestimonialsSection extends React.Component {
   handleClickItem = id => {
     this.setState({ activeItem: id })
     this.stopCarousel()
+  }
+
+  handlePageScroll = () => {
+    const scrollY = window.scrollY
+
+    if (!this.ticking) {
+      window.requestAnimationFrame(() => {
+        const el = document.querySelector('#testimonials')
+        const { top: bodyTop } = document.body.getBoundingClientRect()
+        const { top: elTop } = el.getBoundingClientRect()
+        const offY = elTop - bodyTop
+
+        if (scrollY > offY) {
+          this.stopCarousel()
+        }
+        this.ticking = false
+      })
+
+      this.ticking = true
+    }
   }
 
   selectReviewRandomly = () => {
