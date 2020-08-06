@@ -1,6 +1,7 @@
 import './3d-perspective-image.less'
 import React, { useCallback, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
+import { ReactComponent as TrianglesImage } from '../images/icons/bg-triangles.svg'
 
 let ticking = false
 
@@ -9,15 +10,14 @@ const ThreeDimensionalPerspectiveImage = props => {
 
   const transform3d = useCallback((rX, rY) => {
     const { current: elContainer } = refContainer
-    const imgs = elContainer.querySelectorAll('img')
-    imgs.forEach(img => {
-      img.style.transform = `rotateY(${rY}deg) rotateX(${-rX}deg)`
-    })
+    const elContent = elContainer.querySelector('.content')
+    elContent.style.transform = `rotateY(${rY}deg) rotateX(${-rX}deg)`
   })
 
   const handleMouseMove = useCallback(
     e => {
       if (!ticking) {
+        ticking = true
         window.requestAnimationFrame(() => {
           const { current: elContainer } = refContainer
           const {
@@ -40,8 +40,6 @@ const ThreeDimensionalPerspectiveImage = props => {
           transform3d(rX, rY)
           ticking = false
         })
-
-        ticking = true
       }
     },
     [transform3d]
@@ -49,21 +47,16 @@ const ThreeDimensionalPerspectiveImage = props => {
 
   const handleMouseEnter = useCallback(() => {
     const { current: elContainer } = refContainer
-    const imgs = elContainer.querySelectorAll('img')
-    imgs.forEach(img => {
-      img.style.transition = `all 0.05s linear`
-    })
+    const elContent = elContainer.querySelector('.content')
+    elContent.style.transition = `none`
   }, [])
 
   const handleMouseLeave = useCallback(() => {
     window.requestAnimationFrame(() => {
       const { current: elContainer } = refContainer
-      const imgs = elContainer.querySelectorAll('img')
-
-      imgs.forEach(img => {
-        img.style.transition = `all 0.2s linear`
-        img.style.transform = `rotateY(0deg) rotateX(0deg)`
-      })
+      const elContent = elContainer.querySelector('.content')
+      elContent.style.transition = `all 0.2s linear`
+      elContent.style.transform = `rotateY(0deg) rotateX(0deg)`
     })
   }, [])
 
@@ -83,7 +76,18 @@ const ThreeDimensionalPerspectiveImage = props => {
 
   return (
     <div ref={refContainer} className="perspective-image">
-      {props.children}
+      <div className="content">
+        <div className="bg-triangles">
+          <TrianglesImage />
+        </div>
+        <div className="bg-triangles bg-triangles-2">
+          <TrianglesImage />
+        </div>
+        <div className="bg-triangles bg-triangles-3">
+          <TrianglesImage />
+        </div>
+        {props.children}
+      </div>
     </div>
   )
 }
