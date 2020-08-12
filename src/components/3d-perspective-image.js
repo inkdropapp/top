@@ -79,7 +79,7 @@ const ThreeDimensionalPerspectiveImage = props => {
     }, [])
   } else {
     const tiltImages = useCallback(() => {
-      const pY = window.scrollY / window.innerHeight
+      const pY = window.scrollY / 800
       const rX = pY * 30 - 15
       const rY = pY * 30 - 15
       transform3d(rX, rY)
