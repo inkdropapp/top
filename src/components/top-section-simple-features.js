@@ -24,16 +24,11 @@ class SectionSimpleFeatures extends React.Component {
             <Container>
               <div className="ui stackable grid">
                 <div className="six wide column">
-                  <Img
-                    className="markdown-icon"
-                    fixed={data.md.childImageSharp.fixed}
-                  />
-                  <h2>Jot down your daily creating endeavors</h2>
+                  <h2>Clarify your thoughts fast, solve elegantly</h2>
                   <p>
-                    Your best work happens when tools stay out of the way. With
-                    a highly customizable Markdown editor, 100+ powerful plugins
-                    and themes, you can stay focused on taking notes about your
-                    work.
+                    Get a low-friction personal note-taking workflow and
+                    accomplish more. With your notes well-organized
+                    effortlessly, you can stay focused on doing your best work.
                   </p>
                 </div>
                 <div className="ten wide column">
@@ -49,19 +44,29 @@ class SectionSimpleFeatures extends React.Component {
               </div>
               <div className="ui stackable three column grid">
                 <div className="column">
-                  <h3>Bring your ideas to life</h3>
+                  <Img
+                    className="markdown-icon"
+                    fixed={data.md.childImageSharp.fixed}
+                  />
+                  <h3>A versatile Markdown editor</h3>
                   <p>
-                    From pixel-perfect icons and scalable vector graphics, to
-                    full user flows and interactive prototypes, Sketch is the
-                    perfect place to design, create, test and iterate.
+                    It comes with multi-language code highlighting,
+                    multi-cursors, line numbers, scrolling beyond the last line,
+                    showing invisible characters and more.
                   </p>
                 </div>
                 <div className="column">
-                  <h3>Build designs that scale</h3>
+                  <h3>Focus on the work that matters</h3>
                   <p>
-                    Lay the foundations for your product’s design system with
-                    reusable, responsive components that automatically scale to
-                    fit their content. Then update them everywhere in a click.
+                    An intuitive and clean user interface and &apos;Distraction
+                    free mode&apos; don&apos;t distract you from the text.
+                  </p>
+                </div>
+                <div className="column">
+                  <h3>Stay organized, find quickly</h3>
+                  <p>
+                    With nestable notebooks, pin-to-top, tags and workspace
+                    view, it allows you to flexibly organize your notes.
                   </p>
                 </div>
                 <div className="column">
