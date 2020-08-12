@@ -2,8 +2,11 @@ import './3d-perspective-image.less'
 import React, { useCallback, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { ReactComponent as TrianglesImage } from '../images/icons/bg-triangles.svg'
+import getPlatform from '../utils/platform'
 
 let ticking = false
+
+const isTouchDevice = ['ios', 'android'].indexOf(getPlatform()) >= 0
 
 const ThreeDimensionalPerspectiveImage = props => {
   const refContainer = useRef()
@@ -14,65 +17,91 @@ const ThreeDimensionalPerspectiveImage = props => {
     elContent.style.transform = `rotateY(${rY}deg) rotateX(${-rX}deg)`
   })
 
-  const handleMouseMove = useCallback(
-    e => {
-      if (!ticking) {
-        ticking = true
-        window.requestAnimationFrame(() => {
-          const { current: elContainer } = refContainer
-          const {
-            top: bodyTop,
-            left: bodyLeft
-          } = document.body.getBoundingClientRect()
-          const {
-            top: elTop,
-            left: elLeft
-          } = elContainer.getBoundingClientRect()
-          const offX = elLeft - bodyLeft
-          const offY = elTop - bodyTop
+  if (!isTouchDevice) {
+    const handleMouseMove = useCallback(
+      e => {
+        if (!ticking) {
+          ticking = true
+          window.requestAnimationFrame(() => {
+            const { current: elContainer } = refContainer
+            const {
+              top: bodyTop,
+              left: bodyLeft
+            } = document.body.getBoundingClientRect()
+            const {
+              top: elTop,
+              left: elLeft
+            } = elContainer.getBoundingClientRect()
+            const offX = elLeft - bodyLeft
+            const offY = elTop - bodyTop
 
-          var x = e.clientX - offX + 0
-          var y = e.clientY - offY + window.scrollY
+            var x = e.clientX - offX + 0
+            var y = e.clientY - offY + window.scrollY
 
-          var rY = map(x, 0, elContainer.clientWidth, -10, 10)
-          var rX = map(y, 0, elContainer.clientHeight, -10, 10)
+            var rY = map(x, 0, elContainer.clientWidth, -10, 10)
+            var rX = map(y, 0, elContainer.clientHeight, -10, 10)
 
-          transform3d(rX, rY)
-          ticking = false
-        })
-      }
-    },
-    [transform3d]
-  )
+            transform3d(rX, rY)
+            ticking = false
+          })
+        }
+      },
+      [transform3d]
+    )
 
-  const handleMouseEnter = useCallback(() => {
-    const { current: elContainer } = refContainer
-    const elContent = elContainer.querySelector('.content')
-    elContent.style.transition = `none`
-  }, [])
-
-  const handleMouseLeave = useCallback(() => {
-    window.requestAnimationFrame(() => {
+    const handleMouseEnter = useCallback(() => {
       const { current: elContainer } = refContainer
       const elContent = elContainer.querySelector('.content')
-      elContent.style.transition = `all 0.2s linear`
-      elContent.style.transform = `rotateY(0deg) rotateX(0deg)`
-    })
-  }, [])
+      elContent.style.transition = `none`
+    }, [])
 
-  useEffect(() => {
-    const { current: elContainer } = refContainer
-    if (elContainer) {
-      elContainer.addEventListener('mousemove', handleMouseMove)
-      elContainer.addEventListener('mouseenter', handleMouseEnter)
-      elContainer.addEventListener('mouseleave', handleMouseLeave)
-    }
-    return () => {
-      elContainer.removeEventListener('mousemove', handleMouseMove)
-      elContainer.removeEventListener('mouseenter', handleMouseEnter)
-      elContainer.removeEventListener('mouseleave', handleMouseLeave)
-    }
-  }, [])
+    const handleMouseLeave = useCallback(() => {
+      window.requestAnimationFrame(() => {
+        const { current: elContainer } = refContainer
+        const elContent = elContainer.querySelector('.content')
+        elContent.style.transition = `all 0.2s linear`
+        elContent.style.transform = `rotateY(0deg) rotateX(0deg)`
+      })
+    }, [])
+
+    useEffect(() => {
+      const { current: elContainer } = refContainer
+      if (elContainer) {
+        elContainer.addEventListener('mousemove', handleMouseMove)
+        elContainer.addEventListener('mouseenter', handleMouseEnter)
+        elContainer.addEventListener('mouseleave', handleMouseLeave)
+      }
+      return () => {
+        elContainer.removeEventListener('mousemove', handleMouseMove)
+        elContainer.removeEventListener('mouseenter', handleMouseEnter)
+        elContainer.removeEventListener('mouseleave', handleMouseLeave)
+      }
+    }, [])
+  } else {
+    const tiltImages = useCallback(() => {
+      const pY = window.scrollY / window.innerHeight
+      const rX = pY * 30 - 15
+      const rY = pY * 30 - 15
+      transform3d(rX, rY)
+    }, [])
+    const handleScroll = useCallback(() => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          tiltImages()
+          ticking = false
+        })
+
+        ticking = true
+      }
+    }, [])
+    useEffect(() => {
+      tiltImages()
+      window.addEventListener('scroll', handleScroll)
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }, [])
+  }
 
   return (
     <div ref={refContainer} className="perspective-image">
