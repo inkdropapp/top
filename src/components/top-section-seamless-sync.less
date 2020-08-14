@@ -1,3 +1,5 @@
+@import "../variables.less";
+
 section#seamless-sync {
   position: relative;
   padding-top: 3em;
@@ -5,6 +7,35 @@ section#seamless-sync {
   background-color: #7d6ae0;
   background-image: linear-gradient(180deg, #7d6ae0 0, #7298d9);
   text-align: center;
+
+  .masthead-image {
+    border: .5px solid #ffffff60;
+    border-radius: 8px;
+    margin: 2em 2em 4em 2em;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07);
+
+    @media (max-width: @tabletBreakpoint) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .description {
+    text-align: left;
+
+    .column.grid {
+      .column {
+        h3 {
+          font-weight: bold;
+          color: white;
+          margin-top: .3em;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 
   &:before {
     display: block;

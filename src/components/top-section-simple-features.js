@@ -70,11 +70,26 @@ class SectionSimpleFeatures extends React.Component {
                   </p>
                 </div>
                 <div className="column">
-                  <h3>Customise your workflow</h3>
+                  <h3>Get things done</h3>
                   <p>
-                    Choose from hundreds of plugins and integrations that let
-                    you do everything from animating interactions to designing
-                    with live data.
+                    Track your work progress with note status and task progress
+                    view in the note list.
+                  </p>
+                </div>
+                <div className="column">
+                  <h3>Share your work quickly with people</h3>
+                  <p>
+                    Your notes can be shared on the web with a public link. It
+                    also supports exporting as HTML, PDF and Markdown file
+                    format.
+                  </p>
+                </div>
+                <div className="column">
+                  <h3>Never miss your ideas</h3>
+                  <p>
+                    Whenever, even while in offline, you can read and write
+                    notes. Just open up the app, then it will be instantly ready
+                    for you to start jotting down before you forget the idea.
                   </p>
                 </div>
               </div>

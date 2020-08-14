@@ -1,9 +1,14 @@
 import './top-section-beautiful-ui.less'
 import { StaticQuery, graphql } from 'gatsby'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
 import BlockBadge from './block-badge'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import PerspectiveImage from './3d-perspective-image'
+import { ReactComponent as MarkdownRendererImage } from '../images/icons/markdown-extensions.svg'
+import { ReactComponent as KeyboardImage } from '../images/icons/keyboard.svg'
+import { ReactComponent as ThemesImage } from '../images/icons/themes.svg'
 
 const SectionBeautifulUI = () => (
   <StaticQuery
@@ -13,43 +18,76 @@ const SectionBeautifulUI = () => (
         <Container>
           <div className="ui stackable grid">
             <div className="ten wide column">
-              <Img
-                fluid={data.image01.childImageSharp.fluid}
-                alt="Beautiful UI"
-              />
+              <PerspectiveImage mode="scroll" name="hoge">
+                <Img
+                  fluid={data.image01.childImageSharp.fluid}
+                  alt="Beautiful UI"
+                />
+              </PerspectiveImage>
             </div>
             <div className="six wide column">
               <BlockBadge />
-              <h2 className="ui header">Clean, intuitive and beautiful</h2>
+              <h2 className="ui header">
+                Work with developer-focused features
+              </h2>
               <p>
-                Sophisticated UIs don&apos;t distract you from the text and come
-                with customizable themes including a dark theme for night owls.
+                With its high customizability, extensibility and 100+ plugins,
+                it will stick with your workflow and improve your productivity.
               </p>
             </div>
           </div>
           <div className="ui stackable three column grid">
             <div className="column">
-              <h3>Bring your ideas to life</h3>
+              <ThemesImage className="icon" />
+              <h3>Make it your notebook</h3>
               <p>
-                From pixel-perfect icons and scalable vector graphics, to full
-                user flows and interactive prototypes, Sketch is the perfect
-                place to design, create, test and iterate.
+                Pick your favorite look and feel from the themes. You can also
+                tweak your UI with CSS/Less to make it more comfortable for your
+                jottings.
               </p>
             </div>
             <div className="column">
-              <h3>Build designs that scale</h3>
+              <MarkdownRendererImage className="icon" />
+              <h3>Do even more with Markdown</h3>
               <p>
-                Lay the foundations for your product’s design system with
-                reusable, responsive components that automatically scale to fit
-                their content. Then update them everywhere in a click.
+                Not only GitHub-flavored Markdown, an extensible Markdown
+                renderer can support various flavors such as{' '}
+                <OutboundLink href="https://my.inkdrop.app/plugins/math">
+                  math
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink href="https://my.inkdrop.app/plugins/flowchart">
+                  flowchart
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink href="https://my.inkdrop.app/plugins/mermaid">
+                  mermaid
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink href="https://my.inkdrop.app/plugins/sequence-diagrams">
+                  sequence diagrams
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink href="https://my.inkdrop.app/plugins/toc">
+                  toc
+                </OutboundLink>
+                , and more.
               </p>
             </div>
             <div className="column">
-              <h3>Customise your workflow</h3>
+              <KeyboardImage className="icon" />
+              <h3>Type fluently in your way</h3>
               <p>
-                Choose from hundreds of plugins and integrations that let you do
-                everything from animating interactions to designing with live
-                data.
+                Keymaps are flexibly customizable to fit your typing
+                style.&nbsp;
+                <OutboundLink href="https://my.inkdrop.app/plugins/vim">
+                  Vim
+                </OutboundLink>
+                &nbsp;and&nbsp;
+                <OutboundLink href="https://my.inkdrop.app/plugins/emacs-keybindings">
+                  Emacs
+                </OutboundLink>
+                -like key bindings are also available to choose for wizards.
               </p>
             </div>
           </div>
@@ -63,7 +101,7 @@ export default SectionBeautifulUI
 
 const query = graphql`
   query {
-    image01: file(relativePath: { eq: "beautiful-ui.png" }) {
+    image01: file(relativePath: { eq: "ss-macos-04.png" }) {
       childImageSharp {
         fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid
