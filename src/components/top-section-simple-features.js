@@ -4,6 +4,7 @@ import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
 import Flickity from 'flickity'
+import gifLayout from '../images/feature-distraction-free.gif'
 
 class SectionSimpleFeatures extends React.Component {
   componentDidMount() {
@@ -45,8 +46,8 @@ class SectionSimpleFeatures extends React.Component {
               <div className="ui stackable three column grid">
                 <div className="column">
                   <Img
-                    className="markdown-icon"
-                    fixed={data.md.childImageSharp.fixed}
+                    className="feature-image"
+                    fixed={data.versatileEditor.childImageSharp.fixed}
                   />
                   <h3>A versatile Markdown editor</h3>
                   <p>
@@ -56,35 +57,97 @@ class SectionSimpleFeatures extends React.Component {
                   </p>
                 </div>
                 <div className="column">
+                  <img className="feature-image" src={gifLayout} />
                   <h3>Focus on the work that matters</h3>
                   <p>
-                    An intuitive and clean user interface and &apos;Distraction
-                    free mode&apos; don&apos;t distract you from the text.
+                    An intuitive and clean user interface and &apos;
+                    <a
+                      href="https://docs.inkdrop.app/manual/writing-note#distraction-free-mode"
+                      className="white bold underline link"
+                    >
+                      Distraction free mode
+                    </a>
+                    &apos; don&apos;t distract you from the text.
                   </p>
                 </div>
                 <div className="column">
+                  <Img
+                    className="feature-image"
+                    fixed={data.organize.childImageSharp.fixed}
+                  />
                   <h3>Stay organized, find quickly</h3>
                   <p>
-                    With nestable notebooks, pin-to-top, tags and workspace
-                    view, it allows you to flexibly organize your notes.
+                    With{' '}
+                    <a
+                      href="https://docs.inkdrop.app/manual/basic-usage#creating-new-note-and-notebook"
+                      className="white bold underline link"
+                    >
+                      nestable notebooks
+                    </a>
+                    ,{' '}
+                    <a
+                      href="https://docs.inkdrop.app/manual/pin-notes-to-top"
+                      className="white bold underline link"
+                    >
+                      pin-to-top
+                    </a>
+                    ,{' '}
+                    <a
+                      href="https://docs.inkdrop.app/manual/writing-note#tagging"
+                      className="white bold underline link"
+                    >
+                      tags
+                    </a>{' '}
+                    and{' '}
+                    <a
+                      href="https://docs.inkdrop.app/manual/navigating-notes#workspace-view"
+                      className="white bold underline link"
+                    >
+                      workspace view
+                    </a>
+                    , it allows you to flexibly organize your notes.
                   </p>
                 </div>
                 <div className="column">
+                  <Img
+                    className="feature-image"
+                    fixed={data.taskManagement.childImageSharp.fixed}
+                  />
                   <h3>Get things done</h3>
                   <p>
-                    Track your work progress with note status and task progress
-                    view in the note list.
+                    Track your work progress with{' '}
+                    <a
+                      className="white underline bold link"
+                      href="https://docs.inkdrop.app/manual/managing-tasks-with-status"
+                    >
+                      note status
+                    </a>{' '}
+                    and task progress view in the note list.
                   </p>
                 </div>
                 <div className="column">
+                  <Img
+                    className="feature-image"
+                    fixed={data.shareYourWork.childImageSharp.fixed}
+                  />
                   <h3>Share your work quickly with people</h3>
                   <p>
-                    Your notes can be shared on the web with a public link. It
-                    also supports exporting as HTML, PDF and Markdown file
+                    Your notes can be{' '}
+                    <a
+                      href="https://docs.inkdrop.app/manual/sharing-your-notes-on-the-web"
+                      className="white bold underline link"
+                    >
+                      shared on the web with a public link
+                    </a>
+                    . It also supports exporting as HTML, PDF and Markdown file
                     format.
                   </p>
                 </div>
                 <div className="column">
+                  <Img
+                    className="feature-image"
+                    fixed={data.offlineSupport.childImageSharp.fixed}
+                  />
                   <h3>Never miss your ideas</h3>
                   <p>
                     Whenever, even while in offline, you can read and write
@@ -94,65 +157,6 @@ class SectionSimpleFeatures extends React.Component {
                 </div>
               </div>
             </Container>
-            <div ref={el => (this.carouselRef = el)} className="carousel">
-              <div className="carousel-cell">
-                <Container>
-                  <Img
-                    fluid={data.image01.childImageSharp.fluid}
-                    alt="Robust editor"
-                  />
-                </Container>
-                <h3>
-                  <i className="write icon" />
-                  Robust editor
-                </h3>
-                <p className="ui text container">
-                  It comes with a highly customizable editor which lets you jot
-                  down in GitHub-flavored Markdown with code syntax
-                  highlightings support.
-                </p>
-              </div>
-              <div className="carousel-cell">
-                <Container>
-                  <Img
-                    fluid={data.image02.childImageSharp.fluid}
-                    alt="Keep it organized"
-                  />
-                </Container>
-                <h3>
-                  <i className="book icon" />
-                  Keep it organized
-                </h3>
-                <p className="ui text container">
-                  Nestable notebooks, tags and status help you quickly find and
-                  organize notes however you like.
-                </p>
-              </div>
-              <div className="carousel-cell plugins">
-                <Container>
-                  <Img
-                    fluid={data.image03.childImageSharp.fluid}
-                    alt="100+ Powerful plugins"
-                  />
-                </Container>
-                <h3>
-                  <i className="plug icon" />
-                  100+ Powerful Plugins
-                </h3>
-                <p className="ui text container">
-                  Plugins add new functionality or provide a new look to
-                  Inkdrop. vim, math, sequence-diagrams, and more!
-                  <br />
-                  <a
-                    className="ui rounded white button"
-                    href="https://my.inkdrop.app/plugins"
-                  >
-                    Explore plugins&nbsp;
-                    <i className="angle double right icon" />
-                  </a>
-                </p>
-              </div>
-            </div>
           </section>
         )}
       />
@@ -189,6 +193,41 @@ const query = graphql`
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    versatileEditor: file(relativePath: { eq: "feature-editor.png" }) {
+      childImageSharp {
+        fixed(width: 350) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    organize: file(relativePath: { eq: "feature-organize.png" }) {
+      childImageSharp {
+        fixed(width: 350) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    taskManagement: file(relativePath: { eq: "feature-task-management.png" }) {
+      childImageSharp {
+        fixed(width: 350) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    shareYourWork: file(relativePath: { eq: "feature-export-share.png" }) {
+      childImageSharp {
+        fixed(width: 350) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    offlineSupport: file(relativePath: { eq: "feature-offline.png" }) {
+      childImageSharp {
+        fixed(width: 350) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

@@ -27,7 +27,6 @@ const TopMasthead = props => {
       query={query}
       render={data => (
         <Masthead className="top-masthead">
-          {console.log('data:', data)}
           <Container>
             <h1>
               <span className="avoid-wrap">Organizing your</span>&nbsp;

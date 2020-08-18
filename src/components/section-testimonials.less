@@ -1,7 +1,18 @@
 @import "../variables.less";
 
 section#testimonials {
-  margin-top: 2rem;
+  &:before {
+    background-image: url(/section-separator-sync.svg);
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 7.77%;
+    top: -2px;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -.1875rem;
+  }
 
   h2 {
     text-align: left;

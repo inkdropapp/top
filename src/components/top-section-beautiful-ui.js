@@ -57,6 +57,15 @@ const SectionBeautifulUI = () => (
               <p>
                 <a
                   className="white link"
+                  href="https://my.inkdrop.app/plugins/theme"
+                >
+                  Browse themes&nbsp;
+                  <i className="angle double right icon" />
+                </a>
+              </p>
+              <p>
+                <a
+                  className="white link"
                   href="https://docs.inkdrop.app/manual/style-tweaks"
                 >
                   How to tweak styles&nbsp;
@@ -74,7 +83,7 @@ const SectionBeautifulUI = () => (
                   href="https://my.inkdrop.app/plugins/math"
                   className="underline link"
                 >
-                  math
+                  math (KaTeX)
                 </OutboundLink>
                 ,{' '}
                 <OutboundLink

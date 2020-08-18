@@ -67,6 +67,11 @@ section#simple-features {
 
   .three.column.grid {
     .column {
+      .feature-image {
+        border-radius: 12px;
+        width: 350px;
+        max-width: 100%;
+      }
       h3 {
         font-weight: bold;
         color: white;
@@ -75,56 +80,6 @@ section#simple-features {
       p {
         font-size: 1.2rem;
       }
-    }
-  }
-
-  .carousel {
-    display: none;
-    margin: 3rem 0 5rem 0;
-
-    .flickity-page-dots {
-      .dot {
-        background-color: transparent;
-        border: 2px solid white;
-        opacity: 1.0;
-
-        &.is-selected {
-          background-color: white;
-          border: none;
-        }
-      }
-    }
-
-    @media (max-width: @tabletBreakpoint - 1) {
-      .flickity-prev-prev-button, .flickity-prev-next-button {
-        display: none;
-      }
-    }
-  }
-
-  .carousel-cell {
-    width: 80vw;
-    margin-right: 10px;
-    border-radius: 5px;
-    max-width: 1024px;
-
-    h3 {
-      color: rgba(255,255,255,0.8);
-      font-size: 1.5rem;
-
-      .icon {
-        margin-right: 1rem;
-      }
-    }
-
-    p {
-      font-size: 1.3rem;
-      color: rgba(255,255,255,0.65);
-    }
-
-    .gatsby-image-wrapper {
-      max-width: 900px;
-      margin: 0 auto;
     }
   }
 }
