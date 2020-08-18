@@ -127,7 +127,7 @@ export default class TestimonialsSection extends React.Component {
             <section id="testimonials">
               <div className="ui text container">
                 <h2>
-                  TRUSTED BY DEVELOPERS AROUND THE WORLD
+                  Trusted by developers around the world
                   <Link className="ui rounded tiny button" to="/reviews">
                     See more
                     <i className="angle double right icon" />
