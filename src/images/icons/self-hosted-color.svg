@@ -1,0 +1,50 @@
+<svg id="Multicolor"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 112">
+  <defs>
+    <style>
+      .kls-1{fill:#e8f4fa60;}.kls-2{fill:#191816;opacity:0.15;}.kls-3{fill:#87898c;}.kls-4{fill:#bdbec0;}.kls-11,.kls-5{fill:none;}.kls-11,.kls-5,.kls-6,.kls-7{stroke:#191816;stroke-linejoin:round;}.kls-5,.kls-6,.kls-7{stroke-linecap:round;}.kls-6,.kls-9{fill:#ff8a14;}.kls-7{fill:#6dd627;}.kls-8{fill:#fff;}.kls-10{fill:#ffaa54;}
+      .cls-1{fill:#e8f4fa;}.cls-2,.cls-5{fill:#f0f0f0;}.cls-11,.cls-12,.cls-13,.cls-2,.cls-7,.cls-8{stroke:#191816;}.cls-13,.cls-2,.cls-7{stroke-linecap:round;}.cls-11,.cls-12,.cls-13,.cls-2,.cls-7{stroke-linejoin:round;}.cls-3{fill:#00b8f0;}.cls-4{fill:#4acfff;}.cls-13,.cls-6{fill:#fff;}.cls-12,.cls-7{fill:none;}.cls-8,.cls-9{fill:#ffcebf;}.cls-8{stroke-miterlimit:10;}.cls-10{fill:#ffb59e;}.cls-11{fill:#009fd9;}
+    </style>
+  </defs>
+  <title>61- cloud-server-upload</title>
+  <g id="Background">
+    <g id="New_Symbol_1-75" data-name="New Symbol 1">
+      <circle class="kls-1" cx="50" cy="56" r="40"/>
+    </g>
+  </g>
+  <g id="Server" transform="translate(0 -35)">
+    <ellipse class="kls-2" cx="50.16" cy="86.7" rx="14.4" ry="1.5"/>
+    <rect class="kls-3" x="36.5" y="61.5" width="27" height="24" rx="2" ry="2"/>
+    <path class="kls-4" d="M63.5,64h-27v-.5a2,2,0,0,1,2-2h23a2,2,0,0,1,2,2Z"/>
+    <line class="kls-5" x1="39.5" y1="81.5" x2="45.5" y2="81.5"/>
+    <line class="kls-5" x1="39.5" y1="73.5" x2="45.5" y2="73.5"/>
+    <line class="kls-5" x1="39.5" y1="65.5" x2="45.5" y2="65.5"/>
+    <circle class="kls-6" cx="60" cy="65.5" r="1.5"/>
+    <circle class="kls-7" cx="55" cy="65.5" r="1.5"/>
+    <circle class="kls-6" cx="60" cy="73.5" r="1.5"/>
+    <circle class="kls-7" cx="55" cy="73.5" r="1.5"/>
+    <circle class="kls-6" cx="60" cy="81.5" r="1.5"/>
+    <circle class="kls-7" cx="55" cy="81.5" r="1.5"/>
+    <path class="kls-5" d="M61.5,85.5h-23a2,2,0,0,1-2-2v-6h27v6A2,2,0,0,1,61.5,85.5Z"/>
+    <rect class="kls-5" x="36.5" y="69.5" width="27" height="8"/>
+    <path class="kls-5" d="M63.5,69.5h-27v-6a2,2,0,0,1,2-2h23a2,2,0,0,1,2,2Z"/>
+  </g>
+  <g id="Hand">
+    <path class="cls-8" d="M21.5,60.18c-.39-3.77,1-9,3.47-12.7a1.76,1.76,0,1,1,2.94,1.93c-2,3-3.21,7.46-2.91,10.4a1.76,1.76,0,1,1-3.5.37Z"/>
+    <path class="cls-9" d="M35.62,73.86a6.57,6.57,0,0,1,.15-3.46c2.34-7-.12-11.92-1.37-15.37a1.76,1.76,0,0,0-3.31,1.2c4.32,13.7-7.65,8.06-7.8-3.44,0-1.44,0-6.38,0-6.76a1.76,1.76,0,0,0-3.52,0c0,.38,0,5.3,0,6.69-.2,8.77,5.68,14.65,5.73,21.14Z"/>
+    <path class="cls-10" d="M25.5,73.86H35.62a6.57,6.57,0,0,1,.15-3.46c.2-.59.36-1.15.49-1.71a18.54,18.54,0,0,1-4.37.53A18.75,18.75,0,0,1,24,67.46,17.58,17.58,0,0,1,25.5,73.86Z"/>
+    <rect class="cls-11" x="27.48" y="72.76" width="6.16" height="13.64" rx="0.8" ry="0.8" transform="translate(-49.01 110.14) rotate(-90)"/>
+    <path class="cls-3" d="M24.62,76.5a.88.88,0,0,0-.88.88v4.4a.89.89,0,0,0,.88.88h1.32V76.5Z"/>
+    <rect class="cls-12" x="27.48" y="72.76" width="6.16" height="13.64" rx="0.8" ry="0.8" transform="translate(-49.01 110.14) rotate(-90)"/>
+    <path class="cls-13" d="M30,69.24h1.84a0,0,0,0,1,0,0V81.12a0,0,0,0,1,0,0H30a.8.8,0,0,1-.8-.8V70A.8.8,0,0,1,30,69.24Z" transform="translate(105.74 44.61) rotate(90)"/>
+    <path class="cls-7" d="M35.62,73.86a6.57,6.57,0,0,1,.15-3.46c2.34-7-.12-11.92-1.37-15.37a1.76,1.76,0,0,0-3.31,1.2c4.32,13.7-7.65,8.06-7.8-3.44,0-1.44,0-6.38,0-6.76a1.76,1.76,0,0,0-3.52,0c0,.38,0,5.3,0,6.69-.2,8.77,5.68,14.65,5.73,21.14Z"/>
+    <path class="cls-8" d="M80.48,60.18c.39-3.77-1-9-3.47-12.7a1.76,1.76,0,1,0-2.94,1.93c2,3,3.21,7.46,2.91,10.4a1.76,1.76,0,1,0,3.5.37Z"/>
+    <path class="cls-9" d="M66.35,73.86a6.47,6.47,0,0,0-.15-3.46c-2.33-7,.12-11.92,1.38-15.37a1.76,1.76,0,0,1,3.31,1.2c-4.33,13.7,7.65,8.06,7.8-3.44,0-1.44,0-6.38,0-6.76a1.76,1.76,0,1,1,3.52,0c0,.38,0,5.3,0,6.69.2,8.77-5.68,14.65-5.74,21.14Z"/>
+    <path class="cls-10" d="M76.47,73.86H66.35a6.47,6.47,0,0,0-.15-3.46c-.19-.59-.35-1.15-.48-1.71a18.48,18.48,0,0,0,4.37.53A18.75,18.75,0,0,0,78,67.46,17.59,17.59,0,0,0,76.47,73.86Z"/>
+    <rect class="cls-11" x="68.33" y="72.76" width="6.16" height="13.64" rx="0.8" ry="0.8" transform="translate(-8.16 150.99) rotate(-90)"/>
+    <path class="cls-3" d="M77.35,76.5a.87.87,0,0,1,.88.88v4.4a.88.88,0,0,1-.88.88H76V76.5Z"/>
+    <rect class="cls-12" x="68.33" y="72.76" width="6.16" height="13.64" rx="0.8" ry="0.8" transform="translate(-8.16 150.99) rotate(-90)"/>
+    <path class="cls-13" d="M70.89,69.24h1.84a0,0,0,0,1,0,0V81.12a0,0,0,0,1,0,0H70.89a.8.8,0,0,1-.8-.8V70A.8.8,0,0,1,70.89,69.24Z" transform="translate(146.59 3.76) rotate(90)"/>
+    <path class="cls-7" d="M66.35,73.86a6.47,6.47,0,0,0-.15-3.46c-2.33-7,.12-11.92,1.38-15.37a1.76,1.76,0,0,1,3.31,1.2c-4.33,13.7,7.65,8.06,7.8-3.44,0-1.44,0-6.38,0-6.76a1.76,1.76,0,1,1,3.52,0c0,.38,0,5.3,0,6.69.2,8.77-5.68,14.65-5.74,21.14Z"/>
+  </g>
+</svg>

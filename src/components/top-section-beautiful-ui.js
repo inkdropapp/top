@@ -34,6 +34,15 @@ const SectionBeautifulUI = () => (
                 With its high customizability, extensibility and 100+ plugins,
                 it will stick with your workflow and improve your productivity.
               </p>
+              <p>
+                <a
+                  className="ui white rounded button"
+                  href="https://my.inkdrop.app/plugins"
+                >
+                  Browse plugins&nbsp;
+                  <i className="angle double right icon" />
+                </a>
+              </p>
             </div>
           </div>
           <div className="ui stackable three column grid">
@@ -45,6 +54,15 @@ const SectionBeautifulUI = () => (
                 tweak your UI with CSS/Less to make it more comfortable for your
                 jottings.
               </p>
+              <p>
+                <a
+                  className="white link"
+                  href="https://docs.inkdrop.app/manual/style-tweaks"
+                >
+                  How to tweak styles&nbsp;
+                  <i className="angle double right icon" />
+                </a>
+              </p>
             </div>
             <div className="column">
               <MarkdownRendererImage className="icon" />
@@ -52,26 +70,50 @@ const SectionBeautifulUI = () => (
               <p>
                 Not only GitHub-flavored Markdown, an extensible Markdown
                 renderer can support various flavors such as{' '}
-                <OutboundLink href="https://my.inkdrop.app/plugins/math">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/math"
+                  className="underline link"
+                >
                   math
                 </OutboundLink>
                 ,{' '}
-                <OutboundLink href="https://my.inkdrop.app/plugins/flowchart">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/flowchart"
+                  className="underline link"
+                >
                   flowchart
                 </OutboundLink>
                 ,{' '}
-                <OutboundLink href="https://my.inkdrop.app/plugins/mermaid">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/mermaid"
+                  className="underline link"
+                >
                   mermaid
                 </OutboundLink>
                 ,{' '}
-                <OutboundLink href="https://my.inkdrop.app/plugins/sequence-diagrams">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/sequence-diagrams"
+                  className="underline link"
+                >
                   sequence diagrams
                 </OutboundLink>
                 ,{' '}
-                <OutboundLink href="https://my.inkdrop.app/plugins/toc">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/toc"
+                  className="underline link"
+                >
                   toc
                 </OutboundLink>
                 , and more.
+              </p>
+              <p>
+                <a
+                  className="white link"
+                  href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins"
+                >
+                  How to install plugins&nbsp;
+                  <i className="angle double right icon" />
+                </a>
               </p>
             </div>
             <div className="column">
@@ -80,14 +122,29 @@ const SectionBeautifulUI = () => (
               <p>
                 Keymaps are flexibly customizable to fit your typing
                 style.&nbsp;
-                <OutboundLink href="https://my.inkdrop.app/plugins/vim">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/vim"
+                  className="underline link"
+                >
                   Vim
                 </OutboundLink>
                 &nbsp;and&nbsp;
-                <OutboundLink href="https://my.inkdrop.app/plugins/emacs-keybindings">
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/emacs-keybindings"
+                  className="underline link"
+                >
                   Emacs
                 </OutboundLink>
                 -like key bindings are also available to choose for wizards.
+              </p>
+              <p>
+                <a
+                  className="white link"
+                  href="https://docs.inkdrop.app/manual/customizing-keybindings"
+                >
+                  How to customize keybindings&nbsp;
+                  <i className="angle double right icon" />
+                </a>
               </p>
             </div>
           </div>
