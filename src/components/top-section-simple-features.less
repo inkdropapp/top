@@ -51,17 +51,18 @@ section#simple-features {
   }
 
   .video-container {
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9*/
     position: relative;
+    overflow: hidden;
+    background: white;
 
-    iframe {
-      border: 0;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
+    border-radius: .2em;
+    box-shadow: rgba(84, 70, 35, 0.15) 0px 2px 8px, rgba(84, 70, 35, 0.15) 0px 1px 3px, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07), rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
+
+    video {
+      display: block;
       width: 100%;
+      height: auto;
     }
   }
 

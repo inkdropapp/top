@@ -1,6 +1,6 @@
 import './top-section-beautiful-ui.less'
 import { StaticQuery, graphql } from 'gatsby'
-import React, { useEffect } from 'react'
+import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
 import BlockBadge from './block-badge'
@@ -19,10 +19,14 @@ const SectionBeautifulUI = () => (
           <div className="ui stackable grid">
             <div className="ten wide column">
               <PerspectiveImage mode="scroll" name="hoge">
-                <Img
-                  fluid={data.image01.childImageSharp.fluid}
-                  alt="Beautiful UI"
-                />
+                <div className="video-container">
+                  <video autoPlay={true} playsInline={true} loop={true} muted>
+                    <source
+                      src="https://site-cdn.inkdrop.app/site/features/demo-plugins.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
               </PerspectiveImage>
             </div>
             <div className="six wide column">

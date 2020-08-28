@@ -34,12 +34,12 @@ class SectionSimpleFeatures extends React.Component {
                 </div>
                 <div className="ten wide column">
                   <div className="video-container">
-                    <iframe
-                      src="https://player.vimeo.com/video/186246591"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                    ></iframe>
+                    <video autoPlay controls playsInline loop muted>
+                      <source
+                        src="https://site-cdn.inkdrop.app/site/features/demo.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
                   </div>
                 </div>
               </div>
