@@ -2,7 +2,7 @@
   "name": "inkdrop-top",
   "private": true,
   "description": "Inkdrop Website",
-  "version": "0.1.0",
+  "version": "5.0.0",
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
