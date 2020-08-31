@@ -12,8 +12,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Footer from './footer'
 import SEO from './seo'
-import './layout.less'
 import 'semantic-ui-less/semantic.less'
+import './layout.less'
 
 const HeaderReferral = React.lazy(() => import('../components/header-referral'))
 
