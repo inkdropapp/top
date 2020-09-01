@@ -11,6 +11,7 @@
 - [Flickity](https://flickity.metafizzy.co/)
 - [Streamline Icons](streamlineicons.com)
 - [PurgeCSS](https://github.com/FullHuman/purgecss)
+- [Netlify](https://www.netlify.com/)
 - etc.
 
 ### Directory
