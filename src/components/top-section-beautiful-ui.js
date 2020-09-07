@@ -141,14 +141,21 @@ const SectionBeautifulUI = () => (
                 >
                   Vim
                 </OutboundLink>
-                &nbsp;and&nbsp;
+                ,&nbsp;
                 <OutboundLink
                   href="https://my.inkdrop.app/plugins/emacs-keybindings"
                   className="underline link"
                 >
                   Emacs
                 </OutboundLink>
-                -like key bindings are also available to choose for wizards.
+                , and&nbsp;
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/sublime"
+                  className="underline link"
+                >
+                  Sublime Text
+                </OutboundLink>
+                &nbsp;key bindings are also available to choose for wizards.
               </p>
               <p>
                 <a
