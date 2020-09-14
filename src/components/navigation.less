@@ -86,11 +86,13 @@
 
   &.visible {
     padding-bottom: 40px;
-    max-height: 370px;
+    max-height: 420px;
   }
 
   .item {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding: 0.6rem;
     color: #373e42;
     border-bottom: 1px solid rgba(0,0,0,0.06);
@@ -104,6 +106,14 @@
       float: right;
       opacity: 0.3;
       color: black;
+    }
+
+    > span {
+      flex: 1;
+    }
+
+    .svg-icon.left {
+      margin-right: .7rem;
     }
   }
 }

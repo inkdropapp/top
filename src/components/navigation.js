@@ -5,6 +5,16 @@ import Img from 'gatsby-image'
 import './navigation.less'
 import HamburgerMenuButton from './hamburger-menu-button'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { ReactComponent as LoginIcon } from '../images/icons/login.svg'
+import { ReactComponent as ArrowRightIcon } from '../images/icons/arrow-right.svg'
+import { ReactComponent as BlogIcon } from '../images/icons/blog.svg'
+import { ReactComponent as TwitterIcon } from '../images/icons/twitter.svg'
+import { ReactComponent as FAQIcon } from '../images/icons/faq.svg'
+import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
+import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
+import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
+import { ReactComponent as PluginsIcon } from '../images/icons/plugins.svg'
+import { ReactComponent as PricingIcon } from '../images/icons/pricing.svg'
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -79,6 +89,12 @@ class Navigation extends React.Component {
                     </OutboundLink>
                     <OutboundLink
                       className="item"
+                      href="https://discord.gg/QfsG5Kj"
+                    >
+                      Discord Community
+                    </OutboundLink>
+                    <OutboundLink
+                      className="item"
                       href="https://docs.inkdrop.app/faq"
                     >
                       FAQ
@@ -127,56 +143,71 @@ class Navigation extends React.Component {
             <div className="content">
               <Container text>
                 <Link className="item" to="/pricing">
-                  <i className="chevron right icon" />
-                  Pricing
+                  <PricingIcon className="svg-icon left" />
+                  <span>Pricing</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </Link>
                 <OutboundLink
                   href="https://my.inkdrop.app/plugins"
                   className="item"
                 >
-                  <i className="chevron right icon" />
-                  Plugins
+                  <PluginsIcon className="svg-icon left" />
+                  <span>Plugins</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item"
                   href="https://my.inkdrop.app/demo"
                 >
-                  <i className="chevron right icon" />
-                  Demo
+                  <DownloadIcon className="svg-icon left" />
+                  <span>Demo</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item"
                   href="https://forum.inkdrop.app/"
                 >
-                  <i className="chevron right icon" />
-                  User Forum
+                  <ForumIcon className="svg-icon left" />
+                  <span>User Forum</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://discord.gg/QfsG5Kj"
+                >
+                  <DiscordIcon className="svg-icon left" />
+                  <span>Discord Community</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item"
                   href="https://docs.inkdrop.app/faq"
                 >
-                  <i className="chevron right icon" />
-                  FAQ
+                  <FAQIcon className="svg-icon left" />
+                  <span>FAQ</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item"
                   href="https://twitter.com/inkdrop_app"
                 >
-                  <i className="chevron right icon" />
-                  Twitter
+                  <TwitterIcon className="svg-icon left" />
+                  <span>Twitter</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item"
                   href="https://blog.inkdrop.info/"
                 >
-                  <i className="chevron right icon" />
-                  Blog
+                  <BlogIcon className="svg-icon left" />
+                  <span>Blog</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
                   className="item login"
                   href="https://my.inkdrop.app/"
                 >
-                  <i className="sign in icon" />
+                  <LoginIcon className="svg-icon left" />
                   Log in
                 </OutboundLink>
               </Container>
