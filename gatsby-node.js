@@ -41,6 +41,7 @@ exports.sourceNodes = async ({
     `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/prodhacker`
   )
   for (const post of blogPosts.data.items) {
+    if (post.title.match(/DDoS/)) continue
     const nodeContent = JSON.stringify(post)
 
     const nodeMeta = {
