@@ -6,7 +6,7 @@
   "author": "Takuya Matsuyama <t@inkdrop.app>",
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "flickity": "^2.2.1",
     "gatsby": "^2.24.15",
     "gatsby-image": "^2.4.14",
