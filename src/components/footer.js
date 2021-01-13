@@ -25,7 +25,9 @@ const Footer = () => (
               </OutboundLink>
             </li>
             <li>
-              <a href="mailto:contact@inkdrop.app">Contact</a>
+              <OutboundLink href="https://docs.inkdrop.app/contact">
+                Contact
+              </OutboundLink>
             </li>
             <li>
               <OutboundLink
