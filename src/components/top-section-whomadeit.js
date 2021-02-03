@@ -44,7 +44,19 @@ export default class SectionWhoMadeIt extends Component {
                 </OutboundLink>
               </div>
             </Container>
-            <Container className="center aligned content stackable two column grid">
+            <Container className="center aligned content stackable three column grid">
+              <div className="column">
+                <div className="embed-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/vj723NlrIQc"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
               <div className="column">
                 <div className="embed-container">
                   <iframe
