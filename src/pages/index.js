@@ -10,14 +10,11 @@ import SectionBlogposts from '../components/section-blogposts'
 import SectionGetStarted from '../components/section-get-started'
 import SectionTestimonials from '../components/section-testimonials'
 import SectionWhoMadeIt from '../components/top-section-whomadeit'
-import TopWhatsNewInV5 from '../components/top-whats-new-in-v5'
 
 const IndexPage = () => (
   <Layout pageTitle="Inkdrop - Note-taking App with Robust Markdown Editor">
     <div className="main-content">
-      <Masthead>
-        <TopWhatsNewInV5 />
-      </Masthead>
+      <Masthead></Masthead>
       <SectionSimpleFeatures />
       <SectionBeautifulUI />
       <SectionSeamlessSync />
