@@ -188,7 +188,7 @@ const SectionBeautifulUI = () => (
                     Firefox
                   </OutboundLink>
                   &nbsp;let you grab the web page&apos;s main article or
-                  selection to stock knowledge on the internet.
+                  selection to store knowledge from the internet.
                 </p>
                 <p>
                   <a
