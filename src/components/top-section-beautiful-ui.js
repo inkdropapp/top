@@ -9,6 +9,7 @@ import PerspectiveImage from './3d-perspective-image'
 import { ReactComponent as MarkdownRendererImage } from '../images/icons/markdown-extensions.svg'
 import { ReactComponent as KeyboardImage } from '../images/icons/keyboard.svg'
 import { ReactComponent as ThemesImage } from '../images/icons/themes.svg'
+import { ReactComponent as WebClipperImage } from '../images/icons/web-clipper.svg'
 
 const SectionBeautifulUI = () => (
   <StaticQuery
@@ -49,123 +50,156 @@ const SectionBeautifulUI = () => (
               </p>
             </div>
           </div>
-          <div className="ui stackable three column grid">
-            <div className="column">
-              <ThemesImage className="icon" />
-              <h3>Make it your notebook</h3>
-              <p>
-                Pick your favorite look and feel from the themes. You can also
-                tweak your UI with CSS/Less to make it more comfortable for your
-                jottings.
-              </p>
-              <p>
-                <a
-                  className="white link"
-                  href="https://my.inkdrop.app/plugins/theme"
-                >
-                  Browse themes&nbsp;
-                  <i className="angle double right icon" />
-                </a>
-              </p>
-              <p>
-                <a
-                  className="white link"
-                  href="https://docs.inkdrop.app/manual/style-tweaks"
-                >
-                  How to tweak styles&nbsp;
-                  <i className="angle double right icon" />
-                </a>
-              </p>
-            </div>
-            <div className="column">
-              <MarkdownRendererImage className="icon" />
-              <h3>Do even more with Markdown</h3>
-              <p>
-                Not only GitHub-flavored Markdown, an extensible Markdown
-                renderer can support various flavors such as{' '}
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/math"
-                  className="underline link"
-                >
-                  math (KaTeX)
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/flowchart"
-                  className="underline link"
-                >
-                  flowchart
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/mermaid"
-                  className="underline link"
-                >
-                  mermaid
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/sequence-diagrams"
-                  className="underline link"
-                >
-                  sequence diagrams
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/toc"
-                  className="underline link"
-                >
-                  toc
-                </OutboundLink>
-                , and more.
-              </p>
-              <p>
-                <a
-                  className="white link"
-                  href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins"
-                >
-                  How to install plugins&nbsp;
-                  <i className="angle double right icon" />
-                </a>
-              </p>
-            </div>
-            <div className="column">
-              <KeyboardImage className="icon" />
-              <h3>Type fluently in your way</h3>
-              <p>
-                Keymaps are flexibly customizable to fit your typing
-                style.&nbsp;
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/vim"
-                  className="underline link"
-                >
-                  Vim
-                </OutboundLink>
-                ,&nbsp;
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/emacs-keybindings"
-                  className="underline link"
-                >
-                  Emacs
-                </OutboundLink>
-                , and&nbsp;
-                <OutboundLink
-                  href="https://my.inkdrop.app/plugins/sublime"
-                  className="underline link"
-                >
-                  Sublime Text
-                </OutboundLink>
-                &nbsp;key bindings are also available to choose for wizards.
-              </p>
-              <p>
-                <a
-                  className="white link"
-                  href="https://docs.inkdrop.app/manual/customizing-keybindings"
-                >
-                  How to customize keybindings&nbsp;
-                  <i className="angle double right icon" />
-                </a>
-              </p>
+          <div className="ui text container">
+            <div className="ui stackable two column grid">
+              <div className="column">
+                <ThemesImage className="icon" />
+                <h3>Make it your notebook</h3>
+                <p>
+                  Pick your favorite look and feel from the themes. You can also
+                  tweak your UI with CSS/Less to make it more comfortable for
+                  your jottings.
+                </p>
+                <p>
+                  <a
+                    className="white link"
+                    href="https://my.inkdrop.app/plugins/theme"
+                  >
+                    Browse themes&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </p>
+                <p>
+                  <a
+                    className="white link"
+                    href="https://docs.inkdrop.app/manual/style-tweaks"
+                  >
+                    How to tweak styles&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </p>
+              </div>
+              <div className="column">
+                <MarkdownRendererImage className="icon" />
+                <h3>Do even more with Markdown</h3>
+                <p>
+                  Not only GitHub-flavored Markdown, an extensible Markdown
+                  renderer can support various flavors such as{' '}
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/math"
+                    className="underline link"
+                  >
+                    math (KaTeX)
+                  </OutboundLink>
+                  ,{' '}
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/flowchart"
+                    className="underline link"
+                  >
+                    flowchart
+                  </OutboundLink>
+                  ,{' '}
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/mermaid"
+                    className="underline link"
+                  >
+                    mermaid
+                  </OutboundLink>
+                  ,{' '}
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/sequence-diagrams"
+                    className="underline link"
+                  >
+                    sequence diagrams
+                  </OutboundLink>
+                  ,{' '}
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/toc"
+                    className="underline link"
+                  >
+                    toc
+                  </OutboundLink>
+                  , and more.
+                </p>
+                <p>
+                  <a
+                    className="white link"
+                    href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins"
+                  >
+                    How to install plugins&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </p>
+              </div>
+              <div className="column">
+                <KeyboardImage className="icon" />
+                <h3>Type fluently in your way</h3>
+                <p>
+                  Keymaps are flexibly customizable to fit your typing
+                  style.&nbsp;
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/vim"
+                    className="underline link"
+                  >
+                    Vim
+                  </OutboundLink>
+                  ,&nbsp;
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/emacs-keybindings"
+                    className="underline link"
+                  >
+                    Emacs
+                  </OutboundLink>
+                  , and&nbsp;
+                  <OutboundLink
+                    href="https://my.inkdrop.app/plugins/sublime"
+                    className="underline link"
+                  >
+                    Sublime Text
+                  </OutboundLink>
+                  &nbsp;key bindings are also available to choose for wizards.
+                </p>
+                <p>
+                  <a
+                    className="white link"
+                    href="https://docs.inkdrop.app/manual/customizing-keybindings"
+                  >
+                    How to customize keybindings&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </p>
+              </div>
+              <div className="column">
+                <WebClipperImage className="icon" />
+                <h3>Clip web pages as Markdown</h3>
+                <p>
+                  The browser extensions for{' '}
+                  <OutboundLink
+                    href="https://chrome.google.com/webstore/detail/inkdrop-web-clipper/foeipofmnkjhlbojckgiecdffbfnnofj"
+                    className="underline link"
+                  >
+                    Google Chrome
+                  </OutboundLink>
+                  &nbsp; and&nbsp;
+                  <OutboundLink
+                    href="https://addons.mozilla.org/en-US/firefox/addon/inkdrop-web-clipper/"
+                    className="underline link"
+                  >
+                    Firefox
+                  </OutboundLink>
+                  &nbsp;let you grab the web page&apos;s main article or
+                  selection to stock knowledge on the internet.
+                </p>
+                <p>
+                  <a
+                    className="white link"
+                    href="https://docs.inkdrop.app/manual/clipping-web-pages-from-browser"
+                  >
+                    How to set up web clipper&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </Container>
