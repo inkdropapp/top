@@ -24,7 +24,7 @@ export default class GetNowSection extends Component {
                   </div>
 
                   <div className="twelve wide column get-started-message">
-                    <h2>Start your 60-day free trial</h2>
+                    <h2>Get started todaty</h2>
                     <h3>
                       Available on 5 platforms for just $4.16 per month (annual
                       billing). No credit card information required.

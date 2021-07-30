@@ -14,7 +14,7 @@ const SignupButton = () => {
       }`}
       className="ui button signup"
     >
-      Get started today
+      Start your 60-day free trial
     </OutboundLink>
   )
 }
