@@ -42,6 +42,7 @@ exports.sourceNodes = async ({
   )
   for (const post of blogPosts.data.items) {
     if (post.title.match(/DDoS/)) continue
+    if (post.title.match(/paternity/)) continue
     const nodeContent = JSON.stringify(post)
 
     const nodeMeta = {
