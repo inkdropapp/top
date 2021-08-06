@@ -108,7 +108,7 @@ class Navigation extends React.Component {
                     </OutboundLink>
                     <OutboundLink
                       className="item"
-                      href="https://blog.inkdrop.info/"
+                      href="https://blog.inkdrop.app/"
                     >
                       Blog
                     </OutboundLink>
@@ -197,7 +197,7 @@ class Navigation extends React.Component {
                 </OutboundLink>
                 <OutboundLink
                   className="item"
-                  href="https://blog.inkdrop.info/"
+                  href="https://blog.inkdrop.app/"
                 >
                   <BlogIcon className="svg-icon left" />
                   <span>Blog</span>

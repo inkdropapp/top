@@ -50,7 +50,7 @@ class SectionSimpleFeatures extends React.Component {
                       </OutboundLink>
                     </li>
                     <li>
-                      <OutboundLink href="https://blog.inkdrop.info/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
+                      <OutboundLink href="https://blog.inkdrop.app/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
                         Plugin developer license
                       </OutboundLink>
                     </li>
@@ -62,7 +62,7 @@ class SectionSimpleFeatures extends React.Component {
           <div className="section-read-blogpost">
             <p>
               If you are curious about our pricing, please read{' '}
-              <OutboundLink href="https://blog.inkdrop.info/why-inkdrop-is-a-subscription-app-beda29c507d5">
+              <OutboundLink href="https://blog.inkdrop.app/why-inkdrop-is-a-subscription-app-beda29c507d5">
                 my blog post
               </OutboundLink>{' '}
               for more detail.

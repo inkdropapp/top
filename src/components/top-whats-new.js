@@ -14,7 +14,7 @@ const TopWhatsNewInV5 = () => {
           className="top-featured-content"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://blog.inkdrop.info/introducing-inkdrop-v5-5dee5873f953"
+          href="https://blog.inkdrop.app/introducing-inkdrop-v5-5dee5873f953"
         >
           <Container text className="ui segment grid">
             <div className="seven wide column blurb-thumb">

@@ -40,7 +40,7 @@ const Footer = () => (
             </li>
             <li>
               <OutboundLink
-                href="https://blog.inkdrop.info"
+                href="https://blog.inkdrop.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >

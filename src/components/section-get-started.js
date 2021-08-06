@@ -42,7 +42,7 @@ export default class GetNowSection extends Component {
                         Educational discount
                       </OutboundLink>
                       &nbsp;&amp;&nbsp;
-                      <OutboundLink href="https://blog.inkdrop.info/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
+                      <OutboundLink href="https://blog.inkdrop.app/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
                         plugin developer license
                       </OutboundLink>
                     </div>
