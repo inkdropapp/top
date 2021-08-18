@@ -1,3 +1,4 @@
+const isDev = process.env.NODE_ENV === 'development'
 module.exports = {
   siteMetadata: {
     title: `Inkdrop`,
@@ -78,6 +79,25 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },
-    'gatsby-plugin-svgr'
+    'gatsby-plugin-svgr',
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        disableOnDev: false,
+        reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
+        mergeScriptHashes: true, // you can disable scripts sha256 hashes
+        mergeStyleHashes: true, // you can disable styles sha256 hashes
+        mergeDefaultDirectives: true,
+        directives: {
+          "script-src": `'self' *.inkdrop.app www.google-analytics.com${isDev ? " 'unsafe-eval'" : ""}`,
+          "style-src": "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
+          "img-src": "'self' data: *.inkdrop.app www.google-analytics.com *.medium.com",
+          "media-src": "'self' *.inkdrop.app",
+          "font-src": "'self' data: fonts.gstatic.com",
+          "frame-src": "www.youtube.com",
+          "connect-src": `'self'${isDev ? " localhost:* ws://localhost:*" : ""}`
+        }
+      }
+    }
   ]
 }
