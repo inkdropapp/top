@@ -85,11 +85,11 @@ module.exports = {
       options: {
         disableOnDev: false,
         reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
-        mergeScriptHashes: true, // you can disable scripts sha256 hashes
+        mergeScriptHashes: false, // you can disable scripts sha256 hashes
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "script-src": `'self' *.inkdrop.app www.google-analytics.com${isDev ? " 'unsafe-eval'" : ""}`,
+          "script-src": `'self' 'unsafe-inline' *.inkdrop.app www.google-analytics.com${isDev ? " 'unsafe-eval'" : ""}`,
           "style-src": "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
           "img-src": "'self' data: *.inkdrop.app www.google-analytics.com stats.g.doubleclick.net *.medium.com",
           "media-src": "'self' *.inkdrop.app",
