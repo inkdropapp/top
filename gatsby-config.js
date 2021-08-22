@@ -91,11 +91,11 @@ module.exports = {
         directives: {
           "script-src": `'self' *.inkdrop.app www.google-analytics.com${isDev ? " 'unsafe-eval'" : ""}`,
           "style-src": "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
-          "img-src": "'self' data: *.inkdrop.app www.google-analytics.com *.medium.com",
+          "img-src": "'self' data: *.inkdrop.app www.google-analytics.com stats.g.doubleclick.net *.medium.com",
           "media-src": "'self' *.inkdrop.app",
           "font-src": "'self' data: fonts.gstatic.com",
           "frame-src": "www.youtube.com",
-          "connect-src": `'self'${isDev ? " localhost:* ws://localhost:*" : ""}`
+          "connect-src": `'self' www.google-analytics.com stats.g.doubleclick.net ${isDev ? " localhost:* ws://localhost:*" : ""}`
         }
       }
     }
