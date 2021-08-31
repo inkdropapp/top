@@ -17,12 +17,16 @@ export default class Breadcrumb extends Component {
           <div className="ui breadcrumb">
             <Link to="/" className="section">
               <i className="home icon" />
-              Docs
+              Top
             </Link>
-            <i className="right chevron icon divider" />
-            <Link to={middleLevel.to} className="section">
-              {middleLevel.label}
-            </Link>
+            {middleLevel && (
+              <>
+                <i className="right chevron icon divider" />
+                <Link to={middleLevel.to} className="section">
+                  {middleLevel.label}
+                </Link>
+              </>
+            )}
             <i className="right chevron icon divider" />
             <div className="active section">{currentPageTitle}</div>
           </div>
