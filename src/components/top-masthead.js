@@ -1,4 +1,4 @@
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import React, { useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import './top-masthead.less'
@@ -68,102 +68,57 @@ const TopMasthead = props => {
                 </div>
                 */}
                     <PerspectiveImage>
-                      {selectedPlatform === 'macos' && !darkThemeEnabled && (
-                        <a
-                          href={data.ss_macOS.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                      <Link to="/gallery">
+                        {selectedPlatform === 'macos' && !darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-macos"
                             fluid={data.ss_macOS.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {selectedPlatform === 'macos' && darkThemeEnabled && (
-                        <a
-                          href={data.ss_macOS_dark.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {selectedPlatform === 'macos' && darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-macos"
                             fluid={data.ss_macOS_dark.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {isPCSelected && !darkThemeEnabled && (
-                        <a
-                          href={data.ss_windows.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {isPCSelected && !darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-windows"
                             fluid={data.ss_windows.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {isPCSelected && darkThemeEnabled && (
-                        <a
-                          href={data.ss_windows_dark.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {isPCSelected && darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-windows"
                             fluid={data.ss_windows_dark.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {selectedPlatform === 'ios' && !darkThemeEnabled && (
-                        <a
-                          href={data.ss_ios.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {selectedPlatform === 'ios' && !darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-ios"
                             fluid={data.ss_ios.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {selectedPlatform === 'ios' && darkThemeEnabled && (
-                        <a
-                          href={data.ss_ios_dark.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {selectedPlatform === 'ios' && darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-ios"
                             fluid={data.ss_ios_dark.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
-                      {selectedPlatform === 'android' && !darkThemeEnabled && (
-                        <a
-                          href={data.ss_android.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Img
-                            className="screenshot screenshot-android"
-                            fluid={data.ss_android.childImageSharp.fluid}
-                          />
-                        </a>
-                      )}
-                      {selectedPlatform === 'android' && darkThemeEnabled && (
-                        <a
-                          href={data.ss_android_dark.childImageSharp.fluid.src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        )}
+                        {selectedPlatform === 'android' &&
+                          !darkThemeEnabled && (
+                            <Img
+                              className="screenshot screenshot-android"
+                              fluid={data.ss_android.childImageSharp.fluid}
+                            />
+                          )}
+                        {selectedPlatform === 'android' && darkThemeEnabled && (
                           <Img
                             className="screenshot screenshot-android"
                             fluid={data.ss_android_dark.childImageSharp.fluid}
                           />
-                        </a>
-                      )}
+                        )}
+                      </Link>
                     </PerspectiveImage>
                   </div>
                 </div>

@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import Breadcrumb from '../components/breadcrumb'
 import GalleryItem from '../components/gallery-item'
+import SectionGetStarted from '../components/section-get-started'
 
 const GalleryPage = () => {
   const baseThemeUrl = 'https://my.inkdrop.app/plugins/'
@@ -21,6 +22,12 @@ const GalleryPage = () => {
                   <img src="/color-brush.svg" alt="Color brush" width={24} />
                 </div>
                 <h1>Find your favorite flavor.</h1>
+                <div>
+                  <a href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins#change-themes">
+                    How to change themes?&nbsp;
+                    <i className="angle double right icon" />
+                  </a>
+                </div>
               </div>
               <div className="ui stackable two column grid">
                 <div className="row">
@@ -86,8 +93,27 @@ const GalleryPage = () => {
                     previewTheme="material-ocean-preview"
                     img={data.materialOcean.childImageSharp.fluid}
                   />
+                  <div className="column gallery-explore-more">
+                    <div>
+                      <a
+                        className="ui primary rounded button"
+                        href="https://my.inkdrop.app/plugins/theme"
+                      >
+                        Explore more themes
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        className="ui rounded button"
+                        href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins#change-themes"
+                      >
+                        How to change themes
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <SectionGetStarted />
             </div>
           </div>
         </Layout>
