@@ -56,6 +56,8 @@ const GalleryPage = () => {
                     syntaxTheme="horizon-dark-syntax"
                     previewTheme="horizon-dark-preview"
                     img={data.horizonDark.childImageSharp.fluid}
+                    authorName="Camden DeVoogd"
+                    authorId="cdevoogd"
                   />
                 </div>
                 <div className="row">
@@ -64,12 +66,16 @@ const GalleryPage = () => {
                     syntaxTheme="bera-light-syntax"
                     previewTheme="bera-preview"
                     img={data.beraLight.childImageSharp.fluid}
+                    authorName="Taylan Tatlı"
+                    authorId="TaylanTatli"
                   />
                   <GalleryItem
                     uiTheme="nord-ui"
                     syntaxTheme="nord-syntax"
                     previewTheme="nord-preview"
                     img={data.nord.childImageSharp.fluid}
+                    authorName="choco"
+                    authorId="choco14t"
                   />
                 </div>
                 <div className="row">
@@ -78,12 +84,16 @@ const GalleryPage = () => {
                     syntaxTheme="octopus-dark-syntax"
                     previewTheme="octopus-dark-preview"
                     img={data.octopusDark.childImageSharp.fluid}
+                    authorName="Peter Bartha"
+                    authorId="peterbartha"
                   />
                   <GalleryItem
                     uiTheme="night-owl-dark-ui"
                     syntaxTheme="night-owl-syntax"
                     previewTheme="night-owl-preview"
                     img={data.nightOwl.childImageSharp.fluid}
+                    authorName="Sami Korpela"
+                    authorId="skipadu"
                   />
                 </div>
                 <div className="row">
@@ -92,6 +102,8 @@ const GalleryPage = () => {
                     syntaxTheme="material-ocean-syntax"
                     previewTheme="material-ocean-preview"
                     img={data.materialOcean.childImageSharp.fluid}
+                    authorName="Abubakar Yagoub"
+                    authorId="Blacksuan19"
                   />
                   <div className="column gallery-explore-more">
                     <div>
@@ -108,6 +120,14 @@ const GalleryPage = () => {
                         href="https://docs.inkdrop.app/manual/extend-inkdrop-with-plugins#change-themes"
                       >
                         How to change themes
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        className="ui rounded button"
+                        href="https://docs.inkdrop.app/manual/creating-a-theme"
+                      >
+                        Create your own theme
                       </a>
                     </div>
                   </div>

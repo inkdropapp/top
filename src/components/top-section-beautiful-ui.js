@@ -1,5 +1,5 @@
 import './top-section-beautiful-ui.less'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Img from 'gatsby-image'
@@ -61,13 +61,10 @@ const SectionBeautifulUI = () => (
                   your jottings.
                 </p>
                 <p>
-                  <a
-                    className="white link"
-                    href="https://my.inkdrop.app/plugins/theme"
-                  >
+                  <Link className="white link" to="/gallery">
                     Browse themes&nbsp;
                     <i className="angle double right icon" />
-                  </a>
+                  </Link>
                 </p>
                 <p>
                   <a
