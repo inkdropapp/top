@@ -15,11 +15,21 @@ function convertUserFriendlyName(name) {
 
 const GalleryItem = props => {
   const baseThemeUrl = 'https://my.inkdrop.app/plugins/'
-  const { uiTheme, syntaxTheme, previewTheme, img, authorName, authorId } =
-    props
+  const {
+    uiTheme,
+    syntaxTheme,
+    previewTheme,
+    additionalPlugin,
+    img,
+    authorName,
+    authorId,
+    onClick
+  } = props
   return (
     <div className="column">
-      <Img className="gallery-screenshot" fluid={img} />
+      <div onClick={onClick}>
+        <Img className="gallery-screenshot" fluid={img} />
+      </div>
       <div className="theme-information">
         {uiTheme.indexOf('default') >= 0 ? (
           convertUserFriendlyName(uiTheme)
@@ -36,13 +46,25 @@ const GalleryItem = props => {
             {convertUserFriendlyName(syntaxTheme)}
           </a>
         )}
-        &nbsp;+&nbsp;
-        {previewTheme.indexOf('github-preview') >= 0 ? (
-          convertUserFriendlyName(previewTheme)
-        ) : (
-          <a href={`${baseThemeUrl}${previewTheme}`}>
-            {convertUserFriendlyName(previewTheme)}
-          </a>
+        {previewTheme && (
+          <>
+            &nbsp;+&nbsp;
+            {previewTheme.indexOf('github-preview') >= 0 ? (
+              convertUserFriendlyName(previewTheme)
+            ) : (
+              <a href={`${baseThemeUrl}${previewTheme}`}>
+                {convertUserFriendlyName(previewTheme)}
+              </a>
+            )}
+          </>
+        )}
+        {additionalPlugin && (
+          <>
+            &nbsp;+&nbsp;
+            <a href={`${baseThemeUrl}${additionalPlugin}`}>
+              {convertUserFriendlyName(additionalPlugin)}
+            </a>
+          </>
         )}
         {authorId && (
           <div className="theme-author">
