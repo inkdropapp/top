@@ -55,7 +55,7 @@ const GalleryPage = () => {
                     previewTheme="github-preview"
                     img={data.defaultDark.childImageSharp.fluid}
                     onClick={() =>
-                      handleItemClick(data.defaultLight.childImageSharp.fluid)
+                      handleItemClick(data.defaultDark.childImageSharp.fluid)
                     }
                   />
                 </div>
