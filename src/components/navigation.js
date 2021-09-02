@@ -10,11 +10,13 @@ import { ReactComponent as ArrowRightIcon } from '../images/icons/arrow-right.sv
 import { ReactComponent as BlogIcon } from '../images/icons/blog.svg'
 import { ReactComponent as TwitterIcon } from '../images/icons/twitter.svg'
 import { ReactComponent as FAQIcon } from '../images/icons/faq.svg'
+import { ReactComponent as HelpIcon } from '../images/icons/help-wheel.svg'
 import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
 import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
 import { ReactComponent as PluginsIcon } from '../images/icons/plugins.svg'
 import { ReactComponent as PricingIcon } from '../images/icons/pricing.svg'
+import { ReactComponent as GalleryIcon } from '../images/icons/gallery.svg'
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -69,34 +71,43 @@ class Navigation extends React.Component {
                   More
                   <i className="dropdown icon" />
                   <div className="menu">
+                    <Link className="item" to="/gallery">
+                      <GalleryIcon className="svg-icon left icon" />
+                      Gallery
+                    </Link>
                     <OutboundLink
                       className="item"
                       href="https://my.inkdrop.app/demo"
                     >
+                      <DownloadIcon className="svg-icon left icon" />
                       Demo
                     </OutboundLink>
                     <OutboundLink
                       className="item"
                       href="https://docs.inkdrop.app/"
                     >
+                      <HelpIcon className="svg-icon left icon" />
                       Documentation
                     </OutboundLink>
                     <OutboundLink
                       className="item"
                       href="https://forum.inkdrop.app/"
                     >
+                      <ForumIcon className="svg-icon left icon" />
                       User Forum
                     </OutboundLink>
                     <OutboundLink
                       className="item"
                       href="https://discord.gg/QfsG5Kj"
                     >
+                      <DiscordIcon className="svg-icon left icon" />
                       Discord Community
                     </OutboundLink>
                     <OutboundLink
                       className="item"
                       href="https://docs.inkdrop.app/faq"
                     >
+                      <FAQIcon className="svg-icon left icon" />
                       FAQ
                     </OutboundLink>
                     <div className="divider" />
@@ -104,12 +115,14 @@ class Navigation extends React.Component {
                       className="item"
                       href="https://twitter.com/inkdrop_app"
                     >
+                      <TwitterIcon className="svg-icon left icon" />
                       Twitter
                     </OutboundLink>
                     <OutboundLink
                       className="item"
                       href="https://blog.inkdrop.app/"
                     >
+                      <BlogIcon className="svg-icon left icon" />
                       Blog
                     </OutboundLink>
                   </div>
@@ -155,6 +168,11 @@ class Navigation extends React.Component {
                   <span>Plugins</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
+                <Link className="item" to="/gallery">
+                  <GalleryIcon className="svg-icon left" />
+                  <span>Gallery</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
+                </Link>
                 <OutboundLink
                   className="item"
                   href="https://my.inkdrop.app/demo"
@@ -195,10 +213,7 @@ class Navigation extends React.Component {
                   <span>Twitter</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
-                <OutboundLink
-                  className="item"
-                  href="https://blog.inkdrop.app/"
-                >
+                <OutboundLink className="item" href="https://blog.inkdrop.app/">
                   <BlogIcon className="svg-icon left" />
                   <span>Blog</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
