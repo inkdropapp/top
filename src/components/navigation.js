@@ -11,7 +11,6 @@ import { ReactComponent as BlogIcon } from '../images/icons/blog.svg'
 import { ReactComponent as TwitterIcon } from '../images/icons/twitter.svg'
 import { ReactComponent as FAQIcon } from '../images/icons/faq.svg'
 import { ReactComponent as HelpIcon } from '../images/icons/help-wheel.svg'
-import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
 import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
 import { ReactComponent as PluginsIcon } from '../images/icons/plugins.svg'
@@ -95,13 +94,6 @@ class Navigation extends React.Component {
                     >
                       <ForumIcon className="svg-icon left icon" />
                       User Forum
-                    </OutboundLink>
-                    <OutboundLink
-                      className="item"
-                      href="https://discord.gg/QfsG5Kj"
-                    >
-                      <DiscordIcon className="svg-icon left icon" />
-                      Discord Community
                     </OutboundLink>
                     <OutboundLink
                       className="item"
