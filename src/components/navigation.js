@@ -183,14 +183,6 @@ class Navigation extends React.Component {
                 </OutboundLink>
                 <OutboundLink
                   className="item"
-                  href="https://discord.gg/QfsG5Kj"
-                >
-                  <DiscordIcon className="svg-icon left" />
-                  <span>Discord Community</span>
-                  <ArrowRightIcon className="svg-icon right aligned" />
-                </OutboundLink>
-                <OutboundLink
-                  className="item"
                   href="https://docs.inkdrop.app/faq"
                 >
                   <FAQIcon className="svg-icon left" />
