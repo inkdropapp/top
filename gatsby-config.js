@@ -89,13 +89,19 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "script-src": `'self' 'unsafe-inline' *.inkdrop.app www.google-analytics.com${isDev ? " 'unsafe-eval'" : ""}`,
-          "style-src": "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
-          "img-src": "'self' data: *.inkdrop.app www.google-analytics.com stats.g.doubleclick.net *.medium.com",
-          "media-src": "'self' *.inkdrop.app",
-          "font-src": "'self' data: fonts.gstatic.com",
-          "frame-src": "www.youtube.com",
-          "connect-src": `'self' www.google-analytics.com stats.g.doubleclick.net ${isDev ? " localhost:* ws://localhost:*" : ""}`
+          'script-src': `'self' 'unsafe-inline' *.inkdrop.app www.google-analytics.com${
+            isDev ? " 'unsafe-eval'" : ''
+          }`,
+          'style-src':
+            "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
+          'img-src':
+            "'self' data: *.inkdrop.app www.google-analytics.com stats.g.doubleclick.net *.medium.com",
+          'media-src': "'self' *.inkdrop.app",
+          'font-src': "'self' data: fonts.gstatic.com",
+          'frame-src': 'www.youtube.com',
+          'connect-src': `'self' api.inkdrop.app www.google-analytics.com stats.g.doubleclick.net ${
+            isDev ? ' localhost:* ws://localhost:*' : ''
+          }`
         }
       }
     }
