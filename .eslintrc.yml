@@ -1,15 +1,14 @@
 root: true
 extends:
-  - plugin:prettier/recommended
+  - prettier
   - plugin:react/recommended
-parser: babel-eslint
+parser: "@babel/eslint-parser"
 settings:
   react:
-    version: "16.8"
+    version: "17.0.2"
 env:
   browser: true
   es6: true
-  mocha: true
   node: true
 globals:
   __PATH_PREFIX__: true

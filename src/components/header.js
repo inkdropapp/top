@@ -3,7 +3,7 @@ import React from 'react'
 import './header.less'
 import Navigation from './navigation'
 
-const Header = ({ siteTitle }) => (
+const Header = (/*{ siteTitle }*/) => (
   <header className="app--header">
     <Navigation />
   </header>

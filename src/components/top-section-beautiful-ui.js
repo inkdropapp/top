@@ -2,7 +2,6 @@ import './top-section-beautiful-ui.less'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import Img from 'gatsby-image'
 import BlockBadge from './block-badge'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import PerspectiveImage from './3d-perspective-image'
@@ -14,7 +13,7 @@ import { ReactComponent as WebClipperImage } from '../images/icons/web-clipper.s
 const SectionBeautifulUI = () => (
   <StaticQuery
     query={query}
-    render={data => (
+    render={_data => (
       <section id="beautiful-ui">
         <Container>
           <div className="ui stackable grid">

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import './top-section-whomadeit.less'
-import Img from 'gatsby-image'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import BlockBadge from './block-badge'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
@@ -11,7 +10,7 @@ export default class SectionWhoMadeIt extends Component {
     return (
       <StaticQuery
         query={query}
-        render={data => (
+        render={_data => (
           <section id="whomadeit">
             <Container>
               <BlockBadge center />

@@ -2,7 +2,6 @@ import './gallery.less'
 import { StaticQuery, graphql } from 'gatsby'
 import React, { useState, useCallback } from 'react'
 import Layout from '../components/layout'
-import Img from 'gatsby-image'
 import Breadcrumb from '../components/breadcrumb'
 import GalleryItem from '../components/gallery-item'
 import GalleryZoomView from '../components/gallery-zoom-view'
@@ -10,7 +9,6 @@ import SectionGetStarted from '../components/section-get-started'
 
 const GalleryPage = () => {
   const [zoomImage, setZoomImage] = useState(null)
-  const baseThemeUrl = 'https://my.inkdrop.app/plugins/'
   const handleItemClick = useCallback(img => {
     setZoomImage(img)
   }, [])

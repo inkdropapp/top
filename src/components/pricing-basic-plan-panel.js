@@ -1,5 +1,4 @@
 import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import PlanPanel from './pricing-plan-panel'
@@ -14,7 +13,7 @@ export default class BasicPlanPanel extends Component {
     return (
       <StaticQuery
         query={query}
-        render={data => (
+        render={_data => (
           <PlanPanel>
             <h3 className="plan">Basic Plan</h3>
             <div className="ui divider" />
