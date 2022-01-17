@@ -6,10 +6,10 @@ import Img from 'gatsby-image'
 import shuffle from 'shuffle-array'
 
 export default class TestimonialsSection extends React.Component {
-  getImageWithId(images, id) {
+  getImageWithId(images, postId) {
     for (const item of images) {
       const { node: img } = item
-      if (img.name === id) {
+      if (img.name === postId) {
         return img
       }
     }
@@ -25,7 +25,8 @@ export default class TestimonialsSection extends React.Component {
           const { edges: testimonials } = data.allYaml
           const items = shuffle(testimonials).map(item => {
             const { node } = item
-            const img = this.getImageWithId(images, node.id)
+            const img = this.getImageWithId(images, node.postId)
+            console.log('ITEM:', node, images)
 
             return (
               <div key={node.id} className="review-item">
@@ -130,6 +131,7 @@ const query = graphql`
       edges {
         node {
           id
+          postId
           name
           company
           title

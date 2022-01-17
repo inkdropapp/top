@@ -1,5 +1,5 @@
 -
-  id: roberto
+  postId: roberto
   name: Roberto Marra
   company: Exovoid sàrl
   twitter: shagan
@@ -8,18 +8,18 @@
 
     Reliable app, I use it every day.
 -
-  id: ben
+  postId: ben
   name: Ben Holub
   comment: |
     This app is amazing. I was previously trying to use a convoluted sublime text + git method, only to find that this app had ALL of the functionality I was looking for... plus mobile!
 -
-  id: nicolo
+  postId: nicolo
   name: Nicolo
   company: pitsch-ing.ch
   comment: |
     I use Inkdrop mainly for professional purposes. My requirements are met at 100%: pure Markdown syntax/content, good structure for content organiziation (nested categories and Tags), strong search function and local backup in readable data-format. Last but not least the UI looks good.
 -
-  id: philip
+  postId: philip
   name: Philip Poots
   company: ClubCollect
   title: VP of Engineering
@@ -27,13 +27,13 @@
   comment: |
     Inkdrop is the perfect tool for offline Markdown editing.
 -
-  id: julio
+  postId: julio
   name: Julio Venegas
   title: Data Analyst
   comment: |
     I was looking for a note-taking tool in Markdown that nails the basics for a professional setting (clean interface, support for code snippets, export of .md files) and Inkdrop covers everything. The tool of course has some issues but it is continuously being improved, and I will definitely support the project in the long-run. Can only recommend!
 -
-  id: alfredo
+  postId: alfredo
   name: Alfredo Fialho
   company: Vobys
   title: Computer Scientist
@@ -41,7 +41,7 @@
   comment: |
     Finally an app able to meet my needs as a developer. Simple, efficient, and dot!
 -
-  id: reilly
+  postId: reilly
   name: Reilly Chase
   company: HostiFi
   title: Founder
@@ -52,34 +52,34 @@
   comment: |
     I just wanted to be able to sync notes from my iPhone to my Windows laptop. Organizing them with labels, notebooks, markdown, and supporting a fellow indie developer were all a bonus. I love Inkdrop and use it every day. Highly recommend!
 -
-  id: bertrand
+  postId: bertrand
   name: B Bascary
   company: Waycom
   title: CTO
   comment: |
     Well designed and efficient, the best note taking application I found over the time. Themes are convenient, tags and notebooks have become a must for me, and sync is working smoothly between windows, linux and my smartphone. Inkdrop has really become my personal notebook.
 -
-  id: marcus
+  postId: marcus
   name: Marcus
   comment: |
     Inkdrop is the tool I use to keep track of nearly all aspects of my personal and professional life. I’ve tried many other note-taking apps over the years, this is the first one that’s stuck. Great performance and syncs across all devices seamlessly.
 -
-  id: artem
+  postId: artem
   name: Artem B.
   comment: |
     Simple, powerful, and works seamlessly across all my platforms and devices.
 -
-  id: ben2
+  postId: ben2
   name: Ben Samuel
   comment: |
     I tried a number of apps; taking notes is so specific to the writer. Inkdrop started off with a smart design, but Takuya is also dialed in to his users' needs so I've got confidence going forward.
 -
-  id: james
+  postId: james
   name: James Lilliott
   comment: |
     Fast, intuitive, & customisable, combined with frequent updates & a developer that listens. Theses are the reasons Inkdrop is one of my most used applications for personal & professional use.
 -
-  id: pavel
+  postId: pavel
   name: Pavel Tishkov
   comment: |
     The application is simple and functional. I use it every day to structure my knowledge.
