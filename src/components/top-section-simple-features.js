@@ -26,7 +26,7 @@ class SectionSimpleFeatures extends React.Component {
               <div className="ui stackable grid">
                 <div className="six wide column">
                   <h2>
-                    Solely designed for Markdown to improve your dev workflow.
+                    Solely designed for Markdown to improve your dev workflow
                   </h2>
                   <p>
                     Get a low-friction personal note-taking workflow and
