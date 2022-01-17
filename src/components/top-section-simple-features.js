@@ -25,7 +25,9 @@ class SectionSimpleFeatures extends React.Component {
             <Container>
               <div className="ui stackable grid">
                 <div className="six wide column">
-                  <h2>Clarify your thoughts fast, solve elegantly</h2>
+                  <h2>
+                    Solely designed for Markdown to improve your dev workflow.
+                  </h2>
                   <p>
                     Get a low-friction personal note-taking workflow and
                     accomplish more. With your notes well-organized
@@ -148,7 +150,7 @@ class SectionSimpleFeatures extends React.Component {
                     className="feature-image"
                     fixed={data.offlineSupport.childImageSharp.fixed}
                   />
-                  <h3>Never miss your ideas</h3>
+                  <h3>Never lose your ideas</h3>
                   <p>
                     Whenever, even while in offline, you can read and write
                     notes. Just open up the app, then it will be instantly ready

@@ -27,7 +27,8 @@ export default class GetNowSection extends Component {
                     <h2>Get started today</h2>
                     <h3>
                       Available on 5 platforms for just $4.16 per month (annual
-                      billing). No credit card information required.
+                      billing). No credit card information required for 30-day
+                      free trial.
                     </h3>
                     <div className="link-to-signup">
                       <SignupButton />
