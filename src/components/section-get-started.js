@@ -4,7 +4,7 @@ import './section-get-started.less'
 import Img from 'gatsby-image'
 import SignupButton from './signup-button'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 export default class GetNowSection extends Component {
   render() {

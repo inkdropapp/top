@@ -3,7 +3,7 @@ import React from 'react'
 import './top-whats-new.less'
 import Img from 'gatsby-image'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 const TopWhatsNewInV5 = () => {
   return (

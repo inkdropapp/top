@@ -1,7 +1,7 @@
 import './pricing-why-a-subscription.less'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 class SectionSimpleFeatures extends React.Component {
   render() {

@@ -3,7 +3,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Flickity from 'flickity'
 import LazyLoad from 'react-lazyload'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 export default class BlogpostsSection extends React.Component {
   componentDidMount() {

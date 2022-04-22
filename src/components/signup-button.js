@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useContext } from 'react'
 import './signup-button.less'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 import ReferralContext from '../utils/referral-context'
 
 const SignupButton = () => {

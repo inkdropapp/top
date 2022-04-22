@@ -1,7 +1,7 @@
 import './footer.less'
 import React from 'react'
 import './header.less'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 const Footer = () => (
   <footer className="app--footer">

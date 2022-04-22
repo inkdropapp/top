@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import './top-section-whomadeit.less'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import BlockBadge from './block-badge'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import OutboundLink from './outbound-link'
 
 export default class SectionWhoMadeIt extends Component {
   render() {

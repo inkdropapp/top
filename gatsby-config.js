@@ -57,15 +57,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-fathom',
       options: {
-        trackingId: 'UA-58709134-2',
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true
+        siteId: 'KOOITLXG',
+        honorDnt: true
       }
     },
     {
@@ -89,17 +84,17 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          'script-src': `'self' 'unsafe-inline' *.inkdrop.app www.google-analytics.com${
+          'script-src': `'self' 'unsafe-inline' *.inkdrop.app *.usefathom.com${
             isDev ? " 'unsafe-eval'" : ''
           }`,
           'style-src':
             "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
           'img-src':
-            "'self' data: *.inkdrop.app www.google-analytics.com stats.g.doubleclick.net *.medium.com",
+            "'self' data: *.inkdrop.app *.usefathom.com stats.g.doubleclick.net *.medium.com",
           'media-src': "'self' *.inkdrop.app",
           'font-src': "'self' data: fonts.gstatic.com",
           'frame-src': 'www.youtube.com',
-          'connect-src': `'self' api.inkdrop.app www.google-analytics.com stats.g.doubleclick.net ${
+          'connect-src': `'self' api.inkdrop.app *.usefathom.com stats.g.doubleclick.net ${
             isDev ? ' localhost:* ws://localhost:*' : ''
           }`
         }
