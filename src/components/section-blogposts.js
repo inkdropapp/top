@@ -22,6 +22,7 @@ export default class BlogpostsSection extends React.Component {
         render={data => {
           const articles = data.allMediumPost.edges.map(edge => {
             const { node } = edge
+            const title = node.title.replace('&amp;', '&')
             return (
               <div key={node.id} className="carousel-cell">
                 <OutboundLink
@@ -44,7 +45,7 @@ export default class BlogpostsSection extends React.Component {
                     />
                   </LazyLoad>
                   <div className="meta-created-at">{node.pubDate}</div>
-                  <h3>{node.title}</h3>
+                  <h3>{title}</h3>
                 </OutboundLink>
               </div>
             )
