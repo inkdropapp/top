@@ -1,4 +1,4 @@
-@import "../variables.less";
+@import '../variables.less';
 
 section#seamless-sync {
   position: relative;
@@ -9,7 +9,7 @@ section#seamless-sync {
   text-align: center;
 
   .masthead-image {
-    border: .5px solid #ffffff60;
+    border: 0.5px solid #ffffff60;
     border-radius: 8px;
     margin: 2em 2em 4em 2em;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07);
@@ -17,6 +17,29 @@ section#seamless-sync {
     @media (max-width: @tabletBreakpoint) {
       margin-left: 1rem;
       margin-right: 1rem;
+    }
+  }
+
+  .masthead-container {
+    padding: 2em 2em 4em 2em;
+
+    .masthead-video {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+
+      iframe.video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        border: 0.5px solid #ffffff60;
+        border-radius: 8px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1),
+          0 3px 10px rgba(0, 0, 0, 0.07);
+      }
     }
   }
 
@@ -28,7 +51,7 @@ section#seamless-sync {
         h3 {
           font-weight: bold;
           color: white;
-          margin-top: .3em;
+          margin-top: 0.3em;
         }
         p {
           font-size: 1.2rem;
@@ -40,9 +63,9 @@ section#seamless-sync {
   &:before {
     display: block;
     content: '';
-    width: 0; 
-    height: 0; 
-    border-left: 100vw solid transparent; 
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
     border-bottom: 10vh solid #7d6ae0;
     position: absolute;
     bottom: 100%;
@@ -72,6 +95,6 @@ section#seamless-sync {
   }
 
   p {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 }
