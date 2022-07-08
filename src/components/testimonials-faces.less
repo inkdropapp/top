@@ -8,10 +8,10 @@
     margin: 0.3rem 0.3rem;
     position: relative;
     cursor: pointer;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 
     img {
-      border: 1px solid rgba(0,0,0,0.2);
+      border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 50%;
       margin: 0;
     }
@@ -23,6 +23,9 @@
         border: 2px solid #ff63c3;
       }
     }
+
+    .gatsby-image-wrapper:after {
+      box-shadow: none;
+    }
   }
 }
-
