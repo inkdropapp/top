@@ -65,7 +65,7 @@ export default class TestimonialsSection extends React.Component {
           const { edges: testimonials } = data.allYaml
           const items = testimonials.map(item => {
             const { node } = item
-            if (node.id === activeItem) {
+            if (node.postId === activeItem) {
               return (
                 <div key={node.id} className="testimonial-item">
                   <i className="quote left icon" />
@@ -167,6 +167,7 @@ const query = graphql`
       edges {
         node {
           id
+          postId
           name
           company
           title

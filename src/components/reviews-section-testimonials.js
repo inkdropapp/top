@@ -26,7 +26,6 @@ export default class TestimonialsSection extends React.Component {
           const items = shuffle(testimonials).map(item => {
             const { node } = item
             const img = this.getImageWithId(images, node.postId)
-            console.log('ITEM:', node, images)
 
             return (
               <div key={node.id} className="review-item">
