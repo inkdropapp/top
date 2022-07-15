@@ -83,3 +83,11 @@
   name: Pavel Tishkov
   comment: |
     The application is simple and functional. I use it every day to structure my knowledge.
+-
+  postId: ramon
+  name: Ramon Saraiva
+  company: ConsumerAffairs
+  title: Software Engineering Manager
+  github: ramonsaraiva
+  comment: |
+    Note-taking is such a personal task and every individual does it in its own style. Markdown, vim-mode and multiplatform support are natural requirements for me. Inkdrop covers it all! I use it every day to structure professional and personal notes. The open source community and plugins are also amazing. Strongly recommend!
