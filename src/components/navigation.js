@@ -66,6 +66,11 @@ class Navigation extends React.Component {
                     Plugins
                   </OutboundLink>
                 </li>
+                <li>
+                  <OutboundLink href="https://docs.inkdrop.app/">
+                    Docs
+                  </OutboundLink>
+                </li>
                 <li className="ui simple dropdown item">
                   More
                   <i className="dropdown icon" />
@@ -80,13 +85,6 @@ class Navigation extends React.Component {
                     >
                       <DownloadIcon className="svg-icon left icon" />
                       Demo
-                    </OutboundLink>
-                    <OutboundLink
-                      className="item"
-                      href="https://docs.inkdrop.app/"
-                    >
-                      <HelpIcon className="svg-icon left icon" />
-                      Documentation
                     </OutboundLink>
                     <OutboundLink
                       className="item"
@@ -147,6 +145,13 @@ class Navigation extends React.Component {
           >
             <div className="content">
               <Container text>
+                <OutboundLink
+                  className="item login"
+                  href="https://my.inkdrop.app/"
+                >
+                  <LoginIcon className="svg-icon left" />
+                  Log in
+                </OutboundLink>
                 <Link className="item" to="/pricing">
                   <PricingIcon className="svg-icon left" />
                   <span>Pricing</span>
@@ -171,6 +176,11 @@ class Navigation extends React.Component {
                 >
                   <DownloadIcon className="svg-icon left" />
                   <span>Demo</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
+                </OutboundLink>
+                <OutboundLink className="item" href="https://docs.inkdrop.app/">
+                  <HelpIcon className="svg-icon left icon" />
+                  <span>Documentation</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
@@ -201,13 +211,6 @@ class Navigation extends React.Component {
                   <BlogIcon className="svg-icon left" />
                   <span>Blog</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
-                </OutboundLink>
-                <OutboundLink
-                  className="item login"
-                  href="https://my.inkdrop.app/"
-                >
-                  <LoginIcon className="svg-icon left" />
-                  Log in
                 </OutboundLink>
               </Container>
             </div>
