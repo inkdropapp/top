@@ -43,7 +43,7 @@ export default class SectionWhoMadeIt extends Component {
                 </OutboundLink>
               </div>
             </Container>
-            <Container className="center aligned content stackable three column grid">
+            <Container className="vlogs center aligned content stackable three column grid">
               <div className="column">
                 <div className="embed-container">
                   <iframe
