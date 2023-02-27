@@ -25,6 +25,11 @@ const Footer = () => (
               </OutboundLink>
             </li>
             <li>
+              <OutboundLink href="https://forum.inkdrop.app/c/announcements/14">
+                Release Notes
+              </OutboundLink>
+            </li>
+            <li>
               <OutboundLink href="https://docs.inkdrop.app/contact">
                 Contact
               </OutboundLink>

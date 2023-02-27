@@ -10,6 +10,7 @@ import { ReactComponent as ArrowRightIcon } from '../images/icons/arrow-right.sv
 import { ReactComponent as BlogIcon } from '../images/icons/blog.svg'
 import { ReactComponent as TwitterIcon } from '../images/icons/twitter.svg'
 import { ReactComponent as FAQIcon } from '../images/icons/faq.svg'
+import { ReactComponent as AnnouncementsIcon } from '../images/icons/announcements.svg'
 import { ReactComponent as HelpIcon } from '../images/icons/help-wheel.svg'
 import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
 import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
@@ -100,6 +101,14 @@ class Navigation extends React.Component {
                       <FAQIcon className="svg-icon left icon" />
                       FAQ
                     </OutboundLink>
+                    <OutboundLink
+                      className="item"
+                      href="https://forum.inkdrop.app/c/announcements/14"
+                    >
+                      <AnnouncementsIcon className="svg-icon left icon" />
+                      What&apos;s New
+                    </OutboundLink>
+
                     <div className="divider" />
                     <OutboundLink
                       className="item"
@@ -170,14 +179,6 @@ class Navigation extends React.Component {
                   <span>Gallery</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
                 </Link>
-                <OutboundLink
-                  className="item"
-                  href="https://my.inkdrop.app/demo"
-                >
-                  <DownloadIcon className="svg-icon left" />
-                  <span>Demo</span>
-                  <ArrowRightIcon className="svg-icon right aligned" />
-                </OutboundLink>
                 <OutboundLink className="item" href="https://docs.inkdrop.app/">
                   <HelpIcon className="svg-icon left icon" />
                   <span>Documentation</span>
@@ -197,6 +198,14 @@ class Navigation extends React.Component {
                 >
                   <FAQIcon className="svg-icon left" />
                   <span>FAQ</span>
+                  <ArrowRightIcon className="svg-icon right aligned" />
+                </OutboundLink>
+                <OutboundLink
+                  className="item"
+                  href="https://forum.inkdrop.app/c/announcements/14"
+                >
+                  <AnnouncementsIcon className="svg-icon left icon" />
+                  <span>What&apos;s New</span>
                   <ArrowRightIcon className="svg-icon right aligned" />
                 </OutboundLink>
                 <OutboundLink
