@@ -1,7 +1,6 @@
-@import "../variables.less";
+@import '../variables.less';
 
 #get-started {
-
   padding: 0 0 2rem 0;
   border-top: 1px solid rgba(34, 36, 38, 0.15);
   border-bottom: 1px solid rgba(34, 36, 38, 0.15);
@@ -12,11 +11,14 @@
     margin: 2rem 0;
     padding: 3rem 0;
     background: white;
-    box-shadow: 0 15px 35px rgba(0,0,0,.1), 0 3px 10px rgba(0,0,0,.07);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07);
   }
 
   .big-icon {
     text-align: right;
+    @media screen and (max-width: @computerBreakpoint) {
+      text-align: center;
+    }
   }
 
   h2 {
