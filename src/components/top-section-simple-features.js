@@ -54,7 +54,7 @@ class SectionSimpleFeatures extends React.Component {
                   <p>
                     An intuitive and clean user interface and &apos;
                     <a
-                      href="https://docs.inkdrop.app/manual/writing-note#distraction-free-mode"
+                      href="https://docs.inkdrop.app/manual/write-notes#distraction-free-mode"
                       className="white bold underline link"
                     >
                       Distraction free mode
@@ -85,14 +85,14 @@ class SectionSimpleFeatures extends React.Component {
                     </a>
                     ,{' '}
                     <a
-                      href="https://docs.inkdrop.app/manual/writing-note#tagging"
+                      href="https://docs.inkdrop.app/manual/write-notes#tag-notes"
                       className="white bold underline link"
                     >
                       tags
                     </a>{' '}
                     and{' '}
                     <a
-                      href="https://docs.inkdrop.app/manual/navigating-notes#workspace-view"
+                      href="https://docs.inkdrop.app/manual/organize-notebooks"
                       className="white bold underline link"
                     >
                       workspace view
