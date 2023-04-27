@@ -16,11 +16,11 @@ export default class SectionWhoMadeIt extends Component {
               <BlockBadge center />
               <h2>Who is making Inkdrop?</h2>
               <p className="sub-headline">
-                It is developed by a freelance developer, Takuya Matsuyama,
-                based in Japan.
+                It is developed by an indie developer, Takuya Matsuyama, based
+                in Japan.
               </p>
               <div className="center aligned links">
-                <OutboundLink href="https://craftz.dog/" title="Homepage">
+                <OutboundLink href="https://www.craftz.dog/" title="Homepage">
                   <i className="home icon" />
                 </OutboundLink>
                 <OutboundLink
@@ -30,8 +30,8 @@ export default class SectionWhoMadeIt extends Component {
                   <i className="twitter icon" />
                 </OutboundLink>
                 <OutboundLink
-                  href="https://www.youtube.com/devaslife"
-                  title="YouTube @devaslife"
+                  href="https://www.youtube.com/@craftzdog"
+                  title="YouTube @craftzdog"
                 >
                   <i className="youtube icon" />
                 </OutboundLink>
