@@ -6,7 +6,6 @@ import Masthead from '../components/top-masthead'
 import SectionSimpleFeatures from '../components/top-section-simple-features'
 import SectionBeautifulUI from '../components/top-section-beautiful-ui'
 import SectionSeamlessSync from '../components/top-section-seamless-sync'
-import SectionBlogposts from '../components/section-blogposts'
 import SectionGetStarted from '../components/section-get-started'
 import SectionTestimonials from '../components/section-testimonials'
 import SectionWhoMadeIt from '../components/top-section-whomadeit'
@@ -23,7 +22,6 @@ const IndexPage = () => (
         <SectionGetStarted />
       </div>
       <SectionWhoMadeIt />
-      <SectionBlogposts />
     </div>
   </Layout>
 )
