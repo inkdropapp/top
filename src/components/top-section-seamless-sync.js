@@ -1,7 +1,6 @@
 import './top-section-seamless-sync.less'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import { graphql } from 'gatsby'
 import { ReactComponent as SyncImage } from '../images/icons/sync-color.svg'
 import { ReactComponent as SecureImage } from '../images/icons/secure-color.svg'
 import { ReactComponent as SelfHostedImage } from '../images/icons/self-hosted-color.svg'
@@ -101,15 +100,3 @@ class SectionSeamlessSync extends React.Component {
 }
 
 export default SectionSeamlessSync
-
-const query = graphql`
-  query {
-    sync: file(relativePath: { eq: "smooth-sync.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

@@ -6,6 +6,7 @@ module.exports = {
     author: `@inkdrop_app`
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
