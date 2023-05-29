@@ -1,6 +1,6 @@
 import './gallery-item.less'
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 function convertUserFriendlyName(name) {
   return name
@@ -28,7 +28,11 @@ const GalleryItem = props => {
   return (
     <div className="column">
       <div onClick={onClick}>
-        <Img className="gallery-screenshot" fluid={img} />
+        <GatsbyImage
+          alt="screenshot"
+          className="gallery-screenshot"
+          image={img}
+        />
       </div>
       <div className="theme-information">
         {uiTheme.indexOf('default') >= 0 ? (

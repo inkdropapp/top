@@ -7,7 +7,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import Footer from './footer'
@@ -19,34 +19,34 @@ const HeaderReferral = React.lazy(() => import('../components/header-referral'))
 
 const Layout = ({ children, pageTitle }) => {
   const isSSR = typeof window === 'undefined'
-  return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
+
+  const data = useStaticQuery(
+    graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
           }
         }
-      `}
-      render={data => (
-        <>
-          <SEO
-            title={pageTitle}
-            keywords={[`inkdrop`, `markdown`, `documentations`]}
-          />
-          <Header siteTitle={data.site.siteMetadata.title} />
-          {!isSSR && (
-            <React.Suspense fallback={null}>
-              <HeaderReferral />
-            </React.Suspense>
-          )}
-          <main>{children}</main>
-          <Footer />
-        </>
+      }
+    `
+  )
+
+  return (
+    <>
+      <SEO
+        title={pageTitle}
+        keywords={[`inkdrop`, `markdown`, `documentations`]}
+      />
+      <Header siteTitle={data.site.siteMetadata.title} />
+      {!isSSR && (
+        <React.Suspense fallback={null}>
+          <HeaderReferral />
+        </React.Suspense>
       )}
-    />
+      <main>{children}</main>
+      <Footer />
+    </>
   )
 }
 

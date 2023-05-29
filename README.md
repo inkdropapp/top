@@ -8,7 +8,6 @@
 
 - [GatsbyJS](https://www.gatsbyjs.com/)
 - [Semantic UI](https://semantic-ui.com/)
-- [Flickity](https://flickity.metafizzy.co/)
 - [Streamline Icons](streamlineicons.com)
 - [PurgeCSS](https://github.com/FullHuman/purgecss)
 - [Netlify](https://www.netlify.com/)

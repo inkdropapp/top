@@ -2,10 +2,10 @@ root: true
 extends:
   - prettier
   - plugin:react/recommended
-parser: "@babel/eslint-parser"
+parser: '@babel/eslint-parser'
 settings:
   react:
-    version: "17.0.2"
+    version: '18.2.0'
 env:
   browser: true
   es6: true
@@ -17,7 +17,7 @@ rules:
   prefer-const: 2
   no-unused-vars:
     - 2
-    -
-      argsIgnorePattern: ^_
+    - argsIgnorePattern: ^_
       varsIgnorePattern: ^_
   react/display-name: 0
+  react/prop-types: 0

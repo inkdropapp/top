@@ -7,7 +7,7 @@
 const axios = require('axios')
 const path = require('path')
 
-exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -15,19 +15,6 @@ exports.onCreateWebpackConfig = ({ stage, actions, loaders }) => {
       }
     }
   })
-
-  if (stage === 'build-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /flickity/,
-            use: loaders.null()
-          }
-        ]
-      }
-    })
-  }
 }
 
 exports.sourceNodes = async ({
