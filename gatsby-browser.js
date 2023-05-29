@@ -6,7 +6,6 @@
 // import 'ionicons/dist/css/ionicons.min.css'
 import PropTypes from 'prop-types'
 import * as React from 'react'
-import 'flickity/css/flickity.css'
 import './src/utils/referral'
 import ReferralWrapper from './src/components/referral-wrapper'
 

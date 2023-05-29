@@ -7,7 +7,6 @@
   "dependencies": {
     "@svgr/webpack": "^6.2.0",
     "axios": "^0.21.1",
-    "flickity": "^2.2.2",
     "gatsby": "^4.18.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^4.18.0",
