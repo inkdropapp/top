@@ -45,10 +45,10 @@ const SectionRightTool = () => {
       <p>
         This feature makes it especially handy for note-taking while coding. So,
         using Markdown for note-taking feels pretty natural. However, it
-        isn&apos;t the best choice when you need to incorporate large amounts of
-        images, videos, audio, tables, or other types of content. Rest assured
-        that Markdown would be a screwdriver for tech notes. Thanks to the{' '}
-        <strong>constraint</strong>, I can{' '}
+        isn&apos;t the best choice when you need to incorporate a large number
+        of images, videos, audio, tables, or other types of content. Rest
+        assured that Markdown would be a screwdriver for tech notes. Thanks to
+        the <strong>constraint</strong>, I can{' '}
         <em>avoid adding topics that aren&apos;t related to coding</em>, like
         shopping wishlists, travel venues, etc. That lets me keep my notes
         simple and organized. It significantly reduces the time it takes to
