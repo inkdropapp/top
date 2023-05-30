@@ -1,0 +1,56 @@
+.carousel-viewport {
+  overflow: hidden;
+
+  &.is-draggable {
+    cursor: move;
+    cursor: grab;
+  }
+  &.is-dragging {
+    cursor: grabbing;
+  }
+}
+
+.carousel-container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dot-button {
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+
+  &:after {
+    transition: background-color 0.4s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+  }
+  &.is-selected:after {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}

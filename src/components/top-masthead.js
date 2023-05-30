@@ -32,9 +32,9 @@ const TopMasthead = props => {
           <span className="avoid-wrap">Markdown notes</span>&nbsp;
           <span className="avoid-wrap">made simple.</span>
         </h1>
-        <p className="ui container sub-headline">
+        <div className="ui container sub-headline">
           With 100+ plugins, cross-platform and encrypted data sync support
-        </p>
+        </div>
 
         <p className="ui text container">
           <SignupButton />

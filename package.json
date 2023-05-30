@@ -7,6 +7,9 @@
   "dependencies": {
     "@svgr/webpack": "^8.0.1",
     "axios": "^1.4.0",
+    "embla-carousel-autoplay": "^8.0.0-rc05",
+    "embla-carousel-class-names": "^8.0.0-rc05",
+    "embla-carousel-react": "^8.0.0-rc05",
     "gatsby": "^5.10.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^5.10.0",

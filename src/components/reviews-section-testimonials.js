@@ -93,7 +93,9 @@ const TestimonialsSection = () => {
           What People Are Saying
           <img src="/smile.svg" width={40} alt="smile" />
         </h2>
-        <p className="sub-headline">How Inkdrop helps their productivities.</p>
+        <div className="sub-headline">
+          How Inkdrop helps their productivities.
+        </div>
       </Container>
       <Container text>{items}</Container>
     </section>

@@ -1,0 +1,29 @@
+@import '../variables.less';
+
+#four-steps {
+  h2 {
+    font-size: 2.82rem;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+    @media (max-width: @mobileBreakpoint) {
+      margin-top: 0.4rem;
+    }
+  }
+  .zoomable-image.section-header-image {
+    border: none;
+    box-shadow: none;
+
+    &:after {
+      box-shadow: none;
+    }
+  }
+
+  .examples {
+    padding: 3em 0;
+  }
+  .paragraph {
+    margin: 1.4em 0;
+  }
+}

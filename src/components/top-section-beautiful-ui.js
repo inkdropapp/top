@@ -1,7 +1,5 @@
-import './top-section-beautiful-ui.less'
 import { Link } from 'gatsby'
 import React from 'react'
-import Container from 'semantic-ui-react/dist/es/elements/Container'
 import BlockBadge from './block-badge'
 import OutboundLink from './outbound-link'
 import PerspectiveImage from './3d-perspective-image'
@@ -9,10 +7,12 @@ import { ReactComponent as MarkdownRendererImage } from '../images/icons/markdow
 import { ReactComponent as KeyboardImage } from '../images/icons/keyboard.svg'
 import { ReactComponent as ThemesImage } from '../images/icons/themes.svg'
 import { ReactComponent as WebClipperImage } from '../images/icons/web-clipper.svg'
+import SectionThird from './section-third'
+import Container from 'semantic-ui-react/dist/es/elements/Container'
 
 const SectionBeautifulUI = () => {
   return (
-    <section id="beautiful-ui">
+    <SectionThird id="beautiful-ui">
       <Container>
         <div className="ui stackable grid">
           <div className="ten wide column">
@@ -195,7 +195,7 @@ const SectionBeautifulUI = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </SectionThird>
   )
 }
 
