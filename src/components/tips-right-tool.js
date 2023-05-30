@@ -45,11 +45,11 @@ const SectionRightTool = () => {
       <p>
         This feature makes it especially handy for note-taking while coding. So,
         using Markdown for note-taking feels pretty natural. However, it
-        isn&apos;t the best choice when you need to incorporate a large amounts
-        of images, videos, audio, tables, or other types of content. Rest
-        assured that Markdown would be a screwdriver for tech notes. Thanks to
-        the <strong>constraint</strong>, I can{' '}
-        <em>avoid adding topics that aren&apos;t related to coding</em> like
+        isn&apos;t the best choice when you need to incorporate large amounts of
+        images, videos, audio, tables, or other types of content. Rest assured
+        that Markdown would be a screwdriver for tech notes. Thanks to the{' '}
+        <strong>constraint</strong>, I can{' '}
+        <em>avoid adding topics that aren&apos;t related to coding</em>, like
         shopping wishlists, travel venues, etc. That lets me keep my notes
         simple and organized. It significantly reduces the time it takes to
         switch between tasks.
@@ -66,9 +66,9 @@ const SectionRightTool = () => {
             everything
           </b>
           . Notion is one of the popular note apps, so I use it to share the
-          manual with my backoffice agent. For non-linear notes like moodboards,
-          I prefer to use apps like Milanote. The right tools for the right
-          tasks.
+          manual with my back office agent. For non-linear notes like
+          moodboards, I prefer to use apps like Milanote. The right tools for
+          the right tasks.
         </p>
       </Callout>
 
@@ -90,9 +90,9 @@ const SectionRightTool = () => {
         They&apos;re like entries in a <strong>sketchbook</strong>; I draw
         things as freely as they appear in my imagination. So, essentially, I
         jot down what&apos;s currently buffering in my brain when coding. I
-        don&apos;t want to invest unnecessary time and effort maintaining my
+        don&apos;t want to invest unnecessary time and effort in maintaining my
         notes. It&apos;s more important to focus on solving the problem at hand.
-        In tech note-taking,
+        In tech note-taking,&nbsp;
         <em>perfection is not the goal, progress is</em>. So, jot down as freely
         as you would in a sketchbook.
       </p>

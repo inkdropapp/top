@@ -83,7 +83,7 @@ const SectionFourSteps = () => {
             <div className="eight wide column">
               <h3>Ex. App crash bug</h3>
               <p>
-                There was this one time when the desktop app was crashing upon
+                There was this one time when the desktop app kept crashing upon
                 quitting on Windows 8.1. It was weird because it didn&apos;t
                 happen on Windows 10. So, I wrote down the error and steps I
                 took to reproduce it like this.
@@ -253,11 +253,11 @@ const SectionFourSteps = () => {
         <Container text>
           <p className="paragraph">
             I also have a whole lot of notes in my <strong>Learn</strong>
-            notebook. It&apos;s filled with stuff about libraries I&apos;ve been
-            wanting to try out, like SvelteJS, Radix UI, LangChain, Whisper API,
-            and so on. Plus, there are even some notes on how to use DaVinci
-            Resolve 18, which is not related to coding though since I am a video
-            content creator, too.
+            notebook. It&apos;s filled with stuff about libraries I want to try
+            out, like SvelteJS, Radix UI, LangChain, Whisper API, and so on.
+            Plus, there are even some notes on how to use DaVinci Resolve 18,
+            which is not related to coding though since I am a video content
+            creator, too.
           </p>
         </Container>
       </Container>

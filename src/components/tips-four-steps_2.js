@@ -83,7 +83,7 @@ const SectionFourSteps2 = () => {
                 Eventually, I decided to implement a custom native module. The
                 entire process of building this module was detailed in another
                 note. This record of the problem, the potential solutions, and
-                the final successful approach now forms a valuable part of my
+                the final successful approach now form a valuable part of my
                 knowledge base. I can refer back to understand why I chose this
                 solution in the future.
               </p>
@@ -102,7 +102,7 @@ const SectionFourSteps2 = () => {
               <h3>Ex. Consider switching the database engine</h3>
               <p>
                 On another occasion, I was considering changing the database
-                engine for my mobile app. I explored libraries like
+                engine for my mobile app. I explored libraries like&nbsp;
                 <code>react-native-leveldown</code> and{' '}
                 <code>react-native-leveldb</code>. Unfortunately, they
                 weren&apos;t entirely compatible with LevelDB at that time, as I
