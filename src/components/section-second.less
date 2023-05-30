@@ -1,0 +1,114 @@
+@import '../variables.less';
+
+section.section-second {
+  position: relative;
+  padding-top: 3em;
+  background-color: #7d6ae0;
+  background-image: linear-gradient(180deg, #7d6ae0 0, #7298d9);
+  color: white;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 10vh solid #7d6ae0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  &.has-separator:after {
+    background-image: url(/section-separator.svg);
+    content: '';
+    display: block;
+    padding-bottom: calc(11.546% + 6px);
+    margin-left: -48px;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin-top: 3vh;
+    margin-bottom: -0.1875rem;
+  }
+
+  &:not(.has-separator) {
+    padding-bottom: 2rem;
+  }
+
+  h2 {
+    color: white;
+    font-size: 2.82rem;
+    margin-top: 0rem;
+    i.icon {
+      font-size: 2.82rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  h3 {
+    color: white;
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+
+  p {
+    opacity: 0.8;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      color: #ff63c3;
+    }
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    background: white;
+
+    border-radius: 0.2em;
+    box-shadow: rgba(84, 70, 35, 0.15) 0px 2px 8px,
+      rgba(84, 70, 35, 0.15) 0px 1px 3px,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07),
+      rgba(255, 255, 255, 0.3) 0px 0px 0px 1px;
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .three.column.grid {
+    .column {
+      .feature-image {
+        border-radius: 12px;
+        width: 350px;
+        max-width: 100%;
+        min-height: 151px;
+      }
+      h3 {
+        font-weight: bold;
+        margin-top: 0.3em;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .callout {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+  }
+}

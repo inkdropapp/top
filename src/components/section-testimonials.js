@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import TestimonialFaces from './testimonials-faces'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
+import SectionFifth from './section-fifth'
 
 const people = [
   'roberto',
@@ -109,21 +110,21 @@ const TestimonialsSection = () => {
     }
   })
   return (
-    <section id="testimonials">
+    <SectionFifth id="testimonials">
       <div className="ui text container">
-        <h2>
+        <h3>
           Trusted by developers around the world
           <Link className="ui rounded tiny button" to="/reviews">
             See more
             <i className="angle double right icon" />
           </Link>
-        </h2>
+        </h3>
       </div>
       <TestimonialFaces activeItem={activeItem} onClickItem={handleClickItem} />
       <div className="testimonial-list">
         <Container text>{items}</Container>
       </div>
-    </section>
+    </SectionFifth>
   )
 }
 

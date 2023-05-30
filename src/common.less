@@ -1,13 +1,21 @@
+:root {
+  --foreground-color: #031b4e;
+  --primary-color: #3d7aed;
+  --secondary-color: #7d6ae0;
+}
+
 .ui.button.rounded {
   margin: 0.6em 0 1em 1em;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 16px;
-  color: #3d7aed;
-  border: 1px solid #3d7aed;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 1.3em;
   background: transparent;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     background: white;
   }
 
@@ -15,8 +23,10 @@
     color: white;
     border-color: white;
 
-    &:hover, &:active, &:focus {
-      color: #3d7aed;
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--primary-color);
     }
   }
 }

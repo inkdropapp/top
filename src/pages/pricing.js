@@ -7,7 +7,7 @@ import PricingWhySection from '../components/pricing-why-a-subscription'
 import SectionGetStarted from '../components/section-get-started'
 import SectionTestimonials from '../components/section-testimonials'
 
-const IndexPage = () => (
+const PricingPage = () => (
   <Layout pageTitle="Pricing">
     <div className="main-content">
       <Masthead />
@@ -20,4 +20,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default PricingPage

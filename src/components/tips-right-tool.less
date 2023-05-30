@@ -1,0 +1,41 @@
+@import '../variables.less';
+
+div#tips #right-tool {
+  @media (max-width: @mobileBreakpoint) {
+    padding-top: 6em;
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  div + p {
+    margin-top: 1rem;
+  }
+
+  .feature-image {
+    border-radius: 12px;
+    width: 350px;
+    max-width: 100%;
+    min-height: 151px;
+    display: inline-block;
+  }
+
+  img.svg-illust.section-header {
+    position: absolute;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: -100px;
+  }
+
+  @media (max-width: @mobileBreakpoint) {
+    img.svg-illust {
+      max-width: 150px;
+    }
+    img.svg-illust.section-header {
+      margin-top: -150px;
+      left: 50%;
+      margin-left: -75px;
+    }
+  }
+}

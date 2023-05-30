@@ -12,10 +12,10 @@ const SectionWhoMadeIt = () => {
       <Container>
         <BlockBadge center />
         <h2>Who is making Inkdrop?</h2>
-        <p className="sub-headline">
+        <div className="sub-headline">
           It is developed by an indie developer, Takuya Matsuyama, based in
           Japan.
-        </p>
+        </div>
         <div className="center aligned links">
           <OutboundLink href="https://www.craftz.dog/" title="Homepage">
             <i className="home icon" />

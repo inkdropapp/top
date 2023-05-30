@@ -30,9 +30,9 @@ export default class PricingMasthead extends Component {
             <span className="avoid-wrap">a coffee per month.</span>
           </h1>
         </Container>
-        <p className="ui container sub-headline">
+        <div className="ui container sub-headline">
           Increase your productivity with organized Markdown notes.
-        </p>
+        </div>
 
         <article className="pricing">
           <Container>

@@ -1,0 +1,49 @@
+@import '../variables.less';
+
+#tips #four-steps_2 {
+  text-align: left;
+  background-color: #7d6ae0;
+  background-image: linear-gradient(
+    180deg,
+    darken(#7d6ae0, 20%) 0,
+    darken(#7298d9, 20%)
+  );
+
+  &:before {
+    border-bottom-color: darken(#7d6ae0, 20%);
+  }
+
+  h2 {
+    font-size: 2.82rem;
+  }
+  h3 {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+  }
+
+  .examples {
+    padding: 3em 0;
+  }
+
+  .paragraph {
+    padding: 1rem 0;
+  }
+
+  img.svg-illust.section-header {
+    position: absolute;
+    margin-top: -200px;
+    left: 50%;
+    margin-left: -100px;
+  }
+
+  @media (max-width: @mobileBreakpoint) {
+    img.svg-illust {
+      max-width: 150px;
+    }
+    img.svg-illust.section-header {
+      margin-top: -150px;
+      left: 50%;
+      margin-left: -75px;
+    }
+  }
+}
