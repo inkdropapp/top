@@ -11,7 +11,10 @@ import SectionWrapUp from '../components/tips-wrap-up'
 import { ZoomedImageProvider } from '../components/zoomable-image'
 
 const TipsPage = () => (
-  <Layout pageTitle="Effective tech note-taking">
+  <Layout
+    pageTitle="How the app author actually uses Inkdrop"
+    ogImage="https://www.inkdrop.app/og-cover-image_tips.jpg"
+  >
     <ZoomedImageProvider>
       <div className="main-content" id="tips">
         <Masthead />

@@ -17,7 +17,7 @@ import './layout.less'
 
 const HeaderReferral = React.lazy(() => import('../components/header-referral'))
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children, pageTitle, ogImage }) => {
   const isSSR = typeof window === 'undefined'
 
   const data = useStaticQuery(
@@ -37,6 +37,7 @@ const Layout = ({ children, pageTitle }) => {
       <SEO
         title={pageTitle}
         keywords={[`inkdrop`, `markdown`, `documentations`]}
+        ogImage={ogImage}
       />
       <Header siteTitle={data.site.siteMetadata.title} />
       {!isSSR && (
