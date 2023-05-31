@@ -26,4 +26,21 @@ div#tips {
   img.svg-illust {
     max-width: 200px;
   }
+
+  .rounded-image {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px #00000040;
+    margin: 10px;
+
+    &.gatsby-image-wrapper::after {
+      box-shadow: inset 0px 0px 1px 0 #ffffff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
 }

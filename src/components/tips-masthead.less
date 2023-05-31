@@ -27,4 +27,29 @@
       font-weight: normal;
     }
   }
+
+  .masthead-image-container {
+    display: block;
+    position: relative;
+    --play-button-size: 80px;
+    cursor: pointer;
+    color: white;
+
+    .play-button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: ~'calc(-1 * var(--play-button-size) / 2)';
+      margin-left: ~'calc(-1 * var(--play-button-size) / 2)';
+
+      svg {
+        width: var(--play-button-size);
+        height: var(--play-button-size);
+      }
+    }
+
+    &:hover {
+      color: red;
+    }
+  }
 }

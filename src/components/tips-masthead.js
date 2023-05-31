@@ -4,7 +4,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 import OutboundLink from './outbound-link'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Masthead from './masthead'
-import { ZoomableImage } from './zoomable-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { ReactComponent as PlayIcon } from '../images/icons/play.svg'
 
 const TipsMasthead = () => {
   const data = useStaticQuery(query)
@@ -23,10 +24,20 @@ const TipsMasthead = () => {
         How the app author actually uses Inkdrop.
       </div>
       <div className="ui container">
-        <ZoomableImage
-          img={data.cover.childImageSharp.gatsbyImageData}
-          alt="Cover"
-        />
+        <OutboundLink
+          className="masthead-image-container"
+          href="https://www.youtube.com/watch?v=rjOuCFrs584"
+          target="_blank"
+        >
+          <GatsbyImage
+            image={data.cover.childImageSharp.gatsbyImageData}
+            className="rounded-image"
+            alt="Cover"
+          />
+          <div className="play-button">
+            <PlayIcon />
+          </div>
+        </OutboundLink>
       </div>
       <section className="ui text container">
         <p>
