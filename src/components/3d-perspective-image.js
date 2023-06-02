@@ -48,14 +48,10 @@ const ThreeDimensionalPerspectiveImage = props => {
           tickingRef.current = true
           window.requestAnimationFrame(() => {
             const { current: elContainer } = refContainer
-            const {
-              top: bodyTop,
-              left: bodyLeft
-            } = document.body.getBoundingClientRect()
-            const {
-              top: elTop,
-              left: elLeft
-            } = elContainer.getBoundingClientRect()
+            const { top: bodyTop, left: bodyLeft } =
+              document.body.getBoundingClientRect()
+            const { top: elTop, left: elLeft } =
+              elContainer.getBoundingClientRect()
             const offX = elLeft - bodyLeft
             const offY = elTop - bodyTop
 
