@@ -29,7 +29,7 @@ const TopMasthead = props => {
       <Container>
         <h1>
           <span className="avoid-wrap">Organizing your</span>&nbsp;
-          <span className="avoid-wrap">Markdown notes</span>&nbsp;
+          <span className="avoid-wrap">tech notes</span>&nbsp;
           <span className="avoid-wrap">made simple.</span>
         </h1>
         <div className="ui container sub-headline">
