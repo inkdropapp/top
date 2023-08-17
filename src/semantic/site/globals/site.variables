@@ -3,7 +3,7 @@
 *******************************/
 
 @importGoogleFonts : false;
-@headerFont: 'M PLUS Rounded 1c', 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
+@headerFont: 'proxima-soft', 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
 @pageFont: 'SF UI Text', 'Helvetica Neue', 'Helvetica', 'Roboto', sans-serif;
 
 @fontSize         : 14px;

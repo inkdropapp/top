@@ -89,11 +89,11 @@ module.exports = {
             isDev ? " 'unsafe-eval'" : ''
           }`,
           'style-src':
-            "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com",
+            "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com *.typekit.net",
           'img-src':
             "'self' data: *.inkdrop.app *.usefathom.com stats.g.doubleclick.net *.medium.com",
           'media-src': "'self' *.inkdrop.app",
-          'font-src': "'self' data: fonts.gstatic.com",
+          'font-src': "'self' data: fonts.gstatic.com *.typekit.net",
           'frame-src': 'www.youtube.com',
           'connect-src': `'self' api.inkdrop.app *.usefathom.com stats.g.doubleclick.net ${
             isDev ? ' localhost:* ws://localhost:*' : ''
