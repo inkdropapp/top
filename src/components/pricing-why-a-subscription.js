@@ -36,24 +36,6 @@ const SectionWhySubscription = () => {
               got a lot of users, we won&apos;t be able to support them all.
             </p>
           </div>
-          <div className="column">
-            <h3>Do you offer any discount plans?</h3>
-            <p>
-              Yes. We provide two types of discount:
-              <ul>
-                <li>
-                  <OutboundLink href="https://docs.inkdrop.app/student-discount">
-                    Educational discount
-                  </OutboundLink>
-                </li>
-                <li>
-                  <OutboundLink href="https://blog.inkdrop.app/announcing-inkdrop-plugin-developer-license-d5c9be52f8af">
-                    Plugin developer license
-                  </OutboundLink>
-                </li>
-              </ul>
-            </p>
-          </div>
         </div>
       </div>
       <Callout>
