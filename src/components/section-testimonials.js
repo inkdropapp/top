@@ -102,6 +102,15 @@ const TestimonialsSection = () => {
                     <i className="facebook icon" />
                   </a>
                 )}
+                {node.linkedin && (
+                  <a
+                    href={`https://www.linkedin.com/${node.linkedin}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="linkedin icon" />
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -142,6 +151,7 @@ const query = graphql`
           twitter
           github
           facebook
+          linkedin
           comment
         }
       }
