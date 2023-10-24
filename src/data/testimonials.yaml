@@ -104,12 +104,14 @@
   linkedin: in/reedam-ranjan/
 - postId: dave
   name: Dave Naugler
+  title: Student
   comment: |
     I have really come to enjoy Inkdrop. I really enjoy the UI and have quickly learned markdown. It's tough to not write markdown in other note apps (Apple Notes). I really appreciate your time and dedication to this app. It's one I have come to really enjoy and use on a daily basis for organizing my thoughts, my projects, and building out software applications. Cheers to you!
   github: davenaugler
   linkedin: in/davenaugler/
 - postId: juan
   name: Juan Daniel Martinez
+  title: Software Engineer
   comment: |
     It is hard to explain the feeling of taking notes in markdown on a daily basis, there's something about inkdrop that gives me the need to write something every day.
     It has become my new study tool in my software development process, watching Takuya's videos when he is taking notes while studying motivates me a lot, it is simple and beautiful, has many cool plugins to complement your experience using the app and I love that it synchronizes your notes instantly with the mobile app so you can't miss any chance of write something anytime!
@@ -117,3 +119,8 @@
   github: juandadev
   twitter: juandadotdev
   linkedin: in/juandadev/
+- postId: dominik
+  name: Dominik
+  comment: |
+    I follow your channel and your doings for a while now and was always inspired by your videos being outside while coding, also the way of how you presented it. It combines the world of tech and the beauty of nature in very pleasing way. I looked into your app, did some warm up with Markdown and was already getting used to it. Thanks for making such a great product, I will continue doing my notes and using the app.
+  title: UX Engineer
