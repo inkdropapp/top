@@ -134,3 +134,24 @@
   github: heyimrein
   twitter: heyimrein
   linkedin: in/heyimrein/
+- postId: kwfjm
+  name: Masashi Kawafuji
+  title: Front-end developer
+  comment: |
+    Inkdrop saves a lot of my time because of the intuitive UI. Amazingly, Inkdrop embraces Vim key bindings by installing the plugin!
+  github: kwfjm
+  twitter: kwfjm_
+- postId: chris
+  name: Chris
+  title: Softrware Developer
+  comment: |
+    I have used Apple Note (iDevices only), Google Keep (not powerful), Evernote (not simple enough for developers and too expensive for personal use) and a few other famous note-taking apps. Each of them has some disappointments that keep me searching for an app that will satisfy me.
+    Then I found Inkdrop. Simple, powerful, fast, smooth, cross-OS and cross-device.
+    The only drawback is that I have an iPhone with iOS 14.6 and the app does not support it.
+- postId: gustavoadono
+  name: Gustavo
+  title: Witte Technology
+  comment: |
+    Simple, efficient, unique and pleasurable to use.
+  github: gustavoadono
+  twitter: adonogus
