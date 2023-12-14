@@ -49,7 +49,7 @@ const SectionSeamlessSync = () => {
               </Link>
               <div className="caption">
                 <Link to="/note-taking-tips/" className="white link">
-                  Effective note-taking in coding and learning&nbsp;
+                  How to maximize your productivity with tech note-taking&nbsp;
                   <i className="angle double right icon" />
                 </Link>
               </div>

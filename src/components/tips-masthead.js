@@ -16,12 +16,23 @@ const TipsMasthead = () => {
           <img src="/boost.svg" alt="Boost" width={24} />
         </div>
         <h1>
-          <span className="avoid-wrap">Effective note-taking</span>&nbsp;
-          <span className="avoid-wrap">in coding and learning</span>
+          <span className="avoid-wrap">How to maximize your productivity</span>
+          &nbsp;
+          <span className="avoid-wrap">with tech note-taking</span>
         </h1>
       </Container>
       <div className="ui container sub-headline">
-        How the app author actually uses Inkdrop.
+        <a href="#the-right-tool-for-the-right-task" className="avoid-wrap">
+          The right tool for the right task
+        </a>{' '}
+        /{' '}
+        <a href="#design-for-productive-failure" className="avoid-wrap">
+          Design for productive failure
+        </a>{' '}
+        /{' '}
+        <a href="#four-steps-for-taking-tech-notes" className="avoid-wrap">
+          Four steps for taking tech notes
+        </a>
       </div>
       <div className="ui container">
         <OutboundLink

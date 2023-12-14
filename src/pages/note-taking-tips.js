@@ -12,7 +12,7 @@ import { ZoomedImageProvider } from '../components/zoomable-image'
 
 const TipsPage = () => (
   <Layout
-    pageTitle="How the app author actually uses Inkdrop"
+    pageTitle="How to maximize your productivity with tech note-taking"
     ogImage="https://www.inkdrop.app/og-cover-image_tips.jpg"
   >
     <ZoomedImageProvider>

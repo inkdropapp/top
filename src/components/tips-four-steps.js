@@ -15,7 +15,9 @@ const SectionFourSteps = () => {
   return (
     <SectionThird id="four-steps">
       <Container>
-        <h2 className="ui header">Four steps for taking tech notes</h2>
+        <h2 className="ui header" id="four-steps-for-taking-tech-notes">
+          Four steps for taking tech notes
+        </h2>
         <p>
           In the world of software development, our day-to-day life revolves
           around identifying problems, referring to API docs, sketching out

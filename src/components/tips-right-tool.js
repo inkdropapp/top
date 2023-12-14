@@ -10,7 +10,9 @@ const SectionRightTool = () => {
   return (
     <SectionSecond id="right-tool" hasSeparator>
       <img src="/tips_right-tool.svg" className="svg-illust section-header" />
-      <h2>The right tool for the right task</h2>
+      <h2 id="the-right-tool-for-the-right-task">
+        The right tool for the right task
+      </h2>
       <p>
         I am a firm believer in the importance of using the right tools for the
         right tasks.
@@ -72,7 +74,7 @@ const SectionRightTool = () => {
         </p>
       </Callout>
 
-      <h2>Design for productive failure</h2>
+      <h2 id="design-for-productive-failure">Design for productive failure</h2>
       <ZoomableImage
         alt="Embrace your imperfection"
         img={data.embrace.childImageSharp.gatsbyImageData}
