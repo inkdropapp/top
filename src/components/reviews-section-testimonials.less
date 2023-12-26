@@ -36,8 +36,10 @@ section#reviews {
     }
 
     .profile {
+      display: flex;
+      flex-direction: column;
       flex: 1 0 auto;
-      text-align: center;
+      align-items: center;
 
       .face {
         border-radius: 50%;
@@ -69,6 +71,10 @@ section#reviews {
       border: none;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07);
       border-radius: 0 1rem 1rem 1rem;
+
+      @media (min-width: @mobileBreakpoint + 1) {
+        margin-top: 2em;
+      }
     }
 
     &:nth-child(even) {
