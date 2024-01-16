@@ -18,13 +18,13 @@ const SupportedPlatformsMenu = props => {
             <i className="apple icon" /> macOS
           </li>
           <li
-            className={active === 'windows' ? 'active' : ''}
+            className={['windows', 'linux'].includes(active) ? 'active' : ''}
             onClick={() => handleClick('windows')}
           >
             <i className="windows icon" /> Windows
           </li>
           <li
-            className={active === 'linux' ? 'active' : ''}
+            className={['windows', 'linux'].includes(active) ? 'active' : ''}
             onClick={() => handleClick('linux')}
           >
             <i className="linux icon" /> Linux
