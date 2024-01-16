@@ -69,17 +69,10 @@ const ThreeDimensionalPerspectiveImage = props => {
       [transform3d, refContainer]
     )
 
-    const handleMouseEnter = useCallback(() => {
-      const { current: elContainer } = refContainer
-      const elContent = elContainer.querySelector('.content')
-      elContent.style.transition = `none`
-    }, [refContainer])
-
     const handleMouseLeave = useCallback(() => {
       window.requestAnimationFrame(() => {
         const { current: elContainer } = refContainer
         const elContent = elContainer.querySelector('.content')
-        elContent.style.transition = `all 0.2s linear`
         elContent.style.transform = `rotateY(0deg) rotateX(0deg)`
       })
     }, [refContainer])
@@ -88,12 +81,10 @@ const ThreeDimensionalPerspectiveImage = props => {
       const { current: elContainer } = refContainer
       if (elContainer) {
         elContainer.addEventListener('mousemove', handleMouseMove)
-        elContainer.addEventListener('mouseenter', handleMouseEnter)
         elContainer.addEventListener('mouseleave', handleMouseLeave)
       }
       return () => {
         elContainer.removeEventListener('mousemove', handleMouseMove)
-        elContainer.removeEventListener('mouseenter', handleMouseEnter)
         elContainer.removeEventListener('mouseleave', handleMouseLeave)
       }
     }, [refContainer])
