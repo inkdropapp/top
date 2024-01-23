@@ -10,13 +10,13 @@ const BasicPlanPanel = props => {
       {period === 'monthly' ? (
         <h2 className="header price">
           <span className="currency">&#36;</span>
-          4.99
+          9.80
           <span className="period">/ mo.</span>
         </h2>
       ) : (
         <h2 className="header price">
           <span className="currency">&#36;</span>
-          49.90
+          99.80
           <span className="period">/ yr.</span>
         </h2>
       )}
@@ -38,7 +38,7 @@ const BasicPlanPanel = props => {
           </div>
           <div className="item">
             <i className="asterisk icon" />
-            <div className="content">10 GB Storage</div>
+            <div className="content">30 GB Storage</div>
           </div>
         </div>
       </div>

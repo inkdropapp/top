@@ -8,6 +8,7 @@ import FreeTrialPanel from './pricing-free-trial-panel'
 import PlusSeparator from './pricing-plus-separator'
 import BasicPlanPanel from './pricing-basic-plan-panel'
 import SignupButton from './signup-button'
+import { DashboardIcon } from './icons/dashboard'
 
 export default class PricingMasthead extends Component {
   constructor(props) {
@@ -22,12 +23,11 @@ export default class PricingMasthead extends Component {
     return (
       <Masthead className="pricing-masthead">
         <Container>
-          <div className="coffee-icon-container">
-            <img src="/coffee.svg" alt="Coffee" width={24} />
+          <div className="icon-container">
+            <DashboardIcon />
           </div>
           <h1>
-            <span className="avoid-wrap">At the cost of</span>&nbsp;
-            <span className="avoid-wrap">a coffee per month.</span>
+            <span className="avoid-wrap">Simple pricing</span>
           </h1>
         </Container>
         <div className="ui container sub-headline">

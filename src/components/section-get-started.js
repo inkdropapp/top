@@ -23,7 +23,7 @@ const GetNowSection = () => {
             <div className="twelve wide column get-started-message">
               <h2>Get started today</h2>
               <h3>
-                Available on 5 platforms for just $4.16 per month (annual
+                Available on 5 platforms for just $8.31 per month (annual
                 billing). No credit card information required for 30-day free
                 trial.
               </h3>
