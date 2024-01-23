@@ -20,7 +20,7 @@ const SectionWhySubscription = () => {
             </p>
           </div>
           <div className="column">
-            <h3>$5 per month is too expensive.</h3>
+            <h3>$10 per month is too expensive.</h3>
             <p>
               It is for professional use, not targeted to the mass of people. We
               believe it would improve your productivity worth more than $5.

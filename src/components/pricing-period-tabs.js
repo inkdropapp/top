@@ -24,7 +24,7 @@ export default class PeriodTabs extends Component {
               className={`item ${period === 'annual' ? 'active' : ''}`}
               onClick={() => onClickTab('annual')}
             >
-              <div className="ui teal bottom pointing label">Save 17%</div>
+              <div className="ui teal bottom pointing label">Save 15%</div>
               <div>Annual billing</div>
             </a>
           </div>
