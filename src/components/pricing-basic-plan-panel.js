@@ -10,7 +10,7 @@ const BasicPlanPanel = props => {
       {period === 'monthly' ? (
         <h2 className="header price">
           <span className="currency">&#36;</span>
-          9.80
+          9.98
           <span className="period">/ mo.</span>
         </h2>
       ) : (
