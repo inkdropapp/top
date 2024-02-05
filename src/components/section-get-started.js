@@ -4,7 +4,7 @@ import './section-get-started.less'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import SignupButton from './signup-button'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
-import OutboundLink from './outbound-link'
+import { trialPeriod } from 'inkdrop-consts'
 
 const GetNowSection = () => {
   const data = useStaticQuery(query)
@@ -24,8 +24,8 @@ const GetNowSection = () => {
               <h2>Get started today</h2>
               <h3>
                 Available on 5 platforms for just $8.31 per month (annual
-                billing). No credit card information required for 30-day free
-                trial.
+                billing). No credit card information required for {trialPeriod}
+                -day free trial.
               </h3>
               <div className="link-to-signup">
                 <SignupButton />
