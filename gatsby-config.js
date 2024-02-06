@@ -46,18 +46,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-transformer-yaml`,
-      options: {
-        typeName: `Yaml`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/data/`
-      }
-    },
-    {
       resolve: 'gatsby-plugin-fathom',
       options: {
         siteId: 'KOOITLXG',
@@ -85,17 +73,17 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          'script-src': `'self' 'unsafe-inline' *.inkdrop.app *.usefathom.com${
+          'script-src': `'self' 'unsafe-inline' *.inkdrop.app *.usefathom.com *.senja.io senja-assets.b-cdn.net ${
             isDev ? " 'unsafe-eval'" : ''
           }`,
           'style-src':
             "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com *.typekit.net",
           'img-src':
-            "'self' data: *.inkdrop.app *.usefathom.com stats.g.doubleclick.net *.medium.com",
+            "'self' data: *.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net *.medium.com senjaio.b-cdn.net *.imagekit.io pbs.twimg.com",
           'media-src': "'self' *.inkdrop.app",
           'font-src': "'self' data: fonts.gstatic.com *.typekit.net",
           'frame-src': 'www.youtube.com',
-          'connect-src': `'self' api.inkdrop.app *.usefathom.com stats.g.doubleclick.net ${
+          'connect-src': `'self' api.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net ${
             isDev ? ' localhost:* ws://localhost:*' : ''
           }`
         }

@@ -29,7 +29,6 @@
     "gatsby-source-medium": "^5.10.0",
     "gatsby-transformer-remark": "^6.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
-    "gatsby-transformer-yaml": "^5.10.0",
     "inkdrop-consts": "^3.0.1",
     "ionicons": "^7.1.1",
     "js-cookie": "^3.0.5",
