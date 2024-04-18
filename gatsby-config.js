@@ -39,13 +39,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-less`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `release-pages`,
-        path: `${__dirname}/src/pages`
-      }
-    },
-    {
       resolve: 'gatsby-plugin-fathom',
       options: {
         siteId: 'KOOITLXG',
