@@ -63,31 +63,31 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },
-    'gatsby-plugin-svgr',
-    {
-      resolve: `gatsby-plugin-csp`,
-      options: {
-        disableOnDev: false,
-        reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
-        mergeScriptHashes: false, // you can disable scripts sha256 hashes
-        mergeStyleHashes: false, // you can disable styles sha256 hashes
-        mergeDefaultDirectives: true,
-        directives: {
-          'script-src': `'self' 'unsafe-inline' *.inkdrop.app *.usefathom.com *.senja.io senja-assets.b-cdn.net ${
-            isDev ? " 'unsafe-eval'" : ''
-          }`,
-          'style-src':
-            "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com *.typekit.net",
-          'img-src':
-            "'self' data: *.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net *.medium.com senjaio.b-cdn.net *.imagekit.io pbs.twimg.com",
-          'media-src': "'self' *.inkdrop.app",
-          'font-src': "'self' data: fonts.gstatic.com *.typekit.net",
-          'frame-src': 'www.youtube.com',
-          'connect-src': `'self' api.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net ${
-            isDev ? ' localhost:* ws://localhost:*' : ''
-          }`
-        }
-      }
-    }
+    'gatsby-plugin-svgr'
+    // {
+    //   resolve: `gatsby-plugin-csp`,
+    //   options: {
+    //     disableOnDev: false,
+    //     reportOnly: false, // Changes header to Content-Security-Policy-Report-Only for csp testing purposes
+    //     mergeScriptHashes: false, // you can disable scripts sha256 hashes
+    //     mergeStyleHashes: false, // you can disable styles sha256 hashes
+    //     mergeDefaultDirectives: true,
+    //     directives: {
+    //       'script-src': `'self' 'unsafe-inline' *.inkdrop.app *.usefathom.com *.senja.io senja-assets.b-cdn.net ajax.googleapis.com cdn.jsdelivr.net ${
+    //         isDev ? " 'unsafe-eval'" : ''
+    //       }`,
+    //       'style-src':
+    //         "'self' 'unsafe-inline' *.inkdrop.app fonts.googleapis.com *.typekit.net",
+    //       'img-src':
+    //         "'self' data: *.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net *.medium.com senjaio.b-cdn.net *.imagekit.io pbs.twimg.com",
+    //       'media-src': "'self' *.inkdrop.app blob:",
+    //       'font-src': "'self' data: fonts.gstatic.com *.typekit.net",
+    //       'frame-src': 'www.youtube.com',
+    //       'connect-src': `'self' api.inkdrop.app *.usefathom.com *.senja.io stats.g.doubleclick.net ${
+    //         isDev ? ' localhost:* ws://localhost:*' : ''
+    //       }`
+    //     }
+    //   }
+    // }
   ]
 }
