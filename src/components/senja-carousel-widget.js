@@ -9,7 +9,7 @@ const SenjaTestimonialCarousel = () => {
         className="senja-embed"
         data-id="a94c253b-3a23-426e-97cc-0a200e4ea00b"
         data-mode="shadow"
-        data-lazyload="true"
+        data-lazyload="false"
       ></div>
       <Script
         async
