@@ -4,17 +4,17 @@ import React from 'react'
 
 const SenjaTestimonialCarousel = () => {
   return (
-    <div>
+    <div className="ui container">
       <div
         className="senja-embed"
-        data-id="cdf731cd-a39c-4cb7-a6bd-6d1652799e09"
-        data-lazyload="false"
+        data-id="a94c253b-3a23-426e-97cc-0a200e4ea00b"
+        data-mode="shadow"
+        data-lazyload="true"
       ></div>
-
       <Script
         async
         type="text/javascript"
-        src="https://static.senja.io/dist/platform.js"
+        src="https://widget.senja.io/widget/a94c253b-3a23-426e-97cc-0a200e4ea00b/platform.js"
       ></Script>
     </div>
   )
