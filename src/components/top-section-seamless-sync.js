@@ -5,17 +5,20 @@ import SectionFourth from './section-fourth'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import OutboundLink from './outbound-link'
-import { ReactComponent as SyncImage } from '../images/icons/sync-color.svg'
-import { ReactComponent as SecureImage } from '../images/icons/secure-color.svg'
-import { ReactComponent as SelfHostedImage } from '../images/icons/self-hosted-color.svg'
+// import { ReactComponent as SyncImage } from '../images/icons/sync-color.svg'
+// import { ReactComponent as SecureImage } from '../images/icons/secure-color.svg'
+// import { ReactComponent as SelfHostedImage } from '../images/icons/self-hosted-color.svg'
 
 const SectionSeamlessSync = () => {
   const data = useStaticQuery(query)
   return (
     <SectionFourth id="seamless-sync">
       <Container>
-        <h2 className="ui icon header">
-          <div className="content">Boost your engineering process</div>
+        <h2 className="ui header">
+          <div className="content">
+            It includes comprehensive guides to boost your productivity with
+            tech notes
+          </div>
         </h2>
         <div className="masthead-container">
           <div className="ui stackable grid">
@@ -23,7 +26,7 @@ const SectionSeamlessSync = () => {
               <div className="masthead-video">
                 <iframe
                   className="video"
-                  src="https://www.youtube.com/embed/-qBavwqc_mY"
+                  src="https://www.youtube.com/embed/k0NbSPIOX54"
                   frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
@@ -32,7 +35,7 @@ const SectionSeamlessSync = () => {
               <div className="caption">
                 <OutboundLink
                   className="white link"
-                  href="https://www.youtube.com/watch?v=-qBavwqc_mY"
+                  href="https://www.youtube.com/watch?v=k0NbSPIOX54"
                 >
                   How to take notes in Markdown (Video)&nbsp;
                   <i className="angle double right icon" />
@@ -57,6 +60,38 @@ const SectionSeamlessSync = () => {
           </div>
         </div>
       </Container>
+
+      <Container>
+        <div className="ui stackable grid">
+          <div className="six wide column left aligned">
+            <h2>Stay inspired and motivated with fellow tech note takers</h2>
+            <p>
+              Connect with like-minded individuals who share your passion for
+              learning, coding, and tech note-taking.
+            </p>
+            <p>
+              <a
+                className="ui white rounded button"
+                href="https://docs.inkdrop.app/start-guide/join-discord-server"
+              >
+                Learn more&nbsp;
+                <i className="angle double right icon" />
+              </a>
+            </p>
+          </div>
+          <div className="ten wide column">
+            <div className="video-container">
+              <GatsbyImage
+                alt="Versatile Markdown editor"
+                className="feature-image"
+                image={data.discordCover.childImageSharp.gatsbyImageData}
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+
+      {/*
       <Container>
         <h2 className="ui icon header">
           <div className="content">
@@ -130,6 +165,7 @@ const SectionSeamlessSync = () => {
           </div>
         </div>
       </Container>
+        */}
     </SectionFourth>
   )
 }
@@ -141,6 +177,11 @@ const query = graphql`
     tipsCover: file(relativePath: { eq: "tips/cover.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, width: 1800)
+      }
+    }
+    discordCover: file(relativePath: { eq: "stay-inspired.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, width: 720)
       }
     }
   }
