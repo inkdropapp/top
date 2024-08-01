@@ -36,11 +36,11 @@ const Footer = () => (
             </li>
             <li>
               <OutboundLink
-                href="https://twitter.com/inkdrop_app"
+                href="https://x.com/inkdrop_app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                &#x1D54F;
               </OutboundLink>
             </li>
             <li>

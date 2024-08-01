@@ -8,11 +8,12 @@ import OutboundLink from './outbound-link'
 import { ReactComponent as LoginIcon } from '../images/icons/login.svg'
 import { ReactComponent as ArrowRightIcon } from '../images/icons/arrow-right.svg'
 import { ReactComponent as BlogIcon } from '../images/icons/blog.svg'
-import { ReactComponent as TwitterIcon } from '../images/icons/twitter.svg'
+import { ReactComponent as XIcon } from '../images/icons/x.svg'
 import { ReactComponent as FAQIcon } from '../images/icons/faq.svg'
 import { ReactComponent as AnnouncementsIcon } from '../images/icons/announcements.svg'
 import { ReactComponent as HelpIcon } from '../images/icons/help-wheel.svg'
 import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
+import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
 import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
 import { ReactComponent as PluginsIcon } from '../images/icons/plugins.svg'
 import { ReactComponent as PricingIcon } from '../images/icons/pricing.svg'
@@ -85,6 +86,13 @@ const Navigation = () => {
                   </OutboundLink>
                   <OutboundLink
                     className="item"
+                    href="https://docs.inkdrop.app/start-guide/join-discord-server"
+                  >
+                    <DiscordIcon className="svg-icon left icon" />
+                    Discord Server
+                  </OutboundLink>
+                  <OutboundLink
+                    className="item"
                     href="https://docs.inkdrop.app/faq"
                   >
                     <FAQIcon className="svg-icon left icon" />
@@ -101,10 +109,9 @@ const Navigation = () => {
                   <div className="divider" />
                   <OutboundLink
                     className="item"
-                    href="https://twitter.com/inkdrop_app"
+                    href="https://x.com/inkdrop_app"
                   >
-                    <TwitterIcon className="svg-icon left icon" />
-                    Twitter
+                    <XIcon className="svg-icon left icon" />X
                   </OutboundLink>
                   <OutboundLink
                     className="item"
@@ -177,6 +184,14 @@ const Navigation = () => {
               </OutboundLink>
               <OutboundLink
                 className="item"
+                href="https://docs.inkdrop.app/start-guide/join-discord-server"
+              >
+                <DiscordIcon className="svg-icon left" />
+                <span>Discord Server</span>
+                <ArrowRightIcon className="svg-icon right aligned" />
+              </OutboundLink>
+              <OutboundLink
+                className="item"
                 href="https://docs.inkdrop.app/faq"
               >
                 <FAQIcon className="svg-icon left" />
@@ -191,12 +206,9 @@ const Navigation = () => {
                 <span>What&apos;s New</span>
                 <ArrowRightIcon className="svg-icon right aligned" />
               </OutboundLink>
-              <OutboundLink
-                className="item"
-                href="https://twitter.com/inkdrop_app"
-              >
-                <TwitterIcon className="svg-icon left" />
-                <span>Twitter</span>
+              <OutboundLink className="item" href="https://x.com/inkdrop_app">
+                <XIcon className="svg-icon left" />
+                <span>X</span>
                 <ArrowRightIcon className="svg-icon right aligned" />
               </OutboundLink>
               <OutboundLink className="item" href="https://blog.inkdrop.app/">

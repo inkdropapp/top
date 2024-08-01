@@ -21,12 +21,6 @@ const SectionWhoMadeIt = () => {
             <i className="home icon" />
           </OutboundLink>
           <OutboundLink
-            href="https://twitter.com/inkdrop_app"
-            title="Twitter @inkdrop_app"
-          >
-            <i className="twitter icon" />
-          </OutboundLink>
-          <OutboundLink
             href="https://www.youtube.com/@craftzdog"
             title="YouTube @craftzdog"
           >
