@@ -52,6 +52,15 @@ const Footer = () => (
                 Blog
               </OutboundLink>
             </li>
+            <li>
+              <OutboundLink
+                href="https://docs.inkdrop.app/notation"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                特定商取引法に基づく表記
+              </OutboundLink>
+            </li>
           </ul>
         </div>
         <div className="three wide column text-left">
