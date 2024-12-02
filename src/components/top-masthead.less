@@ -1,4 +1,4 @@
-@import "../variables.less";
+@import '../variables.less';
 
 .top-masthead {
   overflow: hidden;
@@ -34,7 +34,11 @@
     }
   }
 
-  .platform-screenshot .screenshot-container {
+  .headline {
+    margin-bottom: 2em;
+  }
+
+  .screenshot-container {
     position: relative;
 
     .play-button-container {
@@ -65,18 +69,87 @@
         font-weight: bold;
       }
     }
-    
+
     .screenshot {
       max-width: 1024px;
       margin: 0 auto;
 
-      &.screenshot-ios, &.screenshot-android {
+      &.screenshot-ios,
+      &.screenshot-android {
         max-width: 800px;
       }
     }
     .masthead-spacer {
       display: block;
       height: 80vh;
+    }
+  }
+
+  .spec-grid-container {
+    --gap: 2em;
+    --line-offset: calc(var(--gap) / 2);
+    --line-thickness: 1px;
+    --line-color: hsla(0deg, 0%, 10%, 50%);
+    --text-color: hsla(0deg, 0%, 100%, 60%);
+
+    margin-top: 2em;
+    padding: calc(var(--gap) / 2);
+    color: var(--text-color);
+    border: 1px solid hsla(0deg, 0%, 100%, 30%);
+    border-radius: 1em;
+    background-color: hsla(0deg, 0%, 0%, 60%);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    outline: 1px solid hsla(0deg, 0%, 100%, 20%);
+    outline-offset: 6px;
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      overflow: hidden;
+      gap: var(--gap);
+
+      .item {
+        position: relative;
+        padding: 0em;
+        align-items: center;
+
+        @media (max-width: @tabletBreakpoint) {
+          font-size: 0.9em;
+        }
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: var(--line-color);
+          z-index: 1;
+        }
+
+        &::after {
+          inline-size: 100vw;
+          block-size: var(--line-thickness);
+          inset-inline-start: 0;
+          inset-block-start: calc(var(--line-offset) * -1);
+        }
+        &::before {
+          inline-size: var(--line-thickness);
+          block-size: 100vh;
+          inset-block-start: 0;
+          inset-inline-start: calc(var(--line-offset) * -1);
+        }
+      }
+    }
+
+    .spec-grid .item .icons {
+      svg {
+        width: 24px;
+        margin-inline: 0.4em;
+
+        @media (max-width: @tabletBreakpoint) {
+          margin-inline: 0.2em;
+        }
+      }
     }
   }
 }

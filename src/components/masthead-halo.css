@@ -1,0 +1,20 @@
+.vanta-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.masthead.halo {
+  .content {
+    position: relative;
+  }
+
+  --foreground-color: hsl(0 0% 90%);
+  h1,
+  h2,
+  h3 {
+    mix-blend-mode: color-dodge;
+  }
+}

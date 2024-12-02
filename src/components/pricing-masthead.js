@@ -5,9 +5,7 @@ import Masthead from './masthead'
 import PeriodTabs from './pricing-period-tabs'
 import PeriodSection from './pricing-period-section'
 import FreeTrialPanel from './pricing-free-trial-panel'
-import PlusSeparator from './pricing-plus-separator'
 import BasicPlanPanel from './pricing-basic-plan-panel'
-import SignupButton from './signup-button'
 import { DashboardIcon } from './icons/dashboard'
 
 export default class PricingMasthead extends Component {
@@ -40,19 +38,13 @@ export default class PricingMasthead extends Component {
 
             <PeriodSection active={period === 'monthly'}>
               <FreeTrialPanel />
-              <PlusSeparator />
               <BasicPlanPanel period="monthly" />
             </PeriodSection>
 
             <PeriodSection active={period === 'annual'}>
               <FreeTrialPanel />
-              <PlusSeparator />
               <BasicPlanPanel period="annual" />
             </PeriodSection>
-
-            <div className="join">
-              <SignupButton />
-            </div>
           </Container>
         </article>
       </Masthead>

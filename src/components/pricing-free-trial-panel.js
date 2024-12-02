@@ -1,38 +1,44 @@
 import React, { Component } from 'react'
 import PlanPanel from './pricing-plan-panel'
-// import './masthead.scss'
+import { GlowingPrimaryButton } from './glowing-primary-button'
+import OutboundLink from './outbound-link'
 
 export default class FreeTrialPanel extends Component {
   render() {
     return (
       <PlanPanel>
-        <h3 className="plan">Free Trial</h3>
-        <div className="ui divider" />
-        <h2 className="header price">
-          <span className="currency">&#36;</span>0
-          <span className="period">for 14 days</span>
-        </h2>
+        <h2 className="plan">Demo</h2>
+        <h2 className="header price">Free</h2>
         <div className="description">
           <div className="ui list">
             <div className="item">
               <i className="asterisk icon" />
               <div className="content">
-                You can try it out for 14 days without any fees
+                Create up to <strong>5</strong> notes
               </div>
             </div>
             <div className="item">
               <i className="asterisk icon" />
-              <div className="content">No credit card information required</div>
+              <div className="content">No signup required</div>
             </div>
             <div className="item">
               <i className="asterisk icon" />
-              <div className="content">Cloud sync</div>
+              <div className="content">Just check the look and feel</div>
             </div>
             <div className="item">
-              <i className="asterisk icon" />
-              <div className="content">1 GB Storage</div>
+              <i className="asterisk negative icon" />
+              <div className="content">No cloud sync / mobile apps</div>
             </div>
           </div>
+        </div>
+        <div>
+          <GlowingPrimaryButton
+            as={OutboundLink}
+            href={`https://my.inkdrop.app/download`}
+            className="signup"
+          >
+            Download now
+          </GlowingPrimaryButton>
         </div>
       </PlanPanel>
     )
