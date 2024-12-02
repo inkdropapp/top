@@ -1,9 +1,23 @@
 import * as React from 'react'
 import OutboundLink from './outbound-link'
 import { SecondaryButton } from './secondary-button'
+import getPlatform from '../utils/platform'
 
 const DemoButton = () => {
-  const platformName = detectDesktopPlatform()
+  const platform = getPlatform()
+
+  const platformName = (() => {
+    switch (platform) {
+      case 'macos':
+        return 'macOS'
+      case 'windows':
+        return 'Windows'
+      case 'linux':
+        return 'Linux'
+      default:
+        return null
+    }
+  })()
 
   return (
     <SecondaryButton
@@ -17,16 +31,3 @@ const DemoButton = () => {
 }
 
 export default DemoButton
-
-function detectDesktopPlatform() {
-  const ua = navigator.userAgent
-  if (ua.indexOf('Mac OS X') !== -1) {
-    return 'macOS'
-  } else if (ua.indexOf('Windows') !== -1) {
-    return 'Windows'
-  } else if (ua.indexOf('Linux') !== -1) {
-    return 'Linux'
-  } else {
-    return null
-  }
-}
