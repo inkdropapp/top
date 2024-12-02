@@ -29,7 +29,6 @@ const TopMasthead = props => {
   const theme = screenshotThemes[themeIndex]
 
   const isDesktop = ['macos', 'windows', 'linux'].indexOf(getPlatform()) >= 0
-  const isBrowser = typeof window !== `undefined`
 
   const handleDotClick = index => {
     setThemeIndex(index)
@@ -67,26 +66,20 @@ const TopMasthead = props => {
           </p>
         </div>
 
-        {isBrowser ? (
-          <>
-            <div
-              ref={refScreenshotContainer}
-              className="screenshot-container"
-              style={{ minHeight: minScreenshotContainerHeight }}
-            >
-              <PerspectiveImage>
-                <FrostedBackgroundScreenshot
-                  src={theme.imageSrc}
-                  isDark={theme.isDark}
-                  alt="screenshot macos"
-                  className="screenshot screenshot-macos"
-                />
-              </PerspectiveImage>
-            </div>
-          </>
-        ) : (
-          <span className="masthead-spacer" />
-        )}
+        <div
+          ref={refScreenshotContainer}
+          className="screenshot-container"
+          style={{ minHeight: minScreenshotContainerHeight }}
+        >
+          <PerspectiveImage>
+            <FrostedBackgroundScreenshot
+              src={theme.imageSrc}
+              isDark={theme.isDark}
+              alt="screenshot macos"
+              className="screenshot screenshot-macos"
+            />
+          </PerspectiveImage>
+        </div>
 
         <Dots
           numOfDots={screenshotThemes.length}
