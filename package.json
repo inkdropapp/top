@@ -9,7 +9,6 @@
     "axios": "^1.4.0",
     "embla-carousel-autoplay": "^8.5.1",
     "embla-carousel-class-names": "^8.5.1",
-    "embla-carousel-fade": "^8.5.1",
     "embla-carousel-react": "^8.5.1",
     "gatsby": "^5.14.0",
     "gatsby-image": "^3.11.0",
