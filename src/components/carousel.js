@@ -3,7 +3,6 @@ import React, { useCallback, useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
 import Autoplay from 'embla-carousel-autoplay'
-import Fade from 'embla-carousel-fade'
 
 export const CarouselContext = React.createContext({
   embla: undefined,
@@ -20,7 +19,7 @@ const Carousel = ({ children, className, options }) => {
       skipSnaps: false,
       ...(options || {})
     },
-    [ClassNames(), Autoplay({ delay: 30000 }), Fade()]
+    [ClassNames(), Autoplay({ delay: 30000 })]
   )
 
   const onSelect = useCallback(() => {

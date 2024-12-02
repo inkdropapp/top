@@ -14,10 +14,8 @@ import { ReactComponent as AnnouncementsIcon } from '../images/icons/announcemen
 import { ReactComponent as HelpIcon } from '../images/icons/help-wheel.svg'
 import { ReactComponent as ForumIcon } from '../images/icons/forum.svg'
 import { ReactComponent as DiscordIcon } from '../images/icons/discord.svg'
-import { ReactComponent as DownloadIcon } from '../images/icons/download.svg'
 import { ReactComponent as PluginsIcon } from '../images/icons/plugins.svg'
 import { ReactComponent as PricingIcon } from '../images/icons/pricing.svg'
-import { ReactComponent as GalleryIcon } from '../images/icons/gallery.svg'
 
 const Navigation = () => {
   const [navbarMobileVisible, setNavbarMobileVisible] = useState(false)
@@ -66,17 +64,6 @@ const Navigation = () => {
                 More
                 <i className="dropdown icon" />
                 <div className="menu">
-                  <Link className="item" to="/gallery">
-                    <GalleryIcon className="svg-icon left icon" />
-                    Gallery
-                  </Link>
-                  <OutboundLink
-                    className="item"
-                    href="https://my.inkdrop.app/demo"
-                  >
-                    <DownloadIcon className="svg-icon left icon" />
-                    Demo
-                  </OutboundLink>
                   <OutboundLink
                     className="item"
                     href="https://forum.inkdrop.app/"
@@ -113,10 +100,7 @@ const Navigation = () => {
                   >
                     <XIcon className="svg-icon left icon" />X
                   </OutboundLink>
-                  <OutboundLink
-                    className="item"
-                    href="https://blog.inkdrop.app/"
-                  >
+                  <OutboundLink className="item" href="https://www.devas.life/">
                     <BlogIcon className="svg-icon left icon" />
                     Blog
                   </OutboundLink>
@@ -167,11 +151,6 @@ const Navigation = () => {
                 <span>Plugins</span>
                 <ArrowRightIcon className="svg-icon right aligned" />
               </OutboundLink>
-              <Link className="item" to="/gallery">
-                <GalleryIcon className="svg-icon left" />
-                <span>Gallery</span>
-                <ArrowRightIcon className="svg-icon right aligned" />
-              </Link>
               <OutboundLink className="item" href="https://docs.inkdrop.app/">
                 <HelpIcon className="svg-icon left icon" />
                 <span>Documentation</span>
