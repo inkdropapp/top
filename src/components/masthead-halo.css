@@ -7,6 +7,8 @@
 }
 
 .masthead.halo {
+  background: rgb(31 10 103) !important;
+
   .content {
     position: relative;
   }
