@@ -1,3 +1,5 @@
+import { isBrowser } from './platform'
+
 export const screenshotThemes = [
   {
     id: 'light',
@@ -35,6 +37,8 @@ const preloadImage = src => {
   img.src = src
 }
 
-screenshotThemes.forEach(theme => {
-  preloadImage(theme.imageSrc)
-})
+if (isBrowser) {
+  screenshotThemes.forEach(theme => {
+    preloadImage(theme.imageSrc)
+  })
+}
