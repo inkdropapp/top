@@ -9,14 +9,15 @@ export const CarouselContext = React.createContext({
   selectedIndex: -1
 })
 
-const Carousel = ({ children, className }) => {
+const Carousel = ({ children, className, options }) => {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState([])
   const [viewportRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
       align: 'center',
-      skipSnaps: false
+      skipSnaps: false,
+      ...(options || {})
     },
     [ClassNames(), Autoplay({ delay: 30000 })]
   )

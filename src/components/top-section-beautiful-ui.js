@@ -56,12 +56,6 @@ const SectionBeautifulUI = () => {
                 jottings.
               </p>
               <p>
-                <Link className="white link" to="/gallery">
-                  Browse themes&nbsp;
-                  <i className="angle double right icon" />
-                </Link>
-              </p>
-              <p>
                 <a
                   className="white link"
                   href="https://docs.inkdrop.app/manual/style-tweaks"

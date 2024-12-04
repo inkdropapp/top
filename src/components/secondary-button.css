@@ -1,16 +1,18 @@
-.ui.button.demo {
+.ui.button.secondary {
   margin: 0.6em 0 1em 1em;
   font-family: 'proxima-soft', sans-serif;
   font-size: 16px;
-  width: 170px;
-  color: var(--primary-color);
+  min-width: 170px;
   background: #ecf2fd;
   border: 1px solid var(--primary-color);
   border-radius: 1.3em;
+  margin-inline: 0.5em;
+  color: var(--primary-color);
 
   &:hover,
   &:active,
   &:focus {
     background: white;
+    color: var(--primary-color);
   }
 }

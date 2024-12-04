@@ -1,4 +1,4 @@
-const isBrowser = typeof window !== 'undefined'
+export const isBrowser = typeof window !== 'undefined'
 
 export default function getPlatform() {
   let platform = 'macos'

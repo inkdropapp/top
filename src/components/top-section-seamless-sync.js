@@ -5,6 +5,7 @@ import SectionFourth from './section-fourth'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import OutboundLink from './outbound-link'
+import { YouTubeVideo } from './youtube-embed'
 // import { ReactComponent as SyncImage } from '../images/icons/sync-color.svg'
 // import { ReactComponent as SecureImage } from '../images/icons/secure-color.svg'
 // import { ReactComponent as SelfHostedImage } from '../images/icons/self-hosted-color.svg'
@@ -23,15 +24,11 @@ const SectionSeamlessSync = () => {
         <div className="masthead-container">
           <div className="ui stackable grid">
             <div className="eight wide column">
-              <div className="masthead-video">
-                <iframe
-                  className="video"
-                  src="https://www.youtube.com/embed/k0NbSPIOX54"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <YouTubeVideo
+                className="masthead-video"
+                videoId="k0NbSPIOX54"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              />
               <div className="caption">
                 <OutboundLink
                   className="white link"

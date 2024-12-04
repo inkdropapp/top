@@ -1,11 +1,33 @@
 import * as React from 'react'
-import './try-demo-button.less'
 import OutboundLink from './outbound-link'
+import { SecondaryButton } from './secondary-button'
+import getPlatform from '../utils/platform'
 
-const DemoButton = () => (
-  <OutboundLink href="https://my.inkdrop.app/demo" className="ui button demo">
-    Try the Demo
-  </OutboundLink>
-)
+const DemoButton = () => {
+  const platform = getPlatform()
+
+  const platformName = (() => {
+    switch (platform) {
+      case 'macos':
+        return 'macOS'
+      case 'windows':
+        return 'Windows'
+      case 'linux':
+        return 'Linux'
+      default:
+        return null
+    }
+  })()
+
+  return (
+    <SecondaryButton
+      as={OutboundLink}
+      href="https://my.inkdrop.app/download"
+      className="ui button demo"
+    >
+      Download{platformName ? ` for ${platformName}` : ''}
+    </SecondaryButton>
+  )
+}
 
 export default DemoButton
