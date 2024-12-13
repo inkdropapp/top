@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PlanPanel from './pricing-plan-panel'
-import { GlowingPrimaryButton } from './glowing-primary-button'
-import OutboundLink from './outbound-link'
+import DownloadButton from './download-button'
 
 export default class FreeTrialPanel extends Component {
   render() {
@@ -13,13 +12,13 @@ export default class FreeTrialPanel extends Component {
           <div className="ui list">
             <div className="item">
               <i className="asterisk icon" />
-              <div className="content">
-                Create up to <strong>5</strong> notes
-              </div>
+              <div className="content">No signup required</div>
             </div>
             <div className="item">
               <i className="asterisk icon" />
-              <div className="content">No signup required</div>
+              <div className="content">
+                Create up to <strong>5</strong> notes
+              </div>
             </div>
             <div className="item">
               <i className="asterisk icon" />
@@ -32,13 +31,7 @@ export default class FreeTrialPanel extends Component {
           </div>
         </div>
         <div>
-          <GlowingPrimaryButton
-            as={OutboundLink}
-            href={`https://my.inkdrop.app/download`}
-            className="signup"
-          >
-            Download now
-          </GlowingPrimaryButton>
+          <DownloadButton />
         </div>
       </PlanPanel>
     )

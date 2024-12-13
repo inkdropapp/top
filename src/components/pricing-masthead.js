@@ -25,7 +25,7 @@ export default class PricingMasthead extends Component {
             <DashboardIcon />
           </div>
           <h1>
-            <span className="avoid-wrap">Simple pricing</span>
+            <span className="avoid-wrap">Start your tech journey today</span>
           </h1>
         </Container>
         <div className="ui container sub-headline">

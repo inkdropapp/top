@@ -2,8 +2,6 @@ import React, { useState, useRef, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import './top-masthead.less'
 import getPlatform from '../utils/platform'
-import SignupButton from './signup-button'
-import TryDemoButton from './try-demo-button'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import { MastheadHalo } from './masthead-halo'
 import PerspectiveImage from './3d-perspective-image'
@@ -18,6 +16,7 @@ import { AndroidIcon } from './icons/android'
 import { PluginIcon } from './icons/plugin'
 import { ThemeIcon } from './icons/theme'
 import { HackableIcon } from './icons/hackable'
+import { GetStartedButton } from './get-started-button'
 
 const TopMasthead = props => {
   const { children } = props
@@ -53,16 +52,18 @@ const TopMasthead = props => {
       <Container>
         <div className="headline">
           <h1>
-            <span className="avoid-wrap">Organizing your</span>&nbsp;
+            <span className="avoid-wrap">Cleaner space</span>&nbsp;
             <span className="avoid-wrap">
-              tech notes
+              for your tech
             </span>&nbsp;
-            <span className="avoid-wrap">made simple.</span>
+            <span className="avoid-wrap">journey.</span>
           </h1>
 
           <p className="ui text container">
-            {isDesktop && <TryDemoButton />}
-            <SignupButton />
+            <GetStartedButton />{' '}
+            <span className="no-signup-required">
+              — No signup required for demo
+            </span>
           </p>
         </div>
 
