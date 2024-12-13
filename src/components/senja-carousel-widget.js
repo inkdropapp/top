@@ -14,7 +14,10 @@ const SenjaTestimonialCarousel = () => {
       <Script
         async
         type="text/javascript"
-        src="https://widget.senja.io/widget/a94c253b-3a23-426e-97cc-0a200e4ea00b/platform.js"
+        src={
+          'https://widget.senja.io/widget/a94c253b-3a23-426e-97cc-0a200e4ea00b/platform.js?_=' +
+          Math.random()
+        }
       ></Script>
     </div>
   )
