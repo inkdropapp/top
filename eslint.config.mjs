@@ -23,7 +23,9 @@ export default [
     },
 
     languageOptions: {
-      globals: {}
+      globals: {
+        fathom: 'readonly'
+      }
     },
 
     rules: {

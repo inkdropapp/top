@@ -17,7 +17,7 @@ export function setReferralIdToLocalStorage(refId) {
 
 export async function increaseReferralViewCount(refId) {
   const { data } = await axios.post(
-    `${process.env.INKDROP_API_URL}/referral/${refId}/_visit`
+    `${process.env.GATSBY_INKDROP_API_URL}/referral/${refId}/_visit`
   )
   if (data && typeof data.ok === 'boolean') {
     return data.ok
