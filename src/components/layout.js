@@ -39,7 +39,7 @@ const Layout = ({ children, pageTitle, ogImage }) => {
       />
       <Script
         src="https://cdn.usefathom.com/script.js"
-        data-site={process.env.FATHOM_SITE_ID}
+        data-site={process.env.GATSBY_FATHOM_SITE_ID}
         data-spa="auto"
       />
       <Header siteTitle={data.site.siteMetadata.title} />
