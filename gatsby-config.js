@@ -39,13 +39,6 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-less`,
     {
-      resolve: 'gatsby-plugin-fathom',
-      options: {
-        siteId: 'KOOITLXG',
-        honorDnt: true
-      }
-    },
-    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
