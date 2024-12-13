@@ -6,7 +6,7 @@ import PeriodTabs from './pricing-period-tabs'
 import PeriodSection from './pricing-period-section'
 import FreeTrialPanel from './pricing-free-trial-panel'
 import BasicPlanPanel from './pricing-basic-plan-panel'
-import { DashboardIcon } from './icons/dashboard'
+import { NotebookIcon } from './icons/notebook'
 
 export default class PricingMasthead extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export default class PricingMasthead extends Component {
       <Masthead className="pricing-masthead">
         <Container>
           <div className="icon-container">
-            <DashboardIcon />
+            <NotebookIcon />
           </div>
           <h1>
             <span className="avoid-wrap">Start your tech journey today</span>
