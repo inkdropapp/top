@@ -4,7 +4,6 @@ import Container from 'semantic-ui-react/dist/es/elements/Container'
 import Masthead from './masthead'
 import PeriodTabs from './pricing-period-tabs'
 import PeriodSection from './pricing-period-section'
-import FreeTrialPanel from './pricing-free-trial-panel'
 import BasicPlanPanel from './pricing-basic-plan-panel'
 import { NotebookIcon } from './icons/notebook'
 

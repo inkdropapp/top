@@ -15,7 +15,6 @@ import { AndroidIcon } from './icons/android'
 import { PluginIcon } from './icons/plugin'
 import { ThemeIcon } from './icons/theme'
 import { HackableIcon } from './icons/hackable'
-import DemoButton from './try-demo-button'
 import SignupButton from './signup-button'
 
 const TopMasthead = props => {
@@ -58,7 +57,7 @@ const TopMasthead = props => {
           </h1>
 
           <p className="ui text container">
-            <SignupButton /> <DemoButton />
+            <SignupButton />
           </p>
         </div>
 
