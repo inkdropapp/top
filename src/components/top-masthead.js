@@ -15,7 +15,6 @@ import { AndroidIcon } from './icons/android'
 import { PluginIcon } from './icons/plugin'
 import { ThemeIcon } from './icons/theme'
 import { HackableIcon } from './icons/hackable'
-import { GetStartedButton } from './get-started-button'
 import DemoButton from './try-demo-button'
 import SignupButton from './signup-button'
 

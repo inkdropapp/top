@@ -14,11 +14,17 @@ const BasicPlanPanel = props => {
           <span className="period">/ mo.</span>
         </h2>
       ) : (
-        <h2 className="header price">
-          <span className="currency">&#36;</span>
-          99.80
-          <span className="period">/ yr.</span>
-        </h2>
+        <>
+          <h2 className="header price">
+            <span className="currency">&#36;</span>
+            8.31
+            <span className="period">/ mo.*</span>
+          </h2>
+          <h3 className="header price">
+            *<span className="currency">&#36;</span>
+            99.80 annually billed
+          </h3>
+        </>
       )}
       <div className="description">
         <div className="ui list">

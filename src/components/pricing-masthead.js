@@ -37,12 +37,10 @@ export default class PricingMasthead extends Component {
             <PeriodTabs onClickTab={this.handleTabClick} period={period} />
 
             <PeriodSection active={period === 'monthly'}>
-              <FreeTrialPanel />
               <BasicPlanPanel period="monthly" />
             </PeriodSection>
 
             <PeriodSection active={period === 'annual'}>
-              <FreeTrialPanel />
               <BasicPlanPanel period="annual" />
             </PeriodSection>
           </Container>
