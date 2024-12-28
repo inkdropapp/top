@@ -25,7 +25,7 @@ const DemoButton = () => {
       href="https://my.inkdrop.app/download"
       className="ui button demo"
     >
-      Download{platformName ? ` for ${platformName}` : ''}
+      Try demo{platformName ? ` for ${platformName}` : ''}
     </SecondaryButton>
   )
 }
