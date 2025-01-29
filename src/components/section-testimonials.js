@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
             Trusted by developers around the world
             <Link
               className="ui rounded tiny button"
-              to="https://love.inkdrop.app/"
+              to="https://senja.io/p/inkdrop/GZUsjb"
             >
               See all
               <i className="angle double right icon" />
