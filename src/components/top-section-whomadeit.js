@@ -37,13 +37,13 @@ const SectionWhoMadeIt = () => {
       </Container>
       <Container className="vlogs center aligned content stackable three column grid">
         <div className="column">
-          <YouTubeVideo videoId="KbZbz1TdgwA" width="560" height="315" />
+          <YouTubeVideo videoId="9J9cL_VyLRY" width="560" height="315" />
         </div>
         <div className="column">
-          <YouTubeVideo videoId="eLja90T28AQ" width="560" height="315" />
+          <YouTubeVideo videoId="ou4BYmY8Dq0" width="560" height="315" />
         </div>
         <div className="column">
-          <YouTubeVideo videoId="vj723NlrIQc" width="560" height="315" />
+          <YouTubeVideo videoId="gY-TK33G6kQ" width="560" height="315" />
         </div>
       </Container>
     </section>
