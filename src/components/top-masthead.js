@@ -124,7 +124,7 @@ const TopMasthead = props => {
                 <div className="icons">
                   <HackableIcon />
                 </div>
-                Hackable
+                Hackable &amp; AI ready
               </div>
             </div>
           </div>

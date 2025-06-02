@@ -7,6 +7,8 @@ import { ReactComponent as MarkdownRendererImage } from '../images/icons/markdow
 import { ReactComponent as KeyboardImage } from '../images/icons/keyboard.svg'
 import { ReactComponent as ThemesImage } from '../images/icons/themes.svg'
 import { ReactComponent as WebClipperImage } from '../images/icons/web-clipper.svg'
+import { ReactComponent as AIReadyImage } from '../images/icons/ai-ready.svg'
+import { ReactComponent as AccessInstantlyImage } from '../images/icons/access-instantly.svg'
 import SectionThird from './section-third'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 
@@ -45,20 +47,29 @@ const SectionBeautifulUI = () => {
             </p>
           </div>
         </div>
-        <div className="ui text container">
-          <div className="ui stackable two column grid">
+        <div className="ui container">
+          <div className="ui stackable three column grid">
             <div className="column">
               <ThemesImage className="icon" />
               <h3>Make it your notebook</h3>
               <p>
                 Pick your favorite look and feel from the themes. You can also
-                tweak your UI with CSS/Less to make it more comfortable for your
+                tweak your UI with CSS to make it more comfortable for your
                 jottings.
               </p>
               <p>
                 <a
                   className="white link"
-                  href="https://docs.inkdrop.app/manual/style-tweaks"
+                  href="https://my.inkdrop.app/plugins/theme"
+                >
+                  Browse themes&nbsp;
+                  <i className="angle double right icon" />
+                </a>
+              </p>
+              <p>
+                <a
+                  className="white link"
+                  href="https://developers.inkdrop.app/guides/style-tweaks"
                 >
                   How to tweak styles&nbsp;
                   <i className="angle double right icon" />
@@ -79,13 +90,6 @@ const SectionBeautifulUI = () => {
                 </OutboundLink>
                 ,{' '}
                 <OutboundLink
-                  href="https://my.inkdrop.app/plugins/flowchart"
-                  className="underline link"
-                >
-                  flowchart
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
                   href="https://my.inkdrop.app/plugins/mermaid"
                   className="underline link"
                 >
@@ -93,17 +97,24 @@ const SectionBeautifulUI = () => {
                 </OutboundLink>
                 ,{' '}
                 <OutboundLink
-                  href="https://my.inkdrop.app/plugins/sequence-diagrams"
-                  className="underline link"
-                >
-                  sequence diagrams
-                </OutboundLink>
-                ,{' '}
-                <OutboundLink
                   href="https://my.inkdrop.app/plugins/toc"
                   className="underline link"
                 >
                   toc
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/embed"
+                  className="underline link"
+                >
+                  embed
+                </OutboundLink>
+                ,{' '}
+                <OutboundLink
+                  href="https://my.inkdrop.app/plugins/code-title"
+                  className="underline link"
+                >
+                  code-title
                 </OutboundLink>
                 , and more.
               </p>
@@ -121,8 +132,8 @@ const SectionBeautifulUI = () => {
               <KeyboardImage className="icon" />
               <h3>Type fluently in your way</h3>
               <p>
-                Keymaps are flexibly customizable to fit your typing
-                style.&nbsp;
+                Keymaps are flexibly customizable to fit your typing style. It
+                also supports multi-stroke keybindings.&nbsp;
                 <OutboundLink
                   href="https://my.inkdrop.app/plugins/vim"
                   className="underline link"
@@ -157,7 +168,7 @@ const SectionBeautifulUI = () => {
             </div>
             <div className="column">
               <WebClipperImage className="icon" />
-              <h3>Clip web pages as Markdown</h3>
+              <h3>Collect knowledge</h3>
               <p>
                 The browser extensions for{' '}
                 <OutboundLink
@@ -173,15 +184,68 @@ const SectionBeautifulUI = () => {
                 >
                   Firefox
                 </OutboundLink>
-                &nbsp;let you grab the web page&apos;s main article or selection
-                to store knowledge from the internet.
+                &nbsp;let you clip the web page&apos;s main article to store
+                knowledge from the internet. It also supports&nbsp;
+                <OutboundLink
+                  href="https://docs.inkdrop.app/reference/import-kindle-highlights"
+                  className="underline link"
+                >
+                  importing Kindle highlights
+                </OutboundLink>
+                .
               </p>
               <p>
                 <a
                   className="white link"
                   href="https://docs.inkdrop.app/manual/clipping-web-pages-from-browser"
                 >
-                  How to set up web clipper&nbsp;
+                  How to set the up web clipper&nbsp;
+                  <i className="angle double right icon" />
+                </a>
+              </p>
+            </div>
+            <div className="column">
+              <AccessInstantlyImage className="icon" />
+              <h3>Access instantly</h3>
+              <p>
+                Inkdrop is very performant and responsive, even with a large
+                number of notes. The&nbsp;
+                <OutboundLink
+                  href="https://docs.inkdrop.app/reference/integrate-with-alfred"
+                  className="underline link"
+                >
+                  Alfred workflow
+                </OutboundLink>
+                &nbsp;and&nbsp;
+                <OutboundLink
+                  href="https://docs.inkdrop.app/reference/integrate-with-raycast"
+                  className="underline link"
+                >
+                  Raycast extension
+                </OutboundLink>
+                &nbsp;even let you access your notes lightning fast.
+              </p>
+            </div>
+            <div className="column">
+              <AIReadyImage className="icon" />
+              <h3>AI Integration ✨</h3>
+              <p>
+                The{' '}
+                <OutboundLink
+                  href="https://github.com/inkdropapp/mcp-server"
+                  className="underline link"
+                >
+                  Inkdrop MCP server
+                </OutboundLink>
+                &nbsp;allows AI to search your notes, understand their context,
+                and generate new notes based on your existing content.
+              </p>
+              <p>
+                <a
+                  className="white link"
+                  href="https://docs.inkdrop.app/reference/mcp-server"
+                >
+                  How to set up the MCP server&nbsp;
                   <i className="angle double right icon" />
                 </a>
               </p>
