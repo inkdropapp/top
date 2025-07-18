@@ -1,0 +1,118 @@
+# Inkdrop
+
+> Inkdrop is a note-taking app for Markdown lovers. Built for software developers, designers, and writers who want to organize their thoughts and knowledge efficiently with a powerful, hackable Markdown editor.
+
+## Inkdrop Features
+
+### Core Writing & Editing
+- **Markdown Editor**: Powerful editor with GitHub Flavored Markdown (GFM) support
+- **Live Preview**: Side-by-side editing and real-time preview
+- **Syntax Highlighting**: Code blocks with highlighting for 100+ programming languages
+- **Distraction Free Mode**: Hide UI elements to focus on writing
+- **Rich Text Support**: Tables, task lists, footnotes, and alerts
+- **Color Code Preview**: Inline visualization of HEX, RGB, and HSL colors
+- **Image Management**: Embed, resize, and manage images directly in notes
+
+### Note Organization
+- **Notebooks**: Hierarchical folder structure with unlimited nesting
+- **Tags**: Multi-tag support with emoji compatibility
+- **Note Statuses**: Track notes as Active, On Hold, Completed, or Dropped
+- **Pin Notes**: Keep important notes at the top
+- **Advanced Search**: Powerful search with qualifiers (book:, tag:, status:, title:, body:)
+- **Note History**: Navigate through previously viewed notes
+
+### Security & Privacy
+- **End-to-End Encryption**: AES-256 encryption for all data
+- **Zero-Knowledge Architecture**: Your password never leaves your device
+- **Two-Factor Authentication**: TOTP-based 2FA support
+- **Local-First Design**: Full functionality offline
+- **Self-Hosted Option**: Use your own CouchDB-compatible sync server
+- **Transport Security**: TLS/SSL for all data transfers
+
+### Cross-Platform Sync
+- **Desktop Apps**: Native apps for macOS, Windows, and Linux
+- **Mobile Apps**: Full-featured iOS and Android applications
+- **Automatic Sync**: Seamless synchronization across all devices
+- **Offline Mode**: Work without internet, sync when connected
+- **Revision History**: Restore previous versions of any note
+- **Continuous Backup**: Automatic local backups while working
+
+### Integration & Extensibility
+- **Plugin System**: 100+ community plugins available
+- **Theme Support**: Customizable UI, syntax, and preview themes
+- **Vim Mode**: Complete Vim keybinding support
+- **Web Clipper**: Browser extensions for Chrome and Firefox
+- **Mobile Share**: Save content via iOS/Android share sheets
+- **Alfred & Raycast**: macOS launcher integrations
+- **MCP Server**: AI integration for Claude, ChatGPT, and other LLMs
+- **Custom Keybindings**: Fully customizable keyboard shortcuts
+
+### Developer Features
+- **Local API**: HTTP API for third-party integrations
+- **Plugin Development**: Comprehensive API for custom plugins
+- **Theme Creation**: Design your own UI and editor themes
+- **Command Line Tool**: ipm (Inkdrop Plugin Manager)
+- **Custom URI Schemes**: inkdrop:// protocol for automation
+- **Direct Database Access**: CouchDB-compatible local database
+
+### Import & Export
+- **Evernote Import**: Migrate notes from Evernote
+- **Kindle Highlights**: Import Kindle reading highlights
+- **Markdown Export**: Export notes as standard Markdown files
+- **Web Publishing**: Share notes publicly with unique URLs
+- **Data Portability**: Full control over your data
+- **HTML Import**: Import notes from other applications
+
+### Productivity Features
+- **Quick Note**: Create notes with global shortcuts
+- **Note Templates**: Reusable templates for common note types
+- **Multi-Selection**: Batch operations on multiple notes
+- **Note Linking**: Create connections between related notes
+- **Task Management**: Interactive checkboxes and status tracking
+- **Global Search**: Find anything across your entire note collection
+
+### Additional Features
+- **Math Support**: LaTeX formula rendering (via plugin)
+- **Emoji Support**: GitHub-style emoji codes
+- **Touch Gestures**: Swipe navigation on supported devices
+- **Mouse Navigation**: Back/forward buttons support
+- **Network Proxy**: Corporate firewall compatibility
+- **Auto-Update**: Keep the app up-to-date automatically
+- **Multi-Language**: Interface localization support
+
+## Pricing
+
+- [Pricing Page](https://www.inkdrop.app/pricing): Current subscription plans
+- **Monthly Plan**: $9.98/month
+- **Annual Plan**: $8.31/month (billed $99.80 annually)
+- **Free Trial**: 30-day trial with full features
+- **Includes**: Cloud sync, unlimited notes, 30GB storage
+- **No Setup Fees**: No hidden costs or additional charges
+
+## Documentation & Resources
+
+- [Documentation](https://docs.inkdrop.app/): Comprehensive guide on using Inkdrop
+- [API reference](https://developers.inkdrop.app/): Customize and create your own plugins
+- [Plugin Directory](https://my.inkdrop.app/plugins): Browse and install community plugins
+- [FAQ](https://docs.inkdrop.app/faq): Frequently asked questions
+
+## Blog & Updates
+
+- [Blog](https://www.devas.life/): Developer insights and thoughts by Takuya Matsuyama
+- [What's New](https://forum.inkdrop.app/c/announcements/14): Latest announcements and release notes
+
+## Community & Support
+
+- [User Forum](https://forum.inkdrop.app/): Community discussions and support
+- [Discord Server](https://docs.inkdrop.app/start-guide/join-discord-server): Real-time chat with the community
+- [Contact](https://docs.inkdrop.app/contact): Get in touch with support
+- [X (Twitter)](https://x.com/inkdrop_app): Follow for updates and tips
+
+## Legal
+
+- [Terms of Use](https://docs.inkdrop.app/terms): Service terms and conditions
+- [Privacy Policy](https://docs.inkdrop.app/privacy): How we handle your data
+
+## Optional
+
+- [Reviews](https://senja.io/p/inkdrop/GZUsjb): User testimonials and reviews
