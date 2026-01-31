@@ -44,7 +44,7 @@
     "vanta": "^0.5.24"
   },
   "devDependencies": {
-    "eslint": "^9.15.0",
+    "eslint": "^9.26.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.37.2",
     "prettier": "^3.4.1"
