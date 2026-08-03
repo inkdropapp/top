@@ -13,8 +13,8 @@ const SectionWhySubscription = () => {
             <details>
               <summary>What platforms does Inkdrop run on?</summary>
               <p>
-                Inkdrop is available for macOS 10.13 or later, Windows 8.1 or
-                later, and Ubuntu Linux 18.04 or later. Mobile app is also
+                Inkdrop is available for macOS 12.0 or later, Windows 10 or
+                later, and Ubuntu Linux 22.04 or later. Mobile app is also
                 available for iOS 15.6+ and Android 14.0+.
               </p>
             </details>
