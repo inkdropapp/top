@@ -1,39 +1,39 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    { "source": "/features", "destination": "/", "statusCode": 301 },
+    { "source": "/features{/}?", "destination": "/", "statusCode": 301 },
     {
-      "source": "/download",
+      "source": "/download{/}?",
       "destination": "https://my.inkdrop.app/download",
       "statusCode": 301
     },
     {
-      "source": "/demo",
+      "source": "/demo{/}?",
       "destination": "https://my.inkdrop.app/demo",
       "statusCode": 301
     },
     {
-      "source": "/plugins",
+      "source": "/plugins{/}?",
       "destination": "https://my.inkdrop.app/plugins",
       "statusCode": 301
     },
     {
-      "source": "/plugins/:path*",
+      "source": "/plugins/:path*{/}?",
       "destination": "https://my.inkdrop.app/plugins/:path*",
       "statusCode": 301
     },
     {
-      "source": "/login",
+      "source": "/login{/}?",
       "destination": "https://my.inkdrop.app/",
       "statusCode": 301
     },
     {
-      "source": "/signup",
+      "source": "/signup{/}?",
       "destination": "https://my.inkdrop.app/signup",
       "statusCode": 301
     },
     {
-      "source": "/note-taking-tips",
+      "source": "/note-taking-tips{/}?",
       "destination": "https://docs.inkdrop.app/start-guide/note-taking-tips",
       "statusCode": 301
     }
