@@ -2,7 +2,7 @@ import './top-section-seamless-sync.less'
 import React from 'react'
 import Container from 'semantic-ui-react/dist/es/elements/Container'
 import SectionFourth from './section-fourth'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import OutboundLink from './outbound-link'
 import { YouTubeVideo } from './youtube-embed'
@@ -40,18 +40,21 @@ const SectionSeamlessSync = () => {
               </div>
             </div>
             <div className="eight wide column">
-              <Link to="/note-taking-tips/">
+              <OutboundLink href="https://docs.inkdrop.app/start-guide/note-taking-tips">
                 <GatsbyImage
                   alt={'Tips'}
                   className={`cover-image`}
                   image={data.tipsCover.childImageSharp.gatsbyImageData}
                 />
-              </Link>
+              </OutboundLink>
               <div className="caption">
-                <Link to="/note-taking-tips/" className="white link">
+                <OutboundLink
+                  href="https://docs.inkdrop.app/start-guide/note-taking-tips"
+                  className="white link"
+                >
                   How to maximize your productivity with tech note-taking&nbsp;
                   <i className="angle double right icon" />
-                </Link>
+                </OutboundLink>
               </div>
             </div>
           </div>
